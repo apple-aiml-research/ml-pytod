@@ -243,12 +243,6 @@ use it to execute all the ground truth PyTOD transcripts for the development and
 
 
 ```
-├── AUTHORS.md              <- List of developers and maintainers.
-├── CHANGELOG.md            <- Changelog to keep track of new features and fixes.
-├── CONTRIBUTING.md         <- Guidelines for contributing to this project.
-├── Dockerfile              <- Build a docker container with `docker build .`.
-├── LICENSE.txt             <- License as chosen on the command-line.
-├── README.md               <- The top-level README for developers.
 ├── data
 │   ├── external            <- Data from third party sources.
 │   ├── interim             <- Intermediate data that has been transformed.
@@ -300,17 +294,3 @@ use it to execute all the ground truth PyTOD transcripts for the development and
 ├── .isort.cfg              <- Configuration for git hook that sorts imports.
 └── .pre-commit-config.yaml <- Configuration of pre-commit git hooks.
 ```
-
-<!-- pyscaffold-notes -->
-
-## Note
-
-This project has been set up using [PyScaffold] 4.4.1 and the [dsproject extension] 0.7.2.
-
-[conda]: https://docs.conda.io/
-[pre-commit]: https://pre-commit.com/
-[Jupyter]: https://jupyter.org/
-[nbstripout]: https://github.com/kynan/nbstripout
-[Google style]: http://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings
-[PyScaffold]: https://pyscaffold.org/
-[dsproject extension]: https://github.com/pyscaffold/pyscaffoldext-dsproject

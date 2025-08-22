@@ -13,6 +13,9 @@
 
 _pytod_ is a library which provides a simulated environment for the Schema-Guided Dialogue (SGD) dataset (_Rastogi et al., 2019_). It simulates SGD APIs, including database responses and API behavior, according to the complex policies inherent in the dataset, providing a resource for conversational tool-use and zero-shot end-to-end task-oriented dialogue research.
 
+Accompanies the paper [<i>PyTOD: Programmable Task-Oriented Dialogue with Execution Feedback</i>](https://arxiv.org/abs/2508.15456).
+
+
 ## Installation
 
 In order to set up the necessary environment:

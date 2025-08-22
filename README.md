@@ -15,7 +15,6 @@ _pytod_ is a library which provides a simulated environment for the Schema-Gui
 
 Accompanies the paper [<i>PyTOD: Programmable Task-Oriented Dialogue with Execution Feedback</i>](https://arxiv.org/abs/2508.15456).
 
-
 ## Installation
 
 In order to set up the necessary environment:

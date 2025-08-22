@@ -1,0 +1,15 @@
+splits: ???
+ids: ???
+data_path: ${root:data/interim/sgd}
+
+defaults:
+  - conversation_builder: slot_value_paraphrases
+  - _self_
+
+output_path: 'resources/mining_results/slot_value_paraphrases'
+
+hydra:
+  run:
+    dir: "${...output_path}"
+
+run_dir: ${root:${hydra:run.dir}}

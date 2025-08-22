@@ -1,0 +1,51 @@
+{
+  "train": {
+    "Calendar_1(GetEvents->GetAvailableTime)": [
+      "38_00102",
+      "38_00124"
+    ],
+    "Events_2(FindEvents->GetEventDates)": [
+      "10_00097",
+      "10_00049",
+      "10_00102",
+      "11_00037"
+    ],
+    "Flights_1(SearchOnewayFlight->SearchRoundtripFlights)": [
+      "21_00082",
+      "21_00097",
+      "37_00008",
+      "37_00079",
+      "37_00099"
+    ],
+    "Flights_1(SearchRoundtripFlights->SearchOnewayFlight)": [
+      "24_00121",
+      "38_00071",
+      "38_00006",
+      "38_00079",
+      "38_00024",
+      "38_00028",
+      "38_00002"
+    ],
+    "Flights_2(SearchRoundtripFlights->SearchOnewayFlight)": [
+      "25_00053"
+    ],
+    "Movies_1(FindMovies->GetTimesForMovie)": [
+      "12_00125",
+      "12_00075",
+      "13_00126",
+      "13_00002",
+      "13_00012",
+      "13_00092",
+      "13_00039",
+      "13_00084",
+      "13_00061",
+      "13_00078",
+      "14_00013",
+      "14_00022",
+      "14_00031",
+      "14_00017",
+      "43_00016",
+      "43_00029"
+    ]
+  }
+}

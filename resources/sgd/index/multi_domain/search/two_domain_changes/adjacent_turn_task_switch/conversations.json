@@ -1,0 +1,61 @@
+{
+  "train": {
+    "RentalCars_1(GetCarsAvailable)|||Buses_1(FindBus)|||Flights_2(SearchRoundtripFlights)": [
+      "117_00100",
+      "118_00007"
+    ]
+  },
+  "dev": {
+    "RentalCars_1(GetCarsAvailable)|||Buses_1(FindBus)|||Flights_3(SearchOnewayFlight)": [
+      "14_00119"
+    ],
+    "Travel_1(FindAttractions)|||Hotels_1(SearchHotel)|||Flights_3(SearchRoundtripFlights)": [
+      "20_00056",
+      "20_00030",
+      "20_00038",
+      "20_00044",
+      "20_00067",
+      "20_00052",
+      "20_00055",
+      "20_00032",
+      "20_00023",
+      "20_00048",
+      "20_00020",
+      "20_00066",
+      "20_00063",
+      "20_00016",
+      "20_00054"
+    ],
+    "Weather_1(GetWeather)|||Flights_3(SearchOnewayFlight)|||RentalCars_1(GetCarsAvailable)": [
+      "13_00049"
+    ]
+  },
+  "test": {
+    "RentalCars_3(GetCarsAvailable)|||Buses_3(FindBus)|||Flights_4(SearchOnewayFlight)": [
+      "19_00068"
+    ],
+    "Travel_1(FindAttractions)|||Hotels_2(SearchHouse)|||Flights_4(SearchRoundtripFlights)": [
+      "33_00127",
+      "33_00124",
+      "33_00118",
+      "33_00113",
+      "33_00112",
+      "33_00093",
+      "33_00105",
+      "33_00122",
+      "33_00084",
+      "33_00114",
+      "33_00123",
+      "33_00082",
+      "33_00087",
+      "33_00125",
+      "33_00101",
+      "34_00001",
+      "34_00002"
+    ],
+    "Weather_1(GetWeather)|||Flights_4(SearchOnewayFlight)|||RentalCars_3(GetCarsAvailable)": [
+      "17_00100",
+      "17_00101"
+    ]
+  }
+}

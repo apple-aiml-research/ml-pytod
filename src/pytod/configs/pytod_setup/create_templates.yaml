@@ -1,0 +1,11 @@
+defaults:
+  - default_settings: default
+
+split: ???
+input_dir: ${root:data/interim/sgd/${split}}
+out_dir: ${root:data/templates/sgd}
+
+hydra:
+  sweep:
+    dir: ${out_dir}
+    subdir: ${split}

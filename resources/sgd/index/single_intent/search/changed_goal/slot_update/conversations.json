@@ -1,0 +1,60 @@
+{
+  "train": {
+    "Buses_1(FindBus)": [
+      "26_00023",
+      "28_00019"
+    ],
+    "Events_1(FindEvents)": [
+      "11_00070"
+    ],
+    "Events_2(FindEvents)": [
+      "11_00125"
+    ],
+    "Flights_2(SearchOnewayFlight)": [
+      "16_00036",
+      "16_00009",
+      "16_00025"
+    ],
+    "Homes_1(FindApartment)": [
+      "35_00071",
+      "35_00010",
+      "35_00036",
+      "35_00067"
+    ],
+    "Services_3(FindProvider)": [
+      "33_00087",
+      "33_00092",
+      "33_00116"
+    ]
+  },
+  "dev": {
+    "Homes_1(FindApartment)": [
+      "4_00004"
+    ],
+    "Weather_1(GetWeather)": [
+      "3_00098"
+    ]
+  },
+  "test": {
+    "Events_3(FindEvents)": [
+      "2_00051",
+      "2_00040",
+      "2_00023"
+    ],
+    "Flights_4(SearchRoundtripFlights)": [
+      "3_00042"
+    ],
+    "RentalCars_3(GetCarsAvailable)": [
+      "3_00089"
+    ],
+    "Services_4(FindProvider)": [
+      "5_00076",
+      "5_00108"
+    ],
+    "Weather_1(GetWeather)": [
+      "6_00107",
+      "7_00020",
+      "7_00008"
+    ]
+  }
+}

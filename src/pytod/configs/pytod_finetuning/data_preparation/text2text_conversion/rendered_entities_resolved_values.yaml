@@ -1,0 +1,13 @@
+# render entities and display the task-completion stack before
+# the api documentation. Task stack is likely only useful when
+# keyword argument values are symbolic, so it is not displayed
+# for prompts where values are resolved.
+defaults:
+  - conversation_formatter@conversation_fmt: render_entities_resolved_values
+  - intent_formatter@intent_fmt: hidden_return_type_service_command
+  - prompt_formatter@prompt_fmt: task_stack_header_resolved_values
+  - target_formatter@target_fmt: multiline
+
+_target_: pytod.prompting.pytod_prompt_formatters.RenderedEntitiesConversationFormatter
+config:
+  schema: ${command_collection}

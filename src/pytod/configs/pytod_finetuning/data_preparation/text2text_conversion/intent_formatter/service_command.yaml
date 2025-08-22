@@ -1,0 +1,11 @@
+_target_: pytod.prompting.pytod_header_formatters.ServiceCommandFormatter
+config:
+  # needed for intent name formatting
+  toolbox: ???
+  # nb: this setting is overridden based on the
+  # `randomise_schema_element_order` property in the
+  # root config
+  randomise_prompt_elements: true
+  # if `true` optional slot type annotation is `optional[type]`
+  # instead of `type`
+  mark_optional_slots: false

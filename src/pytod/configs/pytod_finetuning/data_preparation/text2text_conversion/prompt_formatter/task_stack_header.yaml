@@ -1,0 +1,11 @@
+_target_: pytod.prompting.pytod_prompt_formatters.TaskStackPromptFormatter
+config:
+  # if true, carried over values reference entities or commands
+  # (e.g. destination=x5.street_address may appear in a get_ride API call.
+  #  otherwise, the resolved value is shown: destination="30 Station Rd" )
+  value_object_references: true
+  schema: ${command_collection}
+  # this randomises the order in which
+  # documentation for completed tasks
+  # is displayed
+  randomise_prompt_elements: true

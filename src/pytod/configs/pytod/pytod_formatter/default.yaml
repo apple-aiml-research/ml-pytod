@@ -1,0 +1,8 @@
+defaults:
+  - rich_config: default
+  - _self_
+
+show_programs: true
+_target_: pytod.pytod_text_formatter.PyTODTextFormatter
+user_name: 'user'
+system_name: 'agent'

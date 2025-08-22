@@ -1,0 +1,66 @@
+{
+  "train": {
+    "Hotels_2(SearchHouse->BookHouse)": [
+      "34_00108",
+      "34_00095",
+      "34_00065",
+      "34_00060"
+    ],
+    "Restaurants_1(FindRestaurants->ReserveRestaurant)": [
+      "1_00126",
+      "1_00025",
+      "1_00067",
+      "2_00045",
+      "2_00029",
+      "2_00021"
+    ],
+    "Services_2(FindProvider->BookAppointment)": [
+      "28_00096",
+      "28_00119",
+      "29_00013",
+      "29_00020",
+      "29_00041",
+      "29_00042",
+      "29_00050"
+    ],
+    "Services_3(FindProvider->BookAppointment)": [
+      "30_00010",
+      "30_00042",
+      "30_00046",
+      "30_00065"
+    ]
+  },
+  "dev": {
+    "Alarm_1(GetAlarms->AddAlarm)": [
+      "3_00011"
+    ],
+    "Hotels_4(SearchHotel->ReserveHotel)": [
+      "6_00057"
+    ],
+    "Restaurants_2(FindRestaurants->ReserveRestaurant)": [
+      "4_00105",
+      "4_00097",
+      "4_00090",
+      "4_00087"
+    ],
+    "Services_4(FindProvider->BookAppointment)": [
+      "3_00062",
+      "3_00043",
+      "3_00045",
+      "3_00038",
+      "3_00065"
+    ]
+  },
+  "test": {
+    "Restaurants_2(FindRestaurants->ReserveRestaurant)": [
+      "4_00045",
+      "4_00048"
+    ],
+    "Services_1(FindProvider->BookAppointment)": [
+      "6_00081"
+    ],
+    "Services_4(FindProvider->BookAppointment)": [
+      "6_00006"
+    ]
+  }
+}

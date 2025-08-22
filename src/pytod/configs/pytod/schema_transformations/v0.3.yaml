@@ -1,0 +1,34 @@
+defaults:
+  - metadata/requests@requests: requests
+  - _self_
+
+train:
+  _target_: pytod.preprocessing_pipelines.SchemaPreprocessingPipeline
+  steps:
+    - _target_: pytod.preprocessing_pipelines.modify_return_types
+      requested_slots_metadata: ${....requests.info}
+      _partial_: true
+    - _target_: pytod.preprocessing_pipelines.add_data_types
+      _partial_: true
+dev:
+  _target_: pytod.preprocessing_pipelines.SchemaPreprocessingPipeline
+  steps:
+    - _target_: pytod.preprocessing_pipelines.modify_return_types
+      requested_slots_metadata: ${....requests.info}
+      _partial_: true
+    - _target_: pytod.preprocessing_pipelines.add_data_types
+      _partial_: true
+test:
+  _target_: pytod.preprocessing_pipelines.SchemaPreprocessingPipeline
+  steps:
+    - _target_: pytod.preprocessing_pipelines.modify_slot_names
+      service: 'Trains_1'
+      slot_map:
+        _target_: pytod.interpreter.metadata.get_unparseable_slot_map
+        service: ${..service}
+      _partial_: true
+    - _target_: pytod.preprocessing_pipelines.modify_return_types
+      requested_slots_metadata: ${....requests.info}
+      _partial_: true
+    - _target_: pytod.preprocessing_pipelines.add_data_types
+      _partial_: true

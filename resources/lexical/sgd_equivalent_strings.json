@@ -1,0 +1,2273 @@
+[
+  [
+    "$10",
+    "10"
+  ],
+  [
+    "$102",
+    "102"
+  ],
+  [
+    "$106",
+    "106 dollars"
+  ],
+  [
+    "$108",
+    "one hundred and eight dollars"
+  ],
+  [
+    "$111",
+    "111 dollars"
+  ],
+  [
+    "$112",
+    "one hundred and twelve bucks"
+  ],
+  [
+    "$118",
+    "118 bucks"
+  ],
+  [
+    "$123",
+    "one hundred and twenty three bucks"
+  ],
+  [
+    "$125",
+    "125 dollars"
+  ],
+  [
+    "$128",
+    "128 bucks"
+  ],
+  [
+    "$129",
+    "129 bucks"
+  ],
+  [
+    "$130",
+    "130 bucks"
+  ],
+  [
+    "$131",
+    "one hundred and thirty one bucks"
+  ],
+  [
+    "$135",
+    "135 dollars"
+  ],
+  [
+    "$138",
+    "138 dollars"
+  ],
+  [
+    "$139",
+    "139 dollars"
+  ],
+  [
+    "$142",
+    "142 dollars"
+  ],
+  [
+    "$144",
+    "144 bucks"
+  ],
+  [
+    "$145",
+    "one hundred and forty five bucks"
+  ],
+  [
+    "$148",
+    "148 dollars"
+  ],
+  [
+    "$150",
+    "150 bucks"
+  ],
+  [
+    "$151",
+    "151 bucks"
+  ],
+  [
+    "$152",
+    "152 dollars"
+  ],
+  [
+    "$153",
+    "153 bucks"
+  ],
+  [
+    "$154",
+    "one hundred and fifty four dollars"
+  ],
+  [
+    "$157",
+    "one hundred and fifty seven dollars"
+  ],
+  [
+    "$158",
+    "158 dollars"
+  ],
+  [
+    "$159",
+    "one hundred and fifty nine dollars"
+  ],
+  [
+    "$161",
+    "161 bucks"
+  ],
+  [
+    "$162",
+    "162 bucks"
+  ],
+  [
+    "$164",
+    "164 bucks"
+  ],
+  [
+    "$166",
+    "166 bucks"
+  ],
+  [
+    "$167",
+    "one hundred and sixty seven dollars"
+  ],
+  [
+    "$168",
+    "168 bucks"
+  ],
+  [
+    "$173",
+    "173 bucks"
+  ],
+  [
+    "$175",
+    "one hundred and seventy five dollars"
+  ],
+  [
+    "$176",
+    "176 bucks"
+  ],
+  [
+    "$179",
+    "179 dollars"
+  ],
+  [
+    "$180",
+    "180 dollars"
+  ],
+  [
+    "$188",
+    "one hundred and eighty eight bucks"
+  ],
+  [
+    "$2,400,000",
+    "$2400000"
+  ],
+  [
+    "$2,500,000",
+    "$2500000"
+  ],
+  [
+    "$2,750",
+    "$2750"
+  ],
+  [
+    "$2,800",
+    "$2800"
+  ],
+  [
+    "$215",
+    "two hundred and fifteen bucks"
+  ],
+  [
+    "$22",
+    "22"
+  ],
+  [
+    "$26",
+    "26"
+  ],
+  [
+    "$28",
+    "28"
+  ],
+  [
+    "$3,000",
+    "$3000"
+  ],
+  [
+    "$37",
+    "37"
+  ],
+  [
+    "$39",
+    "39"
+  ],
+  [
+    "$40",
+    "40 dollars"
+  ],
+  [
+    "$46",
+    "46"
+  ],
+  [
+    "$5,100",
+    "$5100"
+  ],
+  [
+    "$53",
+    "53 dollars"
+  ],
+  [
+    "$54",
+    "54"
+  ],
+  [
+    "$57",
+    "57"
+  ],
+  [
+    "$59",
+    "59"
+  ],
+  [
+    "$66",
+    "66"
+  ],
+  [
+    "$67",
+    "67"
+  ],
+  [
+    "$69",
+    "69"
+  ],
+  [
+    "$70",
+    "70"
+  ],
+  [
+    "$76",
+    "76"
+  ],
+  [
+    "$77",
+    "77"
+  ],
+  [
+    "$78",
+    "78"
+  ],
+  [
+    "$81",
+    "81"
+  ],
+  [
+    "$87",
+    "87"
+  ],
+  [
+    "$88",
+    "88"
+  ],
+  [
+    "$91",
+    "91"
+  ],
+  [
+    "$92",
+    "92"
+  ],
+  [
+    "$95",
+    "95"
+  ],
+  [
+    "07:00",
+    "7 am"
+  ],
+  [
+    "08:45",
+    "8:45 am"
+  ],
+  [
+    "1",
+    "one"
+  ],
+  [
+    "1100 market street hotel entrance is at 45 mcallister street",
+    "1100 market street hotel entrance is at, 45 mcallister street"
+  ],
+  [
+    "11:30 in the night",
+    "11:30 pm"
+  ],
+  [
+    "21:15",
+    "9:15 pm"
+  ],
+  [
+    "5",
+    "five"
+  ],
+  [
+    "6:15 am",
+    "morning 6:15"
+  ],
+  [
+    "6:45 am",
+    "quarter to 7 in the morning"
+  ],
+  [
+    "7:30 am",
+    "half past 7 in the morning"
+  ],
+  [
+    "8 am",
+    "8 o'clock in the morning"
+  ],
+  [
+    "8:15 am",
+    "8:15 in the morning"
+  ],
+  [
+    "academy bar",
+    "academy bar and kitchen"
+  ],
+  [
+    "airport stadium 12",
+    "airport stadium cinemas"
+  ],
+  [
+    "alt-reinickendorf 4-5 13407",
+    "alt-reinickendorf 4-5, 13407"
+  ],
+  [
+    "amc bay street",
+    "amc bay street 16"
+  ],
+  [
+    "amc mercado",
+    "amc mercado 20"
+  ],
+  [
+    "anatolian",
+    "anatolian kitchen"
+  ],
+  [
+    "b&b kitchen",
+    "b&b kitchen & wine bar"
+  ],
+  [
+    "baby blues",
+    "baby blues bbq"
+  ],
+  [
+    "baci",
+    "baci | cafe & wine bar"
+  ],
+  [
+    "barbecue",
+    "comfort food"
+  ],
+  [
+    "belly left coast",
+    "belly left coast kitchen & taproom"
+  ],
+  [
+    "benissimo",
+    "benissimo restaurant & bar"
+  ],
+  [
+    "benito juarez airport",
+    "benito juarez international airport"
+  ],
+  [
+    "bj's",
+    "bj's restaurant & brewhouse"
+  ],
+  [
+    "boulevard 14 cinema",
+    "boulevard cinema"
+  ],
+  [
+    "brass rabbit",
+    "the brass rabbit"
+  ],
+  [
+    "bruno's",
+    "bruno's on fourth"
+  ],
+  [
+    "burgers",
+    "steakhouse"
+  ],
+  [
+    "butterfly",
+    "butterfly restaurant"
+  ],
+  [
+    "c's barber shop",
+    "cs barber shop"
+  ],
+  [
+    "california theatre",
+    "landmark's california theatre"
+  ],
+  [
+    "castle rock",
+    "castle rock restaurant"
+  ],
+  [
+    "century cinema",
+    "century cinema 16"
+  ],
+  [
+    "chi-town",
+    "chicago"
+  ],
+  [
+    "cinelux tennant station",
+    "cinelux tennant station stadium 11"
+  ],
+  [
+    "clay theatre",
+    "landmark's clay theatre"
+  ],
+  [
+    "close encounters",
+    "close encounters of the third kind"
+  ],
+  [
+    "country",
+    "hillbilly"
+  ],
+  [
+    "dara",
+    "dara thai/lao cuisine"
+  ],
+  [
+    "echo",
+    "echo in the canyon"
+  ],
+  [
+    "electronic musical",
+    "electronica"
+  ],
+  [
+    "elephant bar",
+    "elephant bar restaurant"
+  ],
+  [
+    "fabric",
+    "in fabric"
+  ],
+  [
+    "farewell",
+    "the farewell"
+  ],
+  [
+    "fast food",
+    "sandwich"
+  ],
+  [
+    "fiddler",
+    "fiddler: a miracle of miracles"
+  ],
+  [
+    "frantoio",
+    "frantoio ristorante"
+  ],
+  [
+    "french",
+    "parisian"
+  ],
+  [
+    "fresno",
+    "fresno, ca"
+  ],
+  [
+    "gastrobar",
+    "gastropub"
+  ],
+  [
+    "genghix",
+    "genghix asian fusion"
+  ],
+  [
+    "gio's pizza",
+    "gio's pizza and bocce"
+  ],
+  [
+    "greek wedding",
+    "my big fat greek wedding"
+  ],
+  [
+    "green chile",
+    "green chile kitchen"
+  ],
+  [
+    "gypsy",
+    "gypsy cafe"
+  ],
+  [
+    "healthy meal",
+    "soup & salad"
+  ],
+  [
+    "heathrow airport",
+    "heathrow international airport"
+  ],
+  [
+    "himalayan tandoori",
+    "himalayan tandoori and curry house"
+  ],
+  [
+    "hong kong",
+    "hong kong restaurant"
+  ],
+  [
+    "inchin's",
+    "inchin's bamboo garden"
+  ],
+  [
+    "izzy's steaks",
+    "izzy's steaks & chops"
+  ],
+  [
+    "jalisco's",
+    "jalisco's restaurant"
+  ],
+  [
+    "jfk international airport",
+    "john f. kennedy airport"
+  ],
+  [
+    "jomo kenyatta international airport",
+    "nairobi international airport"
+  ],
+  [
+    "kamikaze sushi",
+    "kamikaze sushi bar & cuisine"
+  ],
+  [
+    "kingsford smith airport",
+    "kingsford smith international airport"
+  ],
+  [
+    "kl",
+    "kuala lumpur"
+  ],
+  [
+    "klia international airport",
+    "kuala lumpur international airport"
+  ],
+  [
+    "la hacienda",
+    "la hacienda mexican restaurant"
+  ],
+  [
+    "ladykillers",
+    "the ladykillers"
+  ],
+  [
+    "landmark's piedmont theatre",
+    "piedmont theatre"
+  ],
+  [
+    "landmark's shattuck cinemas",
+    "shattuck cinemas"
+  ],
+  [
+    "las vegas",
+    "vegas"
+  ],
+  [
+    "lavier",
+    "lavier latin fusion restaurant"
+  ],
+  [
+    "le petit",
+    "le petit bistro"
+  ],
+  [
+    "left bank",
+    "left bank larkspur brasserie"
+  ],
+  [
+    "lers ros",
+    "lers ros thai"
+  ],
+  [
+    "light meal",
+    "tapas"
+  ],
+  [
+    "livermore 13 cinema",
+    "livermore cinema"
+  ],
+  [
+    "lotus",
+    "lotus thai bistro"
+  ],
+  [
+    "lotus",
+    "lotus thai restaurant"
+  ],
+  [
+    "madeline",
+    "madeline's madeline"
+  ],
+  [
+    "mcdonald's",
+    "mcdonalds"
+  ],
+  [
+    "mi zacatecas",
+    "mi zacatecas family restaurant"
+  ],
+  [
+    "middle eastern",
+    "persian"
+  ],
+  [
+    "ming's",
+    "ming's diner"
+  ],
+  [
+    "miramar beach",
+    "miramar beach restaurant"
+  ],
+  [
+    "mission mangal",
+    "the indian mars movie"
+  ],
+  [
+    "musical",
+    "song"
+  ],
+  [
+    "mysterious",
+    "mystery"
+  ],
+  [
+    "nairobi",
+    "nairobi, kenya"
+  ],
+  [
+    "once upon a time",
+    "once upon a time in hollywood"
+  ],
+  [
+    "pamela culver psy",
+    "pamela culver, psy"
+  ],
+  [
+    "patxi's",
+    "patxi's pizza"
+  ],
+  [
+    "pdx airport",
+    "pdx international airport"
+  ],
+  [
+    "pearl garden",
+    "pearl garden restaurant"
+  ],
+  [
+    "philadelphia",
+    "philly"
+  ],
+  [
+    "pop",
+    "popular"
+  ],
+  [
+    "portland",
+    "portland, or"
+  ],
+  [
+    "priya",
+    "priya indian cuisine"
+  ],
+  [
+    "rangecafe",
+    "rangecafe bar and grill"
+  ],
+  [
+    "regent",
+    "regent thai"
+  ],
+  [
+    "reggae",
+    "reggaeton"
+  ],
+  [
+    "rio",
+    "rio de janeiro"
+  ],
+  [
+    "rock",
+    "rock-and-roll"
+  ],
+  [
+    "roppongi",
+    "roppongi sushi"
+  ],
+  [
+    "roxy stadium 14",
+    "roxy stadium cinemas"
+  ],
+  [
+    "royal oak",
+    "royal oak steak & seafood"
+  ],
+  [
+    "sacramento",
+    "sacramento, ca"
+  ],
+  [
+    "san airport",
+    "san international airport"
+  ],
+  [
+    "san diego",
+    "sd"
+  ],
+  [
+    "sauced bbq",
+    "sauced bbq & spirits"
+  ],
+  [
+    "scary stories",
+    "scary stories to tell in the dark"
+  ],
+  [
+    "sea thai",
+    "sea thai bistro"
+  ],
+  [
+    "senro",
+    "senro sushi"
+  ],
+  [
+    "sfo airport",
+    "sfo international airport"
+  ],
+  [
+    "suspense",
+    "thriller"
+  ],
+  [
+    "tandoori mahal",
+    "tandoori mahal indian restaurant"
+  ],
+  [
+    "thai chili",
+    "thai chili cuisine"
+  ],
+  [
+    "the buena pride arts center",
+    "the buena, pride arts center"
+  ],
+  [
+    "toronto pearson airport",
+    "toronto pearson international airport"
+  ],
+  [
+    "townhouse",
+    "townhouse bar & grill"
+  ],
+  [
+    "toy story 4",
+    "toy story four"
+  ],
+  [
+    "vine cinema",
+    "vine cinema & alehouse"
+  ],
+  [
+    "yeti",
+    "yeti restaurant"
+  ],
+  [
+    "yin keng",
+    "yin keng restaurant"
+  ],
+  [
+    "$100",
+    "100",
+    "100 bucks"
+  ],
+  [
+    "$101",
+    "101",
+    "101 bucks"
+  ],
+  [
+    "$103",
+    "103",
+    "103 bucks"
+  ],
+  [
+    "$104",
+    "104 dollars",
+    "one hundred and four dollars"
+  ],
+  [
+    "$105",
+    "105",
+    "105 bucks"
+  ],
+  [
+    "$109",
+    "109 bucks",
+    "one hundred and nine bucks"
+  ],
+  [
+    "$11",
+    "11",
+    "eleven dollars"
+  ],
+  [
+    "$115",
+    "115 bucks",
+    "115 dollars"
+  ],
+  [
+    "$116",
+    "116 dollars",
+    "one hundred and sixteen bucks"
+  ],
+  [
+    "$117",
+    "117 bucks",
+    "117 dollars"
+  ],
+  [
+    "$119",
+    "119 dollars",
+    "one hundred and nineteen bucks"
+  ],
+  [
+    "$12",
+    "12",
+    "12 dollars"
+  ],
+  [
+    "$121",
+    "121 dollars",
+    "one hundred and twenty one dollars"
+  ],
+  [
+    "$124",
+    "124 dollars",
+    "one hundred and twenty four dollars"
+  ],
+  [
+    "$134",
+    "134 bucks",
+    "one hundred and thirty four dollars"
+  ],
+  [
+    "$141",
+    "one hundred and forty one bucks",
+    "one hundred and forty one dollars"
+  ],
+  [
+    "$149",
+    "149 bucks",
+    "one hundred and forty nine bucks"
+  ],
+  [
+    "$15",
+    "15",
+    "15 dollars"
+  ],
+  [
+    "$155",
+    "155 bucks",
+    "one hundred and fifty five bucks"
+  ],
+  [
+    "$16",
+    "16",
+    "16 dollars"
+  ],
+  [
+    "$17",
+    "17",
+    "17 bucks"
+  ],
+  [
+    "$171",
+    "171 dollars",
+    "one hundred and seventy one bucks"
+  ],
+  [
+    "$20",
+    "20",
+    "20 bucks"
+  ],
+  [
+    "$21",
+    "21",
+    "21 bucks"
+  ],
+  [
+    "$23",
+    "23",
+    "23 bucks"
+  ],
+  [
+    "$24",
+    "24",
+    "twenty four dollars"
+  ],
+  [
+    "$27",
+    "27",
+    "27 dollars"
+  ],
+  [
+    "$29",
+    "29",
+    "29 bucks"
+  ],
+  [
+    "$3",
+    "3",
+    "three"
+  ],
+  [
+    "$31",
+    "31 bucks",
+    "31 dollars"
+  ],
+  [
+    "$32",
+    "32 bucks",
+    "thirty two bucks"
+  ],
+  [
+    "$36",
+    "thirty six bucks",
+    "thirty six dollars"
+  ],
+  [
+    "$38",
+    "38",
+    "38 bucks"
+  ],
+  [
+    "$44",
+    "44 dollars",
+    "forty four dollars"
+  ],
+  [
+    "$49",
+    "49",
+    "49 bucks"
+  ],
+  [
+    "$50",
+    "50 bucks",
+    "50 dollars"
+  ],
+  [
+    "$51",
+    "51 bucks",
+    "fifty one bucks"
+  ],
+  [
+    "$52",
+    "52 dollars",
+    "fifty two bucks"
+  ],
+  [
+    "$55",
+    "55",
+    "55 bucks"
+  ],
+  [
+    "$56",
+    "56",
+    "56 dollars"
+  ],
+  [
+    "$60",
+    "60",
+    "60 bucks"
+  ],
+  [
+    "$61",
+    "61",
+    "61 bucks"
+  ],
+  [
+    "$62",
+    "62",
+    "sixty two dollars"
+  ],
+  [
+    "$63",
+    "63",
+    "63 dollars"
+  ],
+  [
+    "$64",
+    "64",
+    "sixty four dollars"
+  ],
+  [
+    "$71",
+    "71",
+    "seventy one bucks"
+  ],
+  [
+    "$72",
+    "72",
+    "seventy two bucks"
+  ],
+  [
+    "$73",
+    "73",
+    "73 dollars"
+  ],
+  [
+    "$74",
+    "74",
+    "74 bucks"
+  ],
+  [
+    "$80",
+    "80",
+    "80 dollars"
+  ],
+  [
+    "$83",
+    "83",
+    "83 dollars"
+  ],
+  [
+    "$85",
+    "85",
+    "eighty five bucks"
+  ],
+  [
+    "$86",
+    "86",
+    "eighty six dollars"
+  ],
+  [
+    "$89",
+    "89",
+    "eighty nine bucks"
+  ],
+  [
+    "$9",
+    "9",
+    "9 dollars"
+  ],
+  [
+    "$90",
+    "90",
+    "ninety dollars"
+  ],
+  [
+    "$98",
+    "98",
+    "ninety eight bucks"
+  ],
+  [
+    "$99",
+    "99",
+    "ninety nine dollars"
+  ],
+  [
+    "06:30",
+    "6:30 am",
+    "half past 6 in the morning"
+  ],
+  [
+    "07:00",
+    "7 am",
+    "7:00 am"
+  ],
+  [
+    "07:15",
+    "7:15 am",
+    "quarter past 7 in the morning"
+  ],
+  [
+    "09:15",
+    "9:15 am",
+    "9:15 in the morning"
+  ],
+  [
+    "1003 coast boulevard la jolla, california 92037, united states",
+    "1003 coast boulevard, la jolla california 92037, united states",
+    "1003 coast boulevard, la jolla, california 92037, united states"
+  ],
+  [
+    "10:45 pm",
+    "22:45",
+    "quarter to 11 in the night"
+  ],
+  [
+    "20:15",
+    "8:15 in the night",
+    "8:15 pm"
+  ],
+  [
+    "21:45",
+    "9:45 pm",
+    "night 9:45"
+  ],
+  [
+    "47 meters down",
+    "47 meters down: uncaged",
+    "uncaged"
+  ],
+  [
+    "6 am",
+    "6 in the morning",
+    "morning 6"
+  ],
+  [
+    "8 o'clock in the morning",
+    "8 am",
+    "8:00"
+  ],
+  [
+    "8:30 in the night",
+    "8:30 pm",
+    "half past 8 in the night"
+  ],
+  [
+    "9 pm",
+    "night 9",
+    "nine pm"
+  ],
+  [
+    "9:30 in the night",
+    "9:30 pm",
+    "half past 9 in the night"
+  ],
+  [
+    "anaheim",
+    "anaheim ca",
+    "anaheim, ca"
+  ],
+  [
+    "animation",
+    "cartoon",
+    "kids"
+  ],
+  [
+    "asian",
+    "asian fusion",
+    "oriental"
+  ],
+  [
+    "atl",
+    "atlanta",
+    "atlanta, ga"
+  ],
+  [
+    "bizarre story",
+    "eccentric story",
+    "offbeat"
+  ],
+  [
+    "cafe",
+    "coffee & light bites",
+    "coffeehouse"
+  ],
+  [
+    "cambodian",
+    "pho",
+    "vietnamese"
+  ],
+  [
+    "cdmx",
+    "ciudad de mexico",
+    "mexico city"
+  ],
+  [
+    "chicago airport",
+    "o'hare airport",
+    "o'hare international airport"
+  ],
+  [
+    "comedy",
+    "comic",
+    "funny"
+  ],
+  [
+    "country",
+    "country music",
+    "hillbilly"
+  ],
+  [
+    "delhi airport",
+    "indira gandhi airport",
+    "indira gandhi international airport"
+  ],
+  [
+    "drama",
+    "dramatic story",
+    "play"
+  ],
+  [
+    "ghost",
+    "horror",
+    "scary"
+  ],
+  [
+    "indian",
+    "punjabi",
+    "spicy indian"
+  ],
+  [
+    "it chapter two",
+    "it two",
+    "it2"
+  ],
+  [
+    "korean",
+    "korean barbeque",
+    "korean hot pot"
+  ],
+  [
+    "la",
+    "lax",
+    "los angeles"
+  ],
+  [
+    "latin american",
+    "spanish",
+    "tapas bar"
+  ],
+  [
+    "long beach",
+    "long beach ca",
+    "long beach, ca"
+  ],
+  [
+    "non meat",
+    "vegetarian",
+    "veggie"
+  ],
+  [
+    "paris",
+    "paris france",
+    "paris, france"
+  ],
+  [
+    "phoenix",
+    "phoenix az",
+    "phoenix, az"
+  ],
+  [
+    "phoenix sky harbor airport",
+    "sky harbor airport",
+    "sky harbor international airport"
+  ],
+  [
+    "racing in rain",
+    "racing in the rain",
+    "the art of racing in the rain"
+  ],
+  [
+    "seattle",
+    "seattle wa",
+    "seattle, wa"
+  ],
+  [
+    "toronto",
+    "toronto, canada",
+    "toronto, ontario"
+  ],
+  [
+    "vancouver",
+    "vancouver bc",
+    "vancouver, bc"
+  ],
+  [
+    "vancouver airport",
+    "yvr airport",
+    "yvr international airport"
+  ],
+  [
+    "where would you go",
+    "where'd you go",
+    "where'd you go, bernadette"
+  ],
+  [
+    "$120",
+    "120 bucks",
+    "120 dollars",
+    "one hundred and twenty dollars"
+  ],
+  [
+    "$126",
+    "126 bucks",
+    "126 dollars",
+    "one hundred and twenty six dollars"
+  ],
+  [
+    "$13",
+    "13",
+    "13 bucks",
+    "13 dollars"
+  ],
+  [
+    "$132",
+    "132 bucks",
+    "132 dollars",
+    "one hundred and thirty two dollars"
+  ],
+  [
+    "$14",
+    "14",
+    "14 bucks",
+    "14 dollars"
+  ],
+  [
+    "$169",
+    "169 bucks",
+    "169 dollars",
+    "one hundred and sixty nine bucks"
+  ],
+  [
+    "$18",
+    "18",
+    "18 bucks",
+    "eighteen bucks"
+  ],
+  [
+    "$2",
+    "2",
+    "two",
+    "two dollars"
+  ],
+  [
+    "$20",
+    "20 bucks",
+    "20",
+    "20 dollars"
+  ],
+  [
+    "$25",
+    "25",
+    "25 bucks",
+    "twenty five dollars"
+  ],
+  [
+    "$30",
+    "30 bucks",
+    "thirty bucks",
+    "thirty dollars"
+  ],
+  [
+    "$33",
+    "33",
+    "33 bucks",
+    "33 dollars"
+  ],
+  [
+    "$34",
+    "34",
+    "34 bucks",
+    "thirty four bucks"
+  ],
+  [
+    "$42",
+    "42 dollars",
+    "forty two bucks",
+    "forty two dollars"
+  ],
+  [
+    "$43",
+    "43",
+    "43 bucks",
+    "43 dollars"
+  ],
+  [
+    "$45",
+    "45",
+    "45 dollars",
+    "forty five bucks"
+  ],
+  [
+    "$58",
+    "58",
+    "fifty eight bucks",
+    "fifty eight dollars"
+  ],
+  [
+    "$65",
+    "65",
+    "65 bucks",
+    "sixty five dollars"
+  ],
+  [
+    "$68",
+    "68",
+    "68 bucks",
+    "68 dollars"
+  ],
+  [
+    "$75",
+    "75",
+    "75 bucks",
+    "seventy five dollars"
+  ],
+  [
+    "$79",
+    "79",
+    "79 bucks",
+    "79 dollars"
+  ],
+  [
+    "$82",
+    "82",
+    "82 bucks",
+    "82 dollars"
+  ],
+  [
+    "$84",
+    "84",
+    "84 bucks",
+    "eighty four dollars"
+  ],
+  [
+    "$93",
+    "93",
+    "93 bucks",
+    "ninety three dollars"
+  ],
+  [
+    "$94",
+    "94",
+    "94 bucks",
+    "94 dollars"
+  ],
+  [
+    "$97",
+    "97",
+    "97 bucks",
+    "97 dollars"
+  ],
+  [
+    "06:30",
+    "6:30 am",
+    "6:30am",
+    "half past 6 in the morning"
+  ],
+  [
+    "07:00",
+    "7 am",
+    "7:00am",
+    "7:00 am"
+  ],
+  [
+    "07:45",
+    "7:45 am",
+    "7:45 in the morning",
+    "quarter to 8 in the morning"
+  ],
+  [
+    "08:30",
+    "8:30 am",
+    "half past 8 in the morning",
+    "morning 8:30"
+  ],
+  [
+    "10th of march",
+    "10th of this month",
+    "march 10th",
+    "the 10th"
+  ],
+  [
+    "11 in the night",
+    "11 o\"clock in the night",
+    "11 pm",
+    "eleven pm"
+  ],
+  [
+    "11th of march",
+    "11th of this month",
+    "march 11th",
+    "the 11th"
+  ],
+  [
+    "12th of march",
+    "12th of this month",
+    "march 12th",
+    "the 12th"
+  ],
+  [
+    "13th of march",
+    "13th of this month",
+    "march 13th",
+    "the 13th"
+  ],
+  [
+    "14th of march",
+    "14th of this month",
+    "march 14th",
+    "the 14th"
+  ],
+  [
+    "16th of march",
+    "16th of this month",
+    "march 16th",
+    "the 16th"
+  ],
+  [
+    "9:30 pm",
+    "9:30pm",
+    "9:30 in the night",
+    "half past 9 in the night"
+  ],
+  [
+    "9th of march",
+    "9th of this month",
+    "march 9th",
+    "the 9th"
+  ],
+  [
+    "animation",
+    "anime",
+    "cartoon",
+    "kids"
+  ],
+  [
+    "biographical",
+    "documentary",
+    "life history",
+    "non-fiction"
+  ],
+  [
+    "burrito",
+    "latin american",
+    "mexican",
+    "tacos"
+  ],
+  [
+    "cambodian",
+    "malaysian",
+    "spicy noodles",
+    "thai"
+  ],
+  [
+    "dc",
+    "district of columbia",
+    "washington",
+    "washington d.c."
+  ],
+  [
+    "delhi",
+    "delhi india",
+    "delhi, india",
+    "new delhi"
+  ],
+  [
+    "fish",
+    "freshwater fish",
+    "lobster",
+    "seafood"
+  ],
+  [
+    "italian",
+    "pasta",
+    "pizza",
+    "pizza and pasta"
+  ],
+  [
+    "izakaya",
+    "japanese",
+    "ramen",
+    "sushi"
+  ],
+  [
+    "lord of the rings",
+    "the lord of the rings",
+    "the lord of the rings three",
+    "the lord of the rings: the return of the king"
+  ],
+  [
+    "lord of the rings",
+    "the lord of the rings three",
+    "the lord of the rings: the return of the king",
+    "the lord of the rings"
+  ],
+  [
+    "new york",
+    "new york city",
+    "ny",
+    "nyc"
+  ],
+  [
+    "pick-up",
+    "quick meal",
+    "take-out",
+    "to-go"
+  ],
+  [
+    "san fran",
+    "san francisco",
+    "sf",
+    "sfo"
+  ],
+  [
+    "$35",
+    "35",
+    "35 bucks",
+    "35 dollars",
+    "thirty five dollars"
+  ],
+  [
+    "$4",
+    "4",
+    "4 dollars",
+    "four",
+    "four bucks"
+  ],
+  [
+    "$6",
+    "6",
+    "6 dollars",
+    "six",
+    "six bucks"
+  ],
+  [
+    "$7",
+    "7",
+    "7 bucks",
+    "7 dollars",
+    "seven"
+  ],
+  [
+    "$96",
+    "96",
+    "96 bucks",
+    "96 dollars",
+    "ninety six dollars"
+  ],
+  [
+    "07:00",
+    "7 am",
+    "7:00",
+    "7:00 am",
+    "7:00am"
+  ],
+  [
+    "08:30",
+    "8:30 am",
+    "8:30am",
+    "half past 8 in the morning",
+    "morning 8:30"
+  ],
+  [
+    "09:30",
+    "9:30 am",
+    "9:30 in the morning",
+    "half past 9 in the morning",
+    "morning 9:30"
+  ],
+  [
+    "09:45",
+    "9:45 am",
+    "9:45 in the morning",
+    "morning 9:45",
+    "quarter to 10 in the morning"
+  ],
+  [
+    "10:15",
+    "10:15 am",
+    "10:15 in the morning",
+    "morning 10:15",
+    "quarter past 10 in the morning"
+  ],
+  [
+    "10:15 in the night",
+    "10:15 pm",
+    "22:15",
+    "night 10:15",
+    "quarter past 10 in the night"
+  ],
+  [
+    "10:30",
+    "10:30 am",
+    "10:30 in the morning",
+    "half past 10 in the morning",
+    "morning 10:30"
+  ],
+  [
+    "10:30 in the night",
+    "10:30 pm",
+    "22:30",
+    "half past 10 in the night",
+    "night 10:30"
+  ],
+  [
+    "10:45",
+    "10:45 am",
+    "10:45 in the morning",
+    "morning 10:45",
+    "quarter to 11 in the morning"
+  ],
+  [
+    "10th",
+    "10th of this month",
+    "10th of march",
+    "march 10th",
+    "the 10th"
+  ],
+  [
+    "11:15",
+    "11:15 am",
+    "11:15 in the morning",
+    "morning 11:15",
+    "quarter past 11 in the morning"
+  ],
+  [
+    "11:45",
+    "11:45 am",
+    "11:45 in the morning",
+    "morning 11:45",
+    "quarter to 12 in the morning"
+  ],
+  [
+    "12:15",
+    "12:15 in the afternoon",
+    "12:15 pm",
+    "afternoon 12:15",
+    "quarter past 12 in the afternoon"
+  ],
+  [
+    "12:30",
+    "12:30 in the afternoon",
+    "12:30 pm",
+    "afternoon 12:30",
+    "half past 12 in the afternoon"
+  ],
+  [
+    "12:45",
+    "12:45 in the afternoon",
+    "12:45 pm",
+    "afternoon 12:45",
+    "quarter to 1 in the afternoon"
+  ],
+  [
+    "13:15",
+    "1:15 in the afternoon",
+    "1:15 pm",
+    "afternoon 1:15",
+    "quarter past 1 in the afternoon"
+  ],
+  [
+    "13:30",
+    "1:30 in the afternoon",
+    "1:30 pm",
+    "afternoon 1:30",
+    "half past 1 in the afternoon"
+  ],
+  [
+    "13:45",
+    "1:45 in the afternoon",
+    "1:45 pm",
+    "afternoon 1:45",
+    "quarter to 2 in the afternoon"
+  ],
+  [
+    "14:15",
+    "2:15 in the afternoon",
+    "2:15 pm",
+    "afternoon 2:15",
+    "quarter past 2 in the afternoon"
+  ],
+  [
+    "14:30",
+    "2:30 in the afternoon",
+    "2:30 pm",
+    "afternoon 2:30",
+    "half past 2 in the afternoon"
+  ],
+  [
+    "14:45",
+    "2:45 in the afternoon",
+    "2:45 pm",
+    "afternoon 2:45",
+    "quarter to 3 in the afternoon"
+  ],
+  [
+    "15:15",
+    "3:15 in the afternoon",
+    "3:15 pm",
+    "afternoon 3:15",
+    "quarter past 3 in the afternoon"
+  ],
+  [
+    "15:30",
+    "3:30 in the afternoon",
+    "3:30 pm",
+    "afternoon 3:30",
+    "half past 3 in the afternoon"
+  ],
+  [
+    "15:45",
+    "3:45 in the afternoon",
+    "3:45 pm",
+    "afternoon 3:45",
+    "quarter to 4 in the afternoon"
+  ],
+  [
+    "16:15",
+    "4:15 in the evening",
+    "4:15 pm",
+    "evening 4:15",
+    "quarter past 4 in the evening"
+  ],
+  [
+    "16:30",
+    "4:30 in the evening",
+    "4:30 pm",
+    "evening 4:30",
+    "half past 4 in the evening"
+  ],
+  [
+    "17:15",
+    "5:15 in the evening",
+    "5:15 pm",
+    "evening 5:15",
+    "quarter past 5 in the evening"
+  ],
+  [
+    "17:45",
+    "5:45 in the evening",
+    "5:45 pm",
+    "evening 5:45",
+    "quarter to 6 in the evening"
+  ],
+  [
+    "18:15",
+    "6:15 in the evening",
+    "6:15 pm",
+    "evening 6:15",
+    "quarter past 6 in the evening"
+  ],
+  [
+    "18:30",
+    "6:30 in the evening",
+    "6:30 pm",
+    "evening 6:30",
+    "half past 6 in the evening"
+  ],
+  [
+    "18:45",
+    "6:45 in the evening",
+    "6:45 pm",
+    "evening 6:45",
+    "quarter to 7 in the evening"
+  ],
+  [
+    "19:15",
+    "7:15 in the evening",
+    "7:15 pm",
+    "evening 7:15",
+    "quarter past 7 in the evening"
+  ],
+  [
+    "19:30",
+    "7:30 in the evening",
+    "7:30 pm",
+    "evening 7:30",
+    "half past 7 in the evening"
+  ],
+  [
+    "19:45",
+    "7:45 in the evening",
+    "7:45 pm",
+    "evening 7:45",
+    "quarter to 8 in the evening"
+  ],
+  [
+    "20:00",
+    "8 in the night",
+    "8 pm",
+    "eight in the night",
+    "night 8"
+  ],
+  [
+    "6 am",
+    "6 in the morning",
+    "6:00 am",
+    "6:00am",
+    "morning 6"
+  ],
+  [
+    "american",
+    "barbecue",
+    "burger",
+    "diner",
+    "southern"
+  ],
+  [
+    "angry birds",
+    "the angry birds",
+    "the angry birds movie",
+    "the angry birds movie 2",
+    "the angry birds movie two"
+  ],
+  [
+    "crime",
+    "crime story",
+    "cult",
+    "fight",
+    "violent"
+  ],
+  [
+    "exotic",
+    "foreign",
+    "foreign story",
+    "global",
+    "world"
+  ],
+  [
+    "future scientific fiction",
+    "imaginative fiction",
+    "sci-fi",
+    "science related",
+    "scientific fiction"
+  ],
+  [
+    "london",
+    "london england",
+    "london uk",
+    "london, england",
+    "london, uk"
+  ],
+  [
+    "sydney",
+    "sydney australia",
+    "sydney nsw",
+    "sydney, australia",
+    "sydney, nsw"
+  ],
+  [
+    "09:00",
+    "9 am",
+    "9 in the morning",
+    "9 o'clock in the morning",
+    "morning 9",
+    "nine in the morning"
+  ],
+  [
+    "10 o\"clock in the night",
+    "10 pm",
+    "22:00",
+    "night 10",
+    "ten in the night",
+    "ten pm"
+  ],
+  [
+    "11:30",
+    "11:30 am",
+    "11:30 in the morning",
+    "half past 11 in the morning",
+    "morning 11:30",
+    "morning, 11:30"
+  ],
+  [
+    "16:45",
+    "4:45 in the evening",
+    "4:45 pm",
+    "evening 4:45",
+    "evening, 4:45",
+    "quarter to 5 in the evening"
+  ],
+  [
+    "17:30",
+    "5:30 in the evening",
+    "5:30 pm",
+    "evening 5:30",
+    "evening, 5:30",
+    "half past 5 in the evening"
+  ],
+  [
+    "1st of march",
+    "1st of this month",
+    "later today",
+    "march 1st",
+    "the 1st",
+    "today"
+  ],
+  [
+    "4th of march",
+    "4th of this month",
+    "march 4th",
+    "monday next week",
+    "next monday",
+    "the 4th"
+  ],
+  [
+    "6th of march",
+    "6th of this month",
+    "march 6th",
+    "next wednesday",
+    "the 6th",
+    "wednesday next week"
+  ],
+  [
+    "7th of march",
+    "7th of this month",
+    "march 7th",
+    "next thursday",
+    "the 7th",
+    "thursday next week"
+  ],
+  [
+    "8th of march",
+    "8th of this month",
+    "friday next week",
+    "march 8th",
+    "next friday",
+    "the 8th"
+  ],
+  [
+    "dc",
+    "district of columbia",
+    "washington d.c.",
+    "washington",
+    "washington d.c",
+    "washington dc"
+  ],
+  [
+    "1 in the afternoon",
+    "1 o'clock in the afternoon",
+    "1 pm",
+    "13:00",
+    "afternoon 1",
+    "one in the afternoon",
+    "one pm"
+  ],
+  [
+    "10 am",
+    "10 in the morning",
+    "10 o'clock in the morning",
+    "10:00",
+    "morning 10",
+    "ten am",
+    "ten in the morning"
+  ],
+  [
+    "12 in the afternoon",
+    "12 o'clock in the afternoon",
+    "12 pm",
+    "12:00",
+    "afternoon 12",
+    "twelve in the afternoon",
+    "twelve pm"
+  ],
+  [
+    "16:00",
+    "4 in the evening",
+    "4 pm",
+    "4 o'clock in the evening",
+    "evening 4",
+    "four in the evening",
+    "four pm"
+  ],
+  [
+    "16:00",
+    "4 in the evening",
+    "4 o'clock in the evening",
+    "4 pm",
+    "evening 4",
+    "four in the evening",
+    "four pm"
+  ],
+  [
+    "18:00",
+    "6 in the evening",
+    "6 o'clock in the evening",
+    "6 pm",
+    "evening 6",
+    "six in the evening",
+    "six pm"
+  ],
+  [
+    "19:00",
+    "7 in the evening",
+    "7 o'clock in the evening",
+    "7 pm",
+    "evening 7",
+    "seven in the evening",
+    "seven pm"
+  ],
+  [
+    "2nd of march",
+    "2nd of this month",
+    "march 2nd",
+    "saturday this week",
+    "the 2nd",
+    "this saturday",
+    "tomorrow"
+  ],
+  [
+    "3rd of march",
+    "3rd of this month",
+    "day after tomorrow",
+    "march 3rd",
+    "sunday this week",
+    "the 3rd",
+    "this sunday"
+  ],
+  [
+    "5th of march",
+    "5th of this month",
+    "march 5th",
+    "next tuesday",
+    "the 5th",
+    "tuesday next week",
+    "tuesday, next week"
+  ],
+  [
+    "cantonese",
+    "chinese",
+    "dumplings",
+    "noodles",
+    "sichuan",
+    "szcheuan",
+    "taiwanese"
+  ],
+  [
+    "11 am",
+    "11 in the morning",
+    "11 o\"clock in the morning",
+    "11 o'clock in the morning",
+    "11:00",
+    "eleven am",
+    "eleven in the morning",
+    "morning 11"
+  ],
+  [
+    "14:00",
+    "2 in the afternoon",
+    "2 o\"clock in the afternoon",
+    "2 o'clock in the afternoon",
+    "2 pm",
+    "afternoon 2",
+    "two in the afternoon",
+    "two pm"
+  ],
+  [
+    "15:00",
+    "3 in the afternoon",
+    "3 o\"clock in the afternoon",
+    "3 o'clock in the afternoon",
+    "3 pm",
+    "afternoon 3",
+    "three in the afternoon",
+    "three pm"
+  ],
+  [
+    "17:00",
+    "5 in the evening",
+    "5 o\"clock in the evening",
+    "5 o'clock in the evening",
+    "5 pm",
+    "evening 5",
+    "five in the evening",
+    "five pm"
+  ],
+  [
+    "17:30",
+    "5:30am",
+    "5:30 in the evening",
+    "5:30 pm",
+    "5:30 am",
+    "evening, 5:30",
+    "evening 5:30",
+    "half past 5 in the evening"
+  ],
+  [
+    "19:00",
+    "7 in the evening",
+    "7 pm",
+    "7 o'clock in the evening",
+    "7:00 pm",
+    "evening 7",
+    "seven in the evening",
+    "seven pm"
+  ],
+  [
+    "17:00",
+    "5 o'clock in the evening",
+    "5 pm",
+    "5 o\"clock in the evening",
+    "5 in the evening",
+    "5pm",
+    "evening 5",
+    "five pm",
+    "five in the evening"
+  ],
+  [
+    "17:00",
+    "5 o'clock in the evening",
+    "5 pm",
+    "5 o\"clock in the evening",
+    "5 in the evening",
+    "5:00 pm",
+    "evening 5",
+    "five pm",
+    "five in the evening"
+  ],
+  [
+    "1",
+    "one days",
+    "one",
+    "'1'"
+  ],
+  [
+    "2",
+    "two days",
+    "two",
+    "'2'"
+  ],
+  [
+    "3",
+    "3 days",
+    "three",
+    "'3'"
+  ],
+  [
+    "4",
+    "4 days",
+    "four",
+    "'4'"
+  ],
+  [
+    "5",
+    "5 days",
+    "five",
+    "'5'"
+  ],
+  [
+    "6",
+    "6 days",
+    "six",
+    "'6'"
+  ],
+  [
+    "7",
+    "7 days",
+    "seven",
+    "'7'"
+  ]
+]

@@ -1,0 +1,14 @@
+split: ???
+version: ???
+sgd_variant: 'original'
+experiment_name: ???
+checkpoint: ???
+hyps_dir: ${root:metrics}
+
+file: ${hyps_dir}/${experiment_name}/${sgd_variant}/${split}/${version}/checkpoint-${checkpoint}/model_${checkpoint}_metrics.json
+
+output_path: '${root:runs/read_feedback}'
+
+hydra:
+  run:
+    dir: "${...output_path}/${...split}"

@@ -1,0 +1,1062 @@
+# Define metadata necessary for prompting or app simulation
+# For train-only services, only metadata required for prompting
+#  is defined
+Alarm_1:
+  GetAlarms:
+    entity_name: 'Alarm'
+    entity_cmp_key:
+      - 'alarm_name'
+    result_sort_key: 'order'
+    system_tracked_slots: ~
+    followup_command: 'AddAlarm'
+    # properties that may be referenced
+    # by other tasks
+    shared_properties: ~
+    task_completion_description: 'Checked alarms set on their device.'
+  AddAlarm:
+    entity_name: 'Alarm'
+    system_confirmed_slots:
+      - 'new_alarm_name'
+      - 'new_alarm_time'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Set a new alarm.'
+Banks_1:  # train only
+  CheckBalance:
+    entity_name: 'Account'
+    followup_command: 'TransferMoney'
+    system_tracked_slots: ~
+    shared_properties: ~
+    task_completion_description: 'Checked their bank account balance.'
+  TransferMoney:
+    entity_name: 'TransferConfirmation'
+    followup_command: ~
+    system_confirmed_slots:
+      - 'account_type'
+      - 'amount'
+      - 'recipient_account_type'
+      - 'recipient_account_name'
+    shared_properties: ~
+    task_completion_description: 'Transferred some money from their account.'
+Banks_2:
+  CheckBalance:
+    entity_name: 'Account'
+    entity_cmp_key:
+      - 'account_balance'
+    result_sort_key: 'account_type'
+    system_tracked_slots: ~
+    followup_command: 'TransferMoney'
+    shared_properties: ~
+    task_completion_description: 'Checked the balance in one of their accounts.'
+  TransferMoney:
+    entity_name: 'TransferConfirmation'
+    system_confirmed_slots:
+      - 'account_type'
+      - 'recipient_account_type'
+      - 'recipient_name'
+      - 'transfer_amount'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Confirmed a funds transfer from their account.'
+Buses_1:
+  FindBus:
+    entity_name: 'Bus'
+    entity_cmp_key:
+      - 'leaving_time'
+    system_tracked_slots:
+      - 'leaving_time'
+    result_sort_key: 'leaving_time'
+    followup_command: 'BuyBusTicket'
+    shared_properties:
+      - 'travelers'
+      - 'from_location'
+      - 'to_location'
+      - 'leaving_date'
+    task_completion_description: 'Searched for bus travel options.'
+  BuyBusTicket:
+    entity_name: 'BusTicket'
+    system_confirmed_slots:
+      - 'from_location'
+      - 'leaving_date'
+      - 'leaving_time'
+      - 'to_location'
+      - 'travelers'
+    alternative_transaction:
+      - 'fare'
+      - 'leaving_time'
+    followup_command: ~
+    shared_properties:
+      - 'travelers'
+      - 'from_location'
+      - 'to_location'
+      - 'leaving_date'
+    task_completion_description: 'Reserved seats on a bus.'
+Buses_2:  # train only
+  FindBus:
+    entity_name: 'Bus'
+    followup_command: 'BuyBusTicket'
+    system_tracked_slots:
+      - 'departure_time'
+      - 'fare_type'
+    shared_properties:
+      - 'group_size'
+      - 'origin'
+      - 'destination'
+      - 'departure_date'
+    task_completion_description: 'Explored bus travel alternatives.'
+  BuyBusTicket:
+    entity_name: 'BusTicket'
+    followup_command: ~
+    system_confirmed_slots:
+      - 'departure_date'
+      - 'departure_time'
+      - 'destination'
+      - 'fare_type'
+      - 'group_size'
+      - 'origin'
+    shared_properties:
+      - 'group_size'
+      - 'origin'
+      - 'destination'
+      - 'departure_date'
+    task_completion_description: 'Bought tickets for bus travel.'
+Buses_3:
+  FindBus:
+    entity_name: 'Bus'
+    entity_cmp_key:
+      - 'departure_time'
+    system_tracked_slots:
+      - 'departure_time'
+    result_sort_key: 'departure_time'
+    followup_command: "BuyBusTicket"
+    shared_properties:
+      - 'num_passengers'
+      - 'from_city'
+      - 'to_city'
+      - 'departure_date'
+    task_completion_description: 'Asked the agent for help with bus itinerary planning.'
+  BuyBusTicket:
+    entity_name: 'BusTicket'
+    system_confirmed_slots:
+      - 'additional_luggage'
+      - 'departure_date'
+      - 'departure_time'
+      - 'from_city'
+      - 'num_passengers'
+      - 'to_city'
+    alternative_transaction:
+      - 'departure_time'
+      - 'price'
+    followup_command: ~
+    shared_properties:
+      - 'num_passengers'
+      - 'from_city'
+      - 'to_city'
+      - 'departure_date'
+    task_completion_description: 'Purchased bus tickets.'
+Calendar_1:  # train only
+  GetEvents:
+    entity_name: 'CalendarEvent'
+    followup_command: ~
+    system_tracked_slots:
+      - 'event_name'
+      - 'event_time'
+    shared_properties:
+      - 'event_date'
+    task_completion_description: 'Read their calendar.'
+  GetAvailableTime:
+    entity_name: 'TimeSlot'
+    followup_command: 'AddEvent'
+    system_tracked_slots: ~
+    shared_properties:
+      - 'event_date'
+    task_completion_description: 'Checked their availability.'
+  AddEvent:
+    entity_name: 'NewEvent'
+    followup_command: ~
+    system_confirmed_slots:
+      - 'event_date'
+      - 'event_location'
+      - 'event_name'
+      - 'event_time'
+    shared_properties:
+      - 'event_date'
+    task_completion_description: 'Created a new calendar entry.'
+Events_1:
+  FindEvents:
+    entity_name: 'Event'
+    entity_cmp_key:
+      - 'event_name'
+    result_sort_key: 'event_name'
+    system_tracked_slots:
+      - 'date'
+      - 'event_name'
+    followup_command: 'BuyEventTickets'
+    shared_properties:
+      - 'city_of_event'
+      - 'date'
+      - 'event_location'  # API return property
+    task_completion_description: 'Checked event listings.'
+  BuyEventTickets:
+    entity_name: 'EventTicket'
+    system_confirmed_slots:
+      - 'city_of_event'
+      - 'date'
+      - 'event_name'
+      - 'number_of_seats'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties:
+      - 'city_of_event'
+      - 'date'
+      - 'number_of_seats'
+      - 'event_location'  # API return property
+    task_completion_description: 'Purchased tickets for their chosen event.'
+Events_2: # train only
+  FindEvents:
+    entity_name: 'Event'
+    followup_command: 'BuyEventTickets'
+    system_tracked_slots:
+      - 'event_name'
+    shared_properties:
+      - 'city'
+      - 'date'
+    # API return property - not shared in train dialogues but the model can learn not to carry-over the
+      - 'venue'
+    task_completion_description: 'Browsed events with help from the agent.'
+  GetEventDates:
+    entity_name: 'EventDate'
+    followup_command: 'BuyEventTickets'
+    system_tracked_slots:
+      - 'date'
+    shared_properties:
+      - 'city'
+      - 'date'
+      # API return property - not shared in train dialogues but the model can learn not to carry-over the prop
+      - 'venue'
+    task_completion_description: 'Found out the date when a given event was taking place.'
+  BuyEventTickets:
+    entity_name: 'EventTicket'
+    followup_command: ~
+    system_confirmed_slots:
+      - 'city'
+      - 'date'
+      - 'event_name'
+      - 'number_of_tickets'
+    shared_properties:
+      - 'city'
+      - 'date'
+      - 'number_of_tickets'
+      # API return property - not shared in train dialogues but the model can learn not to carry-over the prop
+      - 'venue'
+    task_completion_description: 'Confirmed their intention to purchase event tickets.'
+Events_3:
+  FindEvents:
+    entity_name: 'Event'
+    entity_cmp_key:
+      - 'event_name'
+    system_tracked_slots:
+      - 'date'
+      - 'event_name'
+    result_sort_key: 'event_name'
+    followup_command: 'BuyEventTickets'
+    shared_properties:
+      - 'city'
+      - 'venue' # API return property
+    task_completion_description: 'Looked for events they could attend.'
+  BuyEventTickets:
+    entity_name: 'EventTicket'
+    system_confirmed_slots:
+      - 'city'
+      - 'date'
+      - 'event_name'
+      - 'number_of_tickets'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties:
+      - 'city'
+      - 'number_of_tickets'
+      - 'venue' # API return property
+    task_completion_description: 'Completed an event ticket purchase.'
+Flights_1: # train only
+  SearchOnewayFlight:
+    entity_name: 'OnewayFlight'
+    followup_command: 'ReserveOnewayFlight'
+    system_tracked_slots:
+      - 'outbound_departure_time'
+      - 'airlines'
+    shared_properties:
+      - 'origin_city'
+      - 'destination_city'
+      - 'destination_airport'  # API return property
+      - 'passengers'
+    task_completion_description: 'Searched for one-way flight options.'
+  SearchRoundtripFlights:
+    entity_name: 'RoundtripFlights'
+    followup_command: 'ReserveRoundtripFlights'
+    system_tracked_slots:
+      - 'outbound_departure_time'
+      - 'inbound_departure_time'
+      - 'airlines'
+    shared_properties:
+      - 'origin_city'
+      - 'destination_city'
+      - 'destination_airport'  # API return property
+      - 'passengers'
+    task_completion_description: 'Checked return flight alternatives.'
+  ReserveOnewayFlight:
+    entity_name: 'OnewayFlightReservation'
+    followup_command: ~
+    system_confirmed_slots:
+      - 'airlines'
+      - 'departure_date'
+      - 'destination_city'
+      - 'origin_city'
+      - 'passengers'
+      - 'seating_class'
+    shared_properties:
+      - 'origin_city'
+      - 'destination_city'
+      - 'destination_airport'  # API return property
+      - 'passengers'
+    task_completion_description: 'Purchased seats on a one-way flight.'
+  ReserveRoundtripFlights:
+    entity_name: 'ReserveRoundtripFlights'
+    followup_command: ~
+    system_confirmed_slots:
+      - 'airlines'
+      - 'departure_date'
+      - 'destination_city'
+      - 'inbound_departure_time'
+      - 'origin_city'
+      - 'outbound_departure_time'
+      - 'passengers'
+      - 'return_date'
+      - 'seating_class'
+    shared_properties:
+      - 'origin_city'
+      - 'destination_city'
+      - 'destination_airport'  # API return property
+      - 'passengers'
+    task_completion_description: 'Confirmed reservation of return flight.'
+Flights_2: # train only
+  SearchOnewayFlight:
+    entity_name: 'OnewayFlight'
+    followup_command: 'SearchRoundtripFlights'
+    system_tracked_slots:
+      - 'airlines'
+    shared_properties:
+      - 'origin'
+      - 'destination'
+      # API return property, not actually referenced in the data but
+      # might be good for the model to learn not to carry-over this slot
+      - 'destination_airport'
+      - 'passengers'
+    task_completion_description: 'Checked the schedule of one-way flights on the specified route.'
+  SearchRoundtripFlights:
+    entity_name: 'RoundtripFlights'
+    followup_command: 'SearchOnewayFlight'
+    system_tracked_slots:
+      - 'airlines'
+    shared_properties:
+      - 'origin'
+      - 'destination'
+      # API return property, not actually referenced in the data but
+      # might be good for the model to learn not to carry-over this slot
+      - 'destination_airport'
+      - 'passengers'
+    task_completion_description: 'Searched for return flight options to get them to and from their destination.'
+Flights_3:
+  SearchOnewayFlight:
+    entity_name: 'OnewayFlight'
+    entity_cmp_key:
+      - 'airlines'
+    result_sort_key: 'airlines'
+    system_tracked_slots:
+      - 'airlines'
+    followup_command: 'SearchRoundtripFlights'
+    shared_properties:
+      - 'passengers'
+      - 'destination_city'
+    task_completion_description: 'Considered one-way air travel options for their itinerary.'
+  SearchRoundtripFlights:
+    entity_name: 'RoundtripFlights'
+    entity_cmp_key:
+      - 'airlines'
+    result_sort_key: 'airlines'
+    system_tracked_slots:
+      - 'airlines'
+    followup_command: ~
+    shared_properties:
+      - 'passengers'
+      - 'destination_city'
+    task_completion_description: 'Asked the agent to search among return flights options for their itinerary.'
+Flights_4:
+  SearchOnewayFlight:
+    entity_name: 'OnewayFlight'
+    entity_cmp_key:
+      - 'airlines'
+    system_tracked_slots: ~
+    result_sort_key: 'airlines'
+    followup_command: ~
+    shared_properties:
+      - 'origin_airport'
+      - 'destination_airport'
+      - 'number_of_tickets'
+    task_completion_description: 'Searched one-way flights.'
+  SearchRoundtripFlights:
+    entity_name: 'RoundtripFlights'
+    entity_cmp_key:
+      - 'airlines'
+    system_tracked_slots: ~
+    result_sort_key: 'airlines'
+    followup_command: ~
+    shared_properties:
+      - 'origin_airport'
+      - 'destination_airport'
+      - 'number_of_tickets'
+    task_completion_description: 'Considered return flight options.'
+Homes_1:
+  FindApartment:
+    entity_name: 'Property'
+    entity_cmp_key:
+      - 'property_name'
+    result_sort_key: 'property_name'
+    system_tracked_slots:
+      - 'property_name'
+    followup_command: 'ScheduleVisit'
+    shared_properties:
+      - 'address'
+      - 'area'
+    task_completion_description: 'Asked the agent to help browsing the home rental market.'
+  ScheduleVisit:
+    entity_name: 'PropertyViewing'
+    system_confirmed_slots:
+      - 'property_name'
+      - 'visit_date'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties:
+      - 'address'
+      - 'visit_date'
+    task_completion_description: 'Scheduled an appointment to view the specified property.'
+Homes_2:
+  FindHomeByArea:
+    entity_name: 'ResidentialProperty'
+    entity_cmp_key:
+      - 'property_name'
+    system_tracked_slots:
+      - 'property_name'
+    result_sort_key: 'property_name'
+    followup_command: 'ScheduleVisit'
+    shared_properties:
+      - 'address'
+    task_completion_description: 'Asked the agent to list properties in the area.'
+  ScheduleVisit:
+    entity_name: 'HouseViewing'
+    system_confirmed_slots:
+      - 'property_name'
+      - 'visit_date'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties:
+      - 'address'
+    task_completion_description: 'Confirmed a house viewing.'
+Hotels_1:
+  SearchHotel:
+    entity_name: 'Hotel'
+    entity_cmp_key:
+      - 'hotel_name'
+    result_sort_key: 'hotel_name'
+    system_tracked_slots:
+      - 'hotel_name'
+    followup_command: 'ReserveHotel'
+    shared_properties:
+      - 'destination'
+    task_completion_description: 'Looked for hotels at a given destination.'
+  ReserveHotel:
+    entity_name: 'HotelReservation'
+    system_confirmed_slots:
+      - 'check_in_date'
+      - 'destination'
+      - 'hotel_name'
+      - 'number_of_days'
+      - 'number_of_rooms'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties:
+      - 'destination'
+    task_completion_description: 'Confirmed their intention to reserve the hotel room(s).'
+Hotels_2:
+  SearchHouse:
+    entity_name: 'VacationHouse'
+    entity_cmp_key:
+      - 'address'
+    system_tracked_slots: ~
+    result_sort_key: 'address'
+    followup_command: 'BookHouse'
+    shared_properties:
+      - 'where_to'
+    task_completion_description: "Used agent's services to list available holiday rentals."
+  BookHouse:
+    entity_name: 'VacationHouse'
+    system_confirmed_slots:
+      - 'check_in_date'
+      - 'check_out_date'
+      - 'number_of_adults'
+      - 'where_to'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties:
+      - 'where_to'
+    task_completion_description: "Confirmed the necessary transaction details for house booking."
+Hotels_3:  # train only
+  SearchHotel:
+    entity_name: 'Hotel'
+    followup_command: 'ReserveHotel'
+    system_tracked_slots:
+      - 'hotel_name'
+    shared_properties:
+      - 'location'
+    task_completion_description: 'Consulted hotel options with help from the agent.'
+  ReserveHotel:
+    entity_name: 'HotelReservation'
+    followup_command: ~
+    system_confirmed_slots:
+      - 'check_in_date'
+      - 'check_out_date'
+      - 'hotel_name'
+      - 'location'
+      - 'number_of_rooms'
+    shared_properties:
+      - 'location'
+    task_completion_description: 'Reserved the chosen hotel.'
+Hotels_4:
+  SearchHotel:
+    entity_name: 'Hotel'
+    entity_cmp_key:
+      - 'place_name'
+    result_sort_key: 'place_name'
+    system_tracked_slots:
+      - 'place_name'
+    followup_command: 'ReserveHotel'
+    shared_properties:
+      - 'location'
+    task_completion_description: 'Searched hotels in a specified location by interacting with the agent.'
+  ReserveHotel:
+    entity_name: 'HotelReservation'
+    system_confirmed_slots:
+      - 'check_in_date'
+      - 'location'
+      - 'place_name'
+      - 'stay_length'
+      - 'number_of_rooms'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties:
+      - 'location'
+    task_completion_description: 'Confirmed the hotel reservation.'
+Media_1:  # train only
+  FindMovies:
+    entity_name: 'OnDemandMovie'
+    followup_command: 'PlayMovie'
+    shared_properties: ~
+    system_tracked_slots:
+      - 'title'
+    task_completion_description: 'Asked the agent to browse movies available for streaming.'
+  PlayMovie:
+    entity_name: 'OnDemandMovie'
+    followup_command: ~
+    system_confirmed_slots:
+      - 'subtitles'
+      - 'title'
+    shared_properties: ~
+    task_completion_description: 'Played the movie they like.'
+Media_2:
+  FindMovies:
+    entity_name: 'OnlineMovie'
+    entity_cmp_key:
+      - 'movie_name'
+    result_sort_key: 'movie_name'
+    system_tracked_slots:
+      - 'movie_name'
+    followup_command: 'RentMovie'
+    shared_properties: ~
+    task_completion_description: 'Searched for movies to potentially rent.'
+  RentMovie:
+    entity_name: 'RentedMovie'
+    system_confirmed_slots:
+      - 'movie_name'
+      - 'subtitle_language'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Rented one of the movies suggested by the agent.'
+Media_3:
+  FindMovies:
+    entity_name: 'OnlineMovie'
+    entity_cmp_key:
+      - 'title'
+    system_tracked_slots:
+      - 'title'
+    result_sort_key: 'title'
+    followup_command: 'PlayMovie'
+    shared_properties: ~
+    task_completion_description: 'Checked what movies are available online.'
+  PlayMovie:
+    entity_name: 'StreamedMovie'
+    system_confirmed_slots:
+      - 'subtitle_language'
+      - 'title'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Streamed one of the movies.'
+Messaging_1:
+  ShareLocation:
+    entity_name: 'Location'
+    system_confirmed_slots:
+      - 'contact_name'
+      - 'location'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Shared a specified location with one of their phone contacts.'
+Movies_1:
+  FindMovies:
+    entity_name: 'Movie'
+    entity_cmp_key:
+       - 'movie_name'
+    system_tracked_slots:
+      - 'movie_name'
+    result_sort_key: 'movie_name'
+    followup_command: 'BuyMovieTickets'
+    shared_properties:
+      - 'location'
+    task_completion_description: 'Searched the movie listings at cinemas in their town.'
+  GetTimesForMovie:
+    entity_name: 'ShowTime'
+    entity_cmp_key:
+       - 'show_time'
+    system_tracked_slots:
+      - 'show_time'
+    result_sort_key: 'show_time'
+    followup_command: 'BuyMovieTickets'
+    shared_properties:
+      - 'show_date'
+      - 'street_address' # API return property
+      - 'location'
+    task_completion_description: 'Consulted the showing schedule for a particular movie.'
+  BuyMovieTickets:
+    entity_name: 'MovieTicket'
+    system_confirmed_slots:
+      - 'location'
+      - 'movie_name'
+      - 'number_of_tickets'
+      - 'show_date'
+      - 'show_time'
+      - 'show_type'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Bought tickets to enjoy a show.'
+Movies_2:
+  FindMovies:
+    entity_name: 'OnlineMovie'
+    entity_cmp_key:
+      - 'title'
+    result_sort_key: 'title'
+    system_tracked_slots: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Searched for a movie to stream.'
+Movies_3:
+  FindMovies:
+    entity_name: 'OnlineMovie'
+    entity_cmp_key:
+      - 'movie_title'
+    result_sort_key: 'movie_title'
+    system_tracked_slots: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Browsed movies together with the agent.'
+Music_1:
+  LookupSong:
+    entity_name: 'Song'
+    entity_cmp_key:
+      - 'song_name'
+    result_sort_key: 'song_name'
+    system_tracked_slots:
+      - 'song_name'
+    followup_command: 'PlaySong'
+    shared_properties: ~
+    task_completion_description: 'Searched for a song to listen to.'
+  PlaySong:
+    entity_name: 'SongPlayed'
+    system_confirmed_slots:
+      - 'playback_device'
+      - 'song_name'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Played a song to their liking on a specified device.'
+Music_2:  # train only
+  LookupMusic:
+    entity_name: 'Song'
+    followup_command: 'PlayMedia'
+    system_tracked_slots:
+      - 'song_name'
+    shared_properties: ~
+    task_completion_description: 'Searched for a track.'
+  PlayMedia:
+    entity_name: 'SongPlayed'
+    system_confirmed_slots:
+      - 'playback_device'
+      - 'song_name'
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Played one of the recommendations made by the agent.'
+Music_3:
+  LookupMusic:
+    entity_name: 'Song'
+    entity_cmp_key:
+      - 'track'
+    result_sort_key: 'track'
+    system_tracked_slots:
+      - 'track'
+    followup_command: 'PlayMedia'
+    shared_properties: ~
+    task_completion_description: 'Looked up tunes.'
+  PlayMedia:
+    entity_name: 'SongPlayed'
+    system_confirmed_slots:
+      - 'device'
+      - 'track'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Confirmed their intention to play a song and the playback device.'
+Payment_1:
+  MakePayment:
+    entity_name: 'Payment'
+    system_confirmed_slots:
+      - 'amount'
+      - 'payment_method'
+      - 'private_visibility'
+      - 'receiver'
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Made a payment.'
+  RequestPayment:
+    entity_name: 'RequestedPayment'
+    system_confirmed_slots:
+      - 'amount'
+      - 'private_visibility'
+      - 'receiver'
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Requested a payment.'
+RentalCars_1:
+  GetCarsAvailable:
+    entity_name: 'RentalCar'
+    entity_cmp_key:
+      - 'car_name'
+    result_sort_key: 'car_name'
+    system_tracked_slots:
+      - 'pickup_location'
+      - 'type'
+    followup_command: 'ReserveCar'
+    shared_properties:
+      - 'pickup_city'
+    task_completion_description: 'Checked the rental cars offering.'
+  ReserveCar:
+    entity_name: 'RentalCar'
+    system_confirmed_slots:
+      - 'dropoff_date'
+      - 'pickup_date'
+      - 'pickup_location'
+      - 'pickup_time'
+      - 'type'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Reserved one of the car alternatives offered by the agent.'
+RentalCars_2:   # train only
+  GetCarsAvailable:
+    entity_name: 'RentalCar'
+    followup_command: 'ReserveCar'
+    system_tracked_slots:
+      - 'pickup_location'
+      - 'car_type'
+    shared_properties:
+      - 'pickup_city'
+    task_completion_description: 'Considered various car rental options.'
+  ReserveCar:
+    entity_name: 'RentalCar'
+    system_confirmed_slots:
+      - 'car_type'
+      - 'dropoff_date'
+      - 'pickup_date'
+      - 'pickup_location'
+      - 'pickup_time'
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Confirmed car rental details.'
+RentalCars_3:
+  GetCarsAvailable:
+    entity_name: 'RentalCar'
+    entity_cmp_key:
+      - 'car_name'
+    result_sort_key: 'car_name'
+    system_tracked_slots:
+      - 'car_type'
+      - 'pickup_location'
+    followup_command: 'ReserveCar'
+    shared_properties:
+      - 'city'
+    task_completion_description: 'Searched for a car to rent.'
+  ReserveCar:
+    entity_name: 'RentalCar'
+    system_confirmed_slots:
+      - 'add_insurance'
+      - 'car_type'
+      - 'end_date'
+      - 'pickup_location'
+      - 'pickup_time'
+      - 'start_date'
+    alternative_transaction:
+      - 'car_name'
+      - 'pickup_location'
+      - 'price_per_day'
+      - 'start_date'
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Confirmed rental car booking details.'
+Restaurants_1:  # train only
+  FindRestaurants:
+    entity_name: 'Restaurant'
+    followup_command: 'ReserveRestaurant'
+    system_tracked_slots:
+      - 'restaurant_name'
+    shared_properties:
+      - 'city'
+    task_completion_description: 'Looked for restaurants in their area.'
+  ReserveRestaurant:
+    entity_name: 'RestaurantReservation'
+    system_confirmed_slots:
+      - 'city'
+      - 'date'
+      - 'party_size'
+      - 'restaurant_name'
+      - 'time'
+    followup_command: ~
+    shared_properties:
+      - 'city'
+      - 'date'
+      - 'street_address'  # API return property
+      - 'party_size'
+    task_completion_description: 'Specified all relevant booking details for getting a table at restaurant.'
+Restaurants_2:
+  FindRestaurants:
+    entity_name: 'Restaurant'
+    entity_cmp_key:
+      - 'restaurant_name'
+    result_sort_key: 'restaurant_name'
+    system_tracked_slots:
+      - 'restaurant_name'
+    followup_command: 'ReserveRestaurant'
+    shared_properties: ~
+    task_completion_description: 'Searched for a dining place suitable to them.'
+  ReserveRestaurant:
+    entity_name: 'RestaurantReservation'
+    system_confirmed_slots:
+      - 'date'
+      - 'location'
+      - 'number_of_seats'
+      - 'restaurant_name'
+      - 'time'
+    alternative_transaction:
+      - 'date'
+      - 'number_of_seats'
+      - 'restaurant_name'
+      - 'time'
+    followup_command: ~
+    shared_properties:
+      - 'date'
+      - 'number_of_seats'
+      - 'address'  # API return property
+    task_completion_description: 'Reserved seats at the restaurant.'
+RideSharing_1:
+  GetRide:
+    entity_name: 'Taxi'
+    system_confirmed_slots:
+      - 'destination'
+      - 'number_of_riders'
+      - 'shared_ride'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Booked a taxi.'
+RideSharing_2:
+  GetRide:
+    entity_name: 'Taxi'
+    system_confirmed_slots:
+      - 'destination'
+      - 'number_of_seats'
+      - 'ride_type'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties: ~
+    task_completion_description: 'Used the ride booking service to book a taxi.'
+Services_1:
+  FindProvider:
+    entity_name: 'Stylist'
+    entity_cmp_key:
+       - 'stylist_name'
+    result_sort_key: 'stylist_name'
+    system_tracked_slots:
+      - 'stylist_name'
+    followup_command: 'BookAppointment'
+    shared_properties:
+      - 'city'
+      - 'street_address'  # API return property
+    task_completion_description: 'Searched for stylists at specified locations.'
+  BookAppointment:
+    entity_name: 'HairStylingAppointment'
+    system_confirmed_slots:
+      - 'appointment_date'
+      - 'appointment_time'
+      - 'stylist_name'
+    alternative_transaction:
+      - 'appointment_date'
+      - 'appointment_time'
+      - 'stylist_name'
+    followup_command: ~
+    shared_properties:
+      - 'appointment_date'
+      - 'street_address'  # API return property
+    task_completion_description: 'Got an appointment booked to do their hair.'
+Services_2:  # train only
+  FindProvider:
+    entity_name: 'Dentist'
+    followup_command: 'BookAppointment'
+    system_tracked_slots:
+      - "dentist_name"
+    shared_properties:
+      - 'city'
+      - 'address'  # not actually used, but good to learn from
+    task_completion_description: 'Completed a dentist search query with help from the agent.'
+  BookAppointment:
+    entity_name: 'DentistAppointment'
+    system_confirmed_slots:
+      - 'appointment_date'
+      - 'appointment_time'
+      - 'dentist_name'
+    followup_command: ~
+    shared_properties:
+      - 'appointment_date'
+      - 'address'  # API return property
+    task_completion_description: 'Booked themselves in for a dental appointment.'
+Services_3:  # train only
+  FindProvider:
+    entity_name: 'Doctor'
+    followup_command: 'BookAppointment'
+    system_tracked_slots:
+      - "doctor_name"
+    shared_properties:
+      - 'city'
+      - 'street_address' # API return property
+    task_completion_description: 'Looked for a doctor to help treat an ailment.'
+  BookAppointment:
+    entity_name: 'DoctorAppointment'
+    system_confirmed_slots:
+      - 'appointment_date'
+      - 'appointment_time'
+      - 'doctor_name'
+    followup_command: ~
+    shared_properties:
+      - 'appointment_date'
+      - 'street_address'  # API return property
+    task_completion_description: 'Confirmed their intention to see a specialist suggested by the agent.'
+Services_4:
+  FindProvider:
+    entity_name: 'Therapist'
+    entity_cmp_key:
+      - 'therapist_name'
+    result_sort_key: 'therapist_name'
+    system_tracked_slots:
+      - 'therapist_name'
+    followup_command: 'BookAppointment'
+    shared_properties:
+      - 'city'
+      - 'address'  # not actually used, but good to learn from
+    task_completion_description: 'Looked for therapy providers.'
+  BookAppointment:
+    entity_name: 'TherapistAppointment'
+    system_confirmed_slots:
+      - 'appointment_date'
+      - 'appointment_time'
+      - 'therapist_name'
+    alternative_transaction:
+      - 'appointment_date'
+      - 'appointment_time'
+      - 'therapist_name'
+    followup_command: ~
+    shared_properties:
+      - 'appointment_date'
+      - 'address'  # API return property
+    task_completion_description: 'Booked a therapy appointment.'
+Trains_1:
+  FindTrains:
+    entity_name: 'Train'
+    entity_cmp_key:
+       - 'journey_start_time'
+    result_sort_key: 'journey_start_time'
+    system_tracked_slots:
+      - 'journey_start_time'
+    followup_command: 'GetTrainTickets'
+    shared_properties:
+      - 'to'
+    task_completion_description: 'Checked the train schedule.'
+  GetTrainTickets:
+    entity_name: 'TrainTicket'
+    system_confirmed_slots:
+      - 'ticket_fare_class'
+      - 'date_of_journey'
+      - 'journey_starts_from'
+      - 'journey_start_time'
+      - 'number_of_adults'
+      - 'to'
+      - 'trip_protection'
+    alternative_transaction: ~
+    followup_command: ~
+    shared_properties:
+      - 'to'  # not actually annotated in slot_relations/default.yaml but good to learn from
+    'task_completion_description': 'Booked train tickets for the specified itinerary.'
+Travel_1:
+  FindAttractions:
+    entity_name: 'Attraction'
+    entity_cmp_key:
+      - 'attraction_name'
+    result_sort_key: 'attraction_name'
+    system_tracked_slots:  ~
+    followup_command: ~
+    shared_properties:
+      - 'attraction_name'
+      - 'location'
+    'task_completion_description': 'Looked for touristic attractions.'
+Weather_1:
+  GetWeather:
+    entity_name: 'Forecast'
+    entity_cmp_key:
+      - 'city'
+      - 'date'
+    result_sort_key: 'city'
+    system_tracked_slots: ~
+    followup_command: ~
+    shared_properties:
+      - 'city'
+      - 'date'
+    'task_completion_description': 'Used the weather service to check the forecast.'

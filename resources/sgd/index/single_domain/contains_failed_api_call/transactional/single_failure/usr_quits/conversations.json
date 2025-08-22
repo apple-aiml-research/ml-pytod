@@ -1,0 +1,99 @@
+{
+  "train": {
+    "Events_2(FindEvents->BuyEventTickets)": [
+      "9_00025"
+    ],
+    "Hotels_2(SearchHouse->BookHouse)": [
+      "34_00057",
+      "34_00056"
+    ],
+    "Hotels_3(SearchHotel->ReserveHotel)": [
+      "41_00086",
+      "41_00115",
+      "41_00106",
+      "41_00052",
+      "41_00072"
+    ],
+    "Media_1(FindMovies->PlayMovie)": [
+      "20_00015",
+      "20_00046",
+      "21_00026"
+    ],
+    "Restaurants_1(FindRestaurants->ReserveRestaurant)": [
+      "1_00038",
+      "1_00124",
+      "1_00123",
+      "2_00073",
+      "2_00001",
+      "2_00010"
+    ],
+    "Services_1(FindProvider->BookAppointment)": [
+      "29_00110",
+      "30_00005"
+    ],
+    "Services_2(FindProvider->BookAppointment)": [
+      "28_00098",
+      "28_00122",
+      "29_00014",
+      "29_00015",
+      "29_00036",
+      "29_00040",
+      "29_00047",
+      "29_00052"
+    ],
+    "Services_3(FindProvider->BookAppointment)": [
+      "30_00013",
+      "30_00039",
+      "30_00047",
+      "30_00056",
+      "30_00076",
+      "30_00080",
+      "30_00088",
+      "30_00093"
+    ]
+  },
+  "dev": {
+    "Alarm_1(GetAlarms->AddAlarm)": [
+      "3_00013",
+      "3_00025"
+    ],
+    "Hotels_4(SearchHotel->ReserveHotel)": [
+      "6_00043"
+    ],
+    "Media_2(FindMovies->RentMovie)": [
+      "5_00115"
+    ],
+    "Restaurants_2(FindRestaurants->ReserveRestaurant)": [
+      "4_00072",
+      "4_00074"
+    ],
+    "Services_4(FindProvider->BookAppointment)": [
+      "3_00069",
+      "3_00050",
+      "3_00063",
+      "3_00042",
+      "3_00047"
+    ]
+  },
+  "test": {
+    "Alarm_1(GetAlarms->AddAlarm)": [
+      "5_00046",
+      "5_00023"
+    ],
+    "Media_3(FindMovies->PlayMovie)": [
+      "10_00082"
+    ],
+    "Movies_1(FindMovies->BuyMovieTickets)": [
+      "9_00086",
+      "9_00059",
+      "9_00070",
+      "9_00052",
+      "9_00069",
+      "9_00053",
+      "9_00064"
+    ],
+    "Restaurants_2(FindRestaurants->ReserveRestaurant)": [
+      "4_00049"
+    ]
+  }
+}

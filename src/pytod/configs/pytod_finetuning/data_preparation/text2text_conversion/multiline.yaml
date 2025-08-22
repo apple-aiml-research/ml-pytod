@@ -1,0 +1,7 @@
+defaults:
+  - conversation_formatter@conversation_fmt: default
+  - intent_formatter@intent_fmt: service_command
+  - prompt_formatter@prompt_fmt: default
+  - target_formatter@target_fmt: multiline
+
+_target_: pytod.prompting.pytod_prompt_formatters.ConversationFormatter

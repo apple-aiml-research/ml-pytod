@@ -1,0 +1,6 @@
+defaults:
+  - actions: default
+  - hints: v3
+  - notifications: v3
+  - nlg_calls: v3
+  - _self_

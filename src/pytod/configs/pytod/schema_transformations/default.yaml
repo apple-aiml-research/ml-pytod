@@ -1,0 +1,11 @@
+train: ~
+dev: ~
+test:
+  _target_: pytod.preprocessing_pipelines.SchemaPreprocessingPipeline
+  steps:
+    - _target_: pytod.preprocessing_pipelines.modify_slot_names
+      service: 'Trains_1'
+      slot_map:
+        _target_: pytod.interpreter.metadata.get_unparseable_slot_map
+        service: ${..service}
+      _partial_: true

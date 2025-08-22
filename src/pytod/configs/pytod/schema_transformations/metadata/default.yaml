@@ -1,0 +1,3 @@
+defaults:
+  - requests: requests
+  - _self_

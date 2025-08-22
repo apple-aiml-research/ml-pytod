@@ -1,0 +1,42 @@
+{
+    "Restaurants_2": {
+        "category": {
+            "Asian Fusion": "Asian",
+            "Barbecue": "American",
+            "Izakaya": "Japanese",
+            "sushi": "Sushi",
+            "Cambodian": "Cambodian",
+            "cambodian": "Cambodian",
+            "Latin American": "Mexican",
+            "light meal": "Tapas",
+            "Sushi": "Sushi",
+            "Burrito": "Mexican",
+            "Brasserie": "Brasserie",
+            "Taiwanese": "Taiwanese",
+            "Light meal": "Tapas",
+            "ramen": "Japanese"
+        },
+        "restaurant_name": {
+            "Lotus": "Lotus"
+        }
+    },
+    "Media_2": {
+        "genre": {
+            "Documentary": "Documentary"
+        }
+    },
+    "Media_3": {
+        "genre": {
+            "cartoon": "Animation",
+            "Animation": "Animation",
+            "kids": "Animation",
+            "Kids": "Animation"
+        }
+    },
+    "Movies_3": {
+        "genre": {
+            "Cartoon": "Animation",
+            "Kids": "Animation"
+        }
+    }
+}

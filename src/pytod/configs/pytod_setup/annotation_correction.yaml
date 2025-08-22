@@ -1,0 +1,21 @@
+defaults:
+  - default_settings@_here_: default
+  - _self_
+
+hydra:
+  run:
+    dir: ${out_dir}/${split}
+
+resource_paths:
+  utterance_corrections:
+    dev: ${root:resources/corrections/utterances/dev.json}
+    train: ${root:resources/corrections/utterances/train.json}
+    test: ${root:resources/corrections/utterances/test.json}
+  canonical_value_corrections: ${root:resources/corrections/canonical_values/corrections.json}
+  python_keywords: ${root:resources/corrections/python_keywords/corrections.json}
+  missing_results:
+    dev:  ${root:resources/corrections/missing_results/dev.json}
+    test:  ${root:resources/corrections/missing_results/test.json}
+  schema_corrections:
+    categorical_value_updates:
+      train: ${root:resources/corrections/schema/categorical_value_updates/train.json}

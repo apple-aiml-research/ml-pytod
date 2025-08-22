@@ -1,0 +1,8 @@
+defaults:
+  - backend: v0.3.2
+  - user: v3
+  - response: v3
+
+start_index: 0
+# valid grammars: "v2" and "v3"
+grammar: 'v3'

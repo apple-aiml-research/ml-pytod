@@ -1,0 +1,19 @@
+{
+  "train": {
+    "Homes_1(FindApartment)": [
+      "34_00116"
+    ],
+    "Services_3(FindProvider)": [
+      "33_00107"
+    ]
+  },
+  "test": {
+    "Events_3(FindEvents)": [
+      "2_00038"
+    ],
+    "Movies_3(FindMovies)": [
+      "9_00103",
+      "9_00122"
+    ]
+  }
+}

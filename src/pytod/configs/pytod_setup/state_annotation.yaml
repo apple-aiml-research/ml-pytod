@@ -1,0 +1,10 @@
+defaults:
+  - default_settings@_here_: default
+  - _self_
+
+data_path: ${root:data/interim/sgd}
+ids: ~
+
+resource_paths:
+  normalisation_lookup: ${root:resources/normalisation/sgd_canonical_value_map.json}
+  in_scope_slots: ~

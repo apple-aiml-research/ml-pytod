@@ -1,0 +1,40 @@
+author: 'AUTO'
+results_alternative_template:
+  _target_: pytod.pytod_types.transcript.BackendNotificationTemplate
+  dialog_template: "Alternative: {offer_params}"
+  fields:
+    _target_: pytod.pytod_types.transcript.TemplateField
+    field: 'offer_params'
+    is_variable: false
+  tag: 'offer_alternative_signal'
+  pass_to_nlg: true
+  origin_template: ~
+  origin_fields: ~
+
+inform_entity_count_template:
+  _target_: pytod.pytod_types.transcript.BackendNotificationTemplate
+  dialog_template: "len({current_call}) # -> {count}"
+  fields:
+    - _target_: pytod.pytod_types.transcript.TemplateField
+      field: 'current_call'
+      is_variable: true
+    - _target_: pytod.pytod_types.transcript.TemplateField
+      field: 'count'
+      is_variable: true
+  tag: 'inform_entity_count_signal'
+  pass_to_nlg: true
+
+task_status_template:
+  success:
+    transactional:
+      template:  "Call to _{task}_ succeeded."  # "Task succeeded"
+      fields: []
+    search:
+      template: "Call to _{task}_ succeeded."
+  failure:
+    search:
+      template: "No results found"   # Query {task} returned no results
+      fields: []
+    transactional:
+      template: "There was an error while completing the task"  # Task {task} could not be completed.
+      fields: []

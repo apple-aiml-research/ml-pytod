@@ -1,0 +1,20 @@
+index_path:
+  multi_domain:
+    - ${root:resources/sgd/index/multi_domain/conversations.json}
+  single_domain:
+    - ${root:resources/sgd/index/single_domain/api_success/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/search/multiple_failures/usr_adapts_adapts/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/search/single_failure/usr_adapts/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/search/single_failure/usr_quits/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/search_transactional/multiple_failures/usr_adapts_adapts/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/search_transactional/multiple_failures/usr_adapts_quits/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/transactional/multiple_failures/usr_adapts_accepts_alternative/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/transactional/multiple_failures/usr_adapts_adapts/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/transactional/multiple_failures/usr_adapts_adapts_quits/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/transactional/multiple_failures/usr_adapts_declines_offer_quits/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/transactional/multiple_failures/usr_adapts_quits/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/transactional/single_failure/usr_accepts_alternative/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/transactional/single_failure/usr_adapts/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/transactional/single_failure/usr_declines_offer_quits/conversations.json}
+    - ${root:resources/sgd/index/single_domain/contains_failed_api_call/transactional/single_failure/usr_quits/conversations.json}
+output_dir: ${root:resources/sampled_dialogues}

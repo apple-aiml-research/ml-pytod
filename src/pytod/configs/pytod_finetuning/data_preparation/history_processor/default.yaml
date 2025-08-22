@@ -1,0 +1,5 @@
+_target_: pytod.prompting.pytod_data_preparation_utils.join_target_and_source_to_history_files
+conversation_formatter: ${text2text_conversion.conversation_fmt}
+schema: ${command_collection}
+multidomain_prompts: ${multidomain_prompts}
+_partial_: true

@@ -1,0 +1,3 @@
+_target_: pytod.prompting.pytod_target_formatters.TargetFormatter
+config:
+  program_newline_sep: "<new>"

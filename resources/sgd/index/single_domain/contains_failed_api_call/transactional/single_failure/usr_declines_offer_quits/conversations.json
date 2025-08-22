@@ -1,0 +1,68 @@
+{
+  "train": {
+    "Restaurants_1(FindRestaurants->ReserveRestaurant)": [
+      "1_00105",
+      "1_00127",
+      "1_00119",
+      "1_00012",
+      "1_00049",
+      "1_00042",
+      "1_00088",
+      "1_00110",
+      "2_00011"
+    ],
+    "Services_1(FindProvider->BookAppointment)": [
+      "29_00065",
+      "29_00069",
+      "29_00096",
+      "29_00106",
+      "29_00127"
+    ],
+    "Services_2(FindProvider->BookAppointment)": [
+      "28_00099",
+      "29_00029"
+    ],
+    "Services_3(FindProvider->BookAppointment)": [
+      "30_00012",
+      "30_00066",
+      "30_00091"
+    ]
+  },
+  "dev": {
+    "Restaurants_2(FindRestaurants->ReserveRestaurant)": [
+      "4_00078",
+      "4_00082",
+      "4_00077",
+      "4_00086"
+    ],
+    "Services_4(FindProvider->BookAppointment)": [
+      "3_00068",
+      "3_00071",
+      "3_00035",
+      "3_00055",
+      "3_00074",
+      "3_00034",
+      "3_00051",
+      "3_00072"
+    ]
+  },
+  "test": {
+    "Restaurants_2(FindRestaurants->ReserveRestaurant)": [
+      "4_00032",
+      "4_00042"
+    ],
+    "Services_1(FindProvider->BookAppointment)": [
+      "6_00066",
+      "6_00073",
+      "6_00087",
+      "6_00098",
+      "6_00097"
+    ],
+    "Services_4(FindProvider->BookAppointment)": [
+      "5_00114",
+      "5_00119",
+      "5_00118",
+      "6_00018"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+author: 'System'
+out_of_scope_acts:
+  _target_: pytod.preprocessing_utils.get_skipped_acts
+  acts:
+    - 'GOODBYE'
+  author: 'SYSTEM'
+say_cmd_name: 'say'
+
+# template used to inform the number of entities retrieved from
+# a call
+inform_entity_count_template:
+  _target_: pytod.pytod_types.transcript.ProgramStatementTemplate
+  metadata:
+    apply_custom_template: true
+    custom_template: "slice({current_call})"
+  expression_template: "show({current_call})"
+  fields:
+    - _target_: pytod.pytod_types.transcript.TemplateField
+      field: 'current_call'
+      is_variable: true
+    - _target_: pytod.pytod_types.transcript.TemplateField
+      field: 'count'
+      is_variable: true
+  tag: 'inform_entity_count_signal'
+  pass_to_nlg: true
+
+
+# the name of the tool used to show system suggested tasks
+task_suggestion_tool_name: "suggest"
+# its argument
+suggestion_tool_arg_name: "task"
+use_snake_case: ${toolbox.use_snake_case}
+skip_service_variations: ${toolbox.skip_service_variations}
+entity_suffix: ${toolbox.entity_suffix}
+anonymize_service: ${toolbox.anonymize_service}

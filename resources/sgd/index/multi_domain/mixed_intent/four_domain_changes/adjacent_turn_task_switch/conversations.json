@@ -1,0 +1,29 @@
+{
+  "train": {
+    "Movies_1(FindMovies)|||Restaurants_1(FindRestaurants)|||Movies_1(GetTimesForMovie)|||Restaurants_1(ReserveRestaurant)|||RideSharing_2(GetRide)": [
+      "82_00054",
+      "82_00056",
+      "82_00089",
+      "82_00119",
+      "82_00059",
+      "83_00008",
+      "83_00007"
+    ]
+  },
+  "dev": {
+    "Events_1(FindEvents)|||Buses_1(FindBus)|||Flights_3(SearchRoundtripFlights)|||Hotels_4(SearchHotel)|||Events_1(BuyEventTickets)": [
+      "17_00102",
+      "17_00059",
+      "17_00066",
+      "17_00088"
+    ]
+  },
+  "test": {
+    "Events_3(FindEvents)|||Buses_3(FindBus)|||Flights_4(SearchRoundtripFlights)|||Hotels_4(SearchHotel)|||Events_3(BuyEventTickets)": [
+      "21_00123",
+      "21_00125",
+      "21_00108",
+      "22_00000"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+split: ???
+data_path: ${root:data/raw/sgd}
+out_dir: ${root:data/interim/sgd}
+
+hydra:
+  run:
+    dir: ${out_dir}
+  sweep:
+    dir: ${root:data/interim/sgd}
+    subdir: ${...split}
+
+conversation_builder:
+  _target_: pytod.sgd_conversation_builder.no_op_conversation_builder
+  _partial_: true
+
+# for debugging - runs the script over a single dialogue and
+# outputs the results.
+ids: ~

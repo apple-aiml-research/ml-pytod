@@ -1,0 +1,16 @@
+defaults:
+  - default_settings@_here_: default
+  - _self_
+
+split: ???
+data_path: ${root:data/interim/sgd}
+out_dir:  ${root:resources/transaction_responses}
+
+hydra:
+  sweep:
+    dir: ${out_dir}
+    subdir: ""
+
+command_collection:
+  _target_: pytod.command.CommandCollection
+  schema_path: ${data_path}/${split}/schema.json

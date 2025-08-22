@@ -1,0 +1,41 @@
+author: 'AUTO'
+# if `true`, a hint is displayed for each
+# required slot yet to be filled by the user
+multiple_slot_filling: false
+# shuffle the list of hints shown to the model for
+# action selection
+randomise_hint_order: true
+# grounds turns where the agent asks the user
+# to provide information required for calling APIs
+slot_filling_template:
+  _target_: pytod.pytod_types.transcript.BackendHintTemplate
+  dialog_template: "Hint(\"Request value: {arg}{value_examples}\", ref={current_call})"
+  tag: 'slot_filling_hint'
+  fields:
+    - _target_: pytod.pytod_types.transcript.TemplateField
+      field: 'arg'
+      is_variable: false
+    - _target_: pytod.pytod_types.transcript.TemplateField
+      field: 'value_examples'
+      is_variable: false
+    - _target_: pytod.pytod_types.transcript.TemplateField
+      field: 'current_call'
+      is_variable: true
+  is_assignable: true
+  origin_template: ~
+  origin_fields: ~
+# grounds turns where the agent asks the user to confirm
+# their transaction (entity properties stated depend on
+# whether the user corrects instead of confirming)
+confirmation_template:
+  _target_: pytod.pytod_types.transcript.BackendHintTemplate
+  dialog_template: "Hint(\"Ask the user to confirm: {entity_properties}\", ref={current_call})"
+  fields:
+    - _target_: pytod.pytod_types.transcript.TemplateField
+      field: 'arg'
+      is_variable: false
+  pass_to_nlg: true
+  is_assignable: true
+  origin_template: ~
+  origin_fields: ~
+  tag: 'require_confirmation_hint'

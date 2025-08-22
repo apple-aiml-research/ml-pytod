@@ -1,0 +1,1 @@
+{"RentalCars_1": {"GetCarsAvailable": ["pickup_city", "pickup_date"]}, "Services_4": {"BookAppointment": ["appointment_date"]}, "Homes_1": {"ScheduleVisit": ["visit_date"]}, "Hotels_4": {"ReserveHotel": ["check_in_date"]}, "Flights_3": {"SearchOnewayFlight": ["departure_date"], "SearchRoundtripFlights": ["departure_date"]}, "RideSharing_1": {"GetRide": ["destination"]}}

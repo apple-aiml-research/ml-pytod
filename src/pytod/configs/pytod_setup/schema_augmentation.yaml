@@ -1,0 +1,10 @@
+defaults:
+  - default_settings@_here_: default
+  - metadata: schema_augmentation
+  - _self_
+
+data_path: ${root:data/interim/sgd}
+splits:
+  - 'train'
+  - 'dev'
+  - 'test'

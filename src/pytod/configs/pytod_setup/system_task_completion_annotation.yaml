@@ -1,0 +1,15 @@
+defaults:
+  - default_settings@_here_: default
+  - _self_
+
+data_path: ${root:data/interim/sgd}
+split: ???
+
+hydra:
+  sweep:
+    dir: ${root:resources/task_completion_annotation}
+    subdir: ${split}
+
+command_collection:
+  _target_: pytod.command.CommandCollection
+  schema_path: ${data_path}/${split}/schema.json

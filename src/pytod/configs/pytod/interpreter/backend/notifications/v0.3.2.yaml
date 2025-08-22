@@ -1,0 +1,15 @@
+author: 'Signal'
+task_status_template:
+  success:
+    transactional:
+      template:  "Call to _{task}_ succeeded."  # "Task succeeded"
+      fields: []
+    search:
+      template: "Call to _{task}_ succeeded."
+  failure:
+    search:
+      template: "No results found"   # Query {task} returned no results
+      fields: []
+    transactional:
+      template: "There was an error while completing the task"  # Task {task} could not be completed.
+      fields: []

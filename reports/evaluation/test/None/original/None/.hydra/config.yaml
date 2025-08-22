@@ -1,0 +1,55 @@
+formatter:
+  rich_config:
+    width: 79
+    code_width: 58
+    user_style: bold dark_orange
+    agent_style: bold dark_magenta
+    syntax_highlight:
+      hint_body: gray50
+      calls: light_salmon1
+      varindex: gray50
+      macros: gray50
+      corrections: light_coral bold italic
+    wrap:
+      hints: false
+  show_programs: true
+  _target_: pytod.pytod_text_formatter.PyTODTextFormatter
+  user_name: user
+  system_name: agent
+split: test
+ids: null
+debug: false
+exclude_ids: []
+version: v0.9.1
+lenient: false
+sgd_variant: original
+experiment_name: null
+checkpoint: null
+hyps_dir: ${root:hyps}
+metrics_dir: ${root:metrics}
+data_path: ${root:data/processed/sgd/${version}}
+save_shards: false
+mapper:
+  _target_: pytod.evaluation.evaluation_utils.SGDFileMapper
+  template_dir: ${root:data/templates/sgd/${split}}
+  dialogues_to_map: ${ids}
+  corrections_info:
+    _target_: pytod.utils.load_json
+    _args_:
+    - ${root:resources/corrections/utterances/${split}.json}
+reference_files:
+  _target_: pytod.evaluation.evaluation_utils.setup_sgd_evaluator_inputs
+  ref_dir: ${root:data/interim/sgd/${split}}
+  decoded_only: ${ids}
+command_collection:
+  _target_: pytod.command.CommandCollection
+  schema_path: ${root:data/processed/sgd/${version}}/${split}/schema.json
+conversation_builder:
+  _target_: pytod.pytod_conversation_builder.pytod_transcript_builder
+  _partial_: true
+output_path: ${root:reports/evaluation}
+wandb:
+  run_id: null
+  entity: ${oc.env:WANDB_ENTITY}
+  project: ${oc.env:WANDB_PROJECT}
+  tags: []

@@ -1,0 +1,72 @@
+# configuration for processing data offline before training
+defaults:
+  # objects that turn pytod transcripts to source/target format for training
+  - text2text_conversion: multiline
+  # the toolbox contains settings for formatting API function names and entities
+  - pytod/toolbox@text2text_conversion.intent_fmt.config.toolbox: default
+  # this function adds gold dst source/target info to dialogue history files
+  # so that it can be joined to predictions in inference
+  - history_processor: default
+  - _self_
+
+split: ???
+version: ???
+# int: specify to add a patch version to `version`.
+# this is useful when experimenting with multiple ways
+# to process the same input data
+patch_version: ~
+# path to PyTOD interpreter outputs
+data_path: ${root:data/processed/sgd/${.version}/${.split}}
+command_collection:
+  _target_: pytod.command.CommandCollection
+  schema_path: ${..data_path}/schema.json
+
+text2text_conversion:
+  conversation_fmt:
+    config:
+      schema: ${....command_collection}
+  intent_fmt:
+    config:
+      schema: ${....command_collection}
+  config:
+    schema: ${...command_collection}
+debug: false
+random:
+  seed: 0
+  # only randomise start variable during training
+  randomise_start_variable:
+    - 'train'
+  # controls the order of function definitions,
+  # slots inside function definitions, etc
+  randomise_schema_element_order:
+    - 'train'
+# list of SGD dialogue IDs of conversations to be processed.
+# Use for debugging.
+ids: ~
+program_newline_sep: ${text2text_conversion.target_fmt.config.program_newline_sep}
+additional_special_tokens:
+  - ${..program_newline_sep}
+# if `true`, prompt the model with all relevant APIs at
+# service boundary turns. Otherwise, only the next service
+# APIs are included
+multidomain_prompts: true
+# process first `limit` conversations. Use for debugging.
+limit: ~
+# if true, `ids` is automatically updated to contain a small sample of dialogues, stored in
+# resources/sampled_dialogues/train|dev|test
+data_check: false
+resources_path: ${root:resources}
+# specify this path to copy dialogue files necessary for
+# inference in the output directory
+evaluation_resource_pth: ${root:resources/evaluation/sgd/dialogue_histories/${version}/${split}/}
+# contains filtered transcripts, which do not have all policy (aka `say`) turns
+testing_resource_pth: ${create_dir:${root:tests/resources/dst_testing/${version}/${split}}}
+
+hydra:
+  # application logs together with configs are saved to this path
+  run:
+    # custom root resolver is defined in `pytod` __init__
+    dir: ${root:data/finetuning/sgd/${apply_patch_version:${...version},${...patch_version}}/${...split}}
+  searchpath:
+    - file://${root:src/pytod/configs}
+output_dir: ${hydra:run.dir}

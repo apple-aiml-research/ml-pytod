@@ -1,0 +1,455 @@
+{
+  "system": {
+    "multivalue": {
+      "cuisine": {
+        "Restaurants_1": {
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)": "1_00000",
+          "Weather_1(GetWeather)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "45_00071",
+          "Events_1(BuyEventTickets)|||Restaurants_1(FindRestaurants)": "60_00101",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||Calendar_1(AddEvent)": "65_00120",
+          "Events_2(BuyEventTickets)|||Restaurants_1(FindRestaurants)": "67_00000",
+          "Movies_1(FindMovies->GetTimesForMovie)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "71_00000",
+          "Services_1(FindProvider->BookAppointment)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "76_00074",
+          "Services_3(FindProvider)|||RideSharing_2(GetRide)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "79_00044",
+          "Movies_1(FindMovies)|||Restaurants_1(FindRestaurants)|||Movies_1(GetTimesForMovie)|||Restaurants_1(ReserveRestaurant)|||RideSharing_2(GetRide)": "82_00048",
+          "Restaurants_1(FindRestaurants)|||Services_1(FindProvider->BookAppointment)|||Restaurants_1(ReserveRestaurant)|||Music_1(PlaySong)": "83_00052",
+          "Events_1(FindEvents->BuyEventTickets)|||Restaurants_1(FindRestaurants)": "95_00067",
+          "Events_2(FindEvents->BuyEventTickets)|||Restaurants_1(FindRestaurants)": "95_00105",
+          "Events_1(FindEvents)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "100_00040",
+          "Events_2(FindEvents)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "100_00074",
+          "Events_1(BuyEventTickets)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "110_00086",
+          "Restaurants_1(FindRestaurants)|||Movies_1(FindMovies)": "112_00113",
+          "Restaurants_1(FindRestaurants)|||Media_1(FindMovies)": "113_00069",
+          "Restaurants_1(FindRestaurants)|||Movies_1(FindMovies)|||Restaurants_1(ReserveRestaurant)": "114_00029",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||Media_1(FindMovies)": "114_00110",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||RideSharing_2(GetRide)": "115_00067",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||RideSharing_1(GetRide)": "116_00016",
+          "Events_2(BuyEventTickets)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "116_00094"
+        }
+      },
+      "category": {
+        "Events_1": {
+          "Events_1(FindEvents->BuyEventTickets)": "8_00040",
+          "Events_1(FindEvents)": "11_00045",
+          "Music_1(LookupSong->PlaySong)|||Events_1(FindEvents)": "49_00112",
+          "Music_2(PlayMedia)|||Events_1(FindEvents)": "50_00095",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||Events_1(FindEvents)": "58_00100",
+          "Events_1(FindEvents->BuyEventTickets)|||Restaurants_1(FindRestaurants)": "95_00068",
+          "Events_1(FindEvents->BuyEventTickets)|||Flights_2(SearchOnewayFlight)": "96_00014",
+          "Events_1(FindEvents)|||Banks_1(CheckBalance)": "96_00088",
+          "Events_1(FindEvents)|||Banks_1(CheckBalance)|||Events_1(BuyEventTickets)": "98_00059",
+          "Movies_1(FindMovies)|||Events_1(FindEvents)": "99_00092",
+          "Events_1(FindEvents)|||Movies_1(FindMovies)": "100_00002",
+          "Events_1(FindEvents)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "100_00041",
+          "Calendar_1(GetAvailableTime)|||Events_1(FindEvents->BuyEventTickets)": "100_00109",
+          "Events_1(FindEvents)|||Calendar_1(GetAvailableTime)|||Events_1(BuyEventTickets)": "101_00068",
+          "Events_1(FindEvents)|||Weather_1(GetWeather)|||Events_1(BuyEventTickets)": "103_00027",
+          "Events_1(FindEvents)|||Hotels_3(SearchHotel)|||Events_1(BuyEventTickets)": "103_00106",
+          "Events_1(FindEvents)|||Hotels_3(SearchHotel->ReserveHotel)": "104_00056"
+        }
+      },
+      "event_type": {
+        "Events_2": {
+          "Events_2(FindEvents->BuyEventTickets)": "8_00124",
+          "Events_2(FindEvents->GetEventDates->BuyEventTickets)": "9_00092",
+          "Events_2(FindEvents->GetEventDates)": "10_00049",
+          "Events_2(FindEvents)": "11_00118",
+          "Music_2(LookupMusic->PlayMedia)|||Events_2(FindEvents)": "50_00019",
+          "Music_1(PlaySong)|||Events_2(FindEvents)": "51_00006",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||Events_2(FindEvents)": "59_00006",
+          "Buses_1(FindBus)|||Events_2(FindEvents)|||Travel_1(FindAttractions)|||Hotels_2(SearchHouse)": "67_00087",
+          "Travel_1(FindAttractions)|||Events_2(FindEvents)|||Hotels_2(SearchHouse)|||Buses_2(FindBus)": "84_00061",
+          "Events_2(FindEvents->BuyEventTickets)|||Restaurants_1(FindRestaurants)": "95_00105",
+          "Events_2(FindEvents->BuyEventTickets)|||Flights_2(SearchOnewayFlight)": "96_00053",
+          "Events_2(FindEvents)|||Banks_1(CheckBalance)": "97_00052",
+          "Events_2(FindEvents)|||Banks_1(CheckBalance)|||Events_2(BuyEventTickets)": "99_00010",
+          "Media_1(FindMovies)|||Events_2(FindEvents)": "99_00115",
+          "Events_2(FindEvents)|||Media_1(FindMovies)": "100_00023",
+          "Events_2(FindEvents)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "100_00074",
+          "Calendar_1(GetAvailableTime)|||Events_2(FindEvents->BuyEventTickets)": "101_00003",
+          "Events_2(FindEvents)|||Calendar_1(GetAvailableTime)|||Events_2(BuyEventTickets)": "101_00087",
+          "Weather_1(GetWeather)|||Events_2(FindEvents->BuyEventTickets)": "103_00068",
+          "Events_2(FindEvents)|||Hotels_1(SearchHotel)|||Events_2(BuyEventTickets)": "104_00025",
+          "Events_2(FindEvents)|||Hotels_1(SearchHotel->ReserveHotel)": "104_00098"
+        }
+      },
+      "airlines": {
+        "Flights_1": {
+          "Flights_1(ReserveOnewayFlight)": "16_00051",
+          "Flights_1(ReserveRoundtripFlights)": "19_00071",
+          "Flights_1(ReserveRoundtripFlights)|||Hotels_3(SearchHotel->ReserveHotel)|||Travel_1(FindAttractions)": "66_00092"
+        }
+      },
+      "departure_date": {
+        "Flights_1": {
+          "RentalCars_1(GetCarsAvailable)|||Buses_2(FindBus)|||Flights_1(SearchRoundtripFlights)": "117_00041"
+        },
+        "Flights_2": {
+          "RentalCars_1(GetCarsAvailable)|||Buses_1(FindBus)|||Flights_2(SearchRoundtripFlights)": "117_00093",
+          "RentalCars_2(GetCarsAvailable)|||Buses_2(FindBus)|||Flights_2(SearchRoundtripFlights)": "118_00012"
+        }
+      },
+      "ride_type": {
+        "RideSharing_2": {
+          "RideSharing_2(GetRide)": "22_00026",
+          "Services_3(FindProvider)|||RideSharing_2(GetRide)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "79_00044",
+          "Movies_1(FindMovies)|||Restaurants_1(FindRestaurants)|||Movies_1(GetTimesForMovie)|||Restaurants_1(ReserveRestaurant)|||RideSharing_2(GetRide)": "82_00050",
+          "Homes_1(FindApartment->ScheduleVisit)|||RideSharing_2(GetRide)": "87_00009",
+          "Weather_1(GetWeather)|||Travel_1(FindAttractions)|||RideSharing_2(GetRide)": "90_00111",
+          "Travel_1(FindAttractions)|||Calendar_1(GetAvailableTime)|||RideSharing_2(GetRide)": "101_00109",
+          "Services_1(FindProvider->BookAppointment)|||RideSharing_2(GetRide)": "109_00003",
+          "Services_3(FindProvider->BookAppointment)|||RideSharing_2(GetRide)": "109_00056",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||RideSharing_2(GetRide)": "115_00065",
+          "Calendar_1(GetEvents)|||RideSharing_2(GetRide)": "124_00093",
+          "RideSharing_2(GetRide)|||Music_1(LookupSong->PlaySong)": "126_00012",
+          "Movies_1(GetTimesForMovie)|||RideSharing_2(GetRide)": "127_00034"
+        }
+      },
+      "destination": {
+        "RideSharing_2": {
+          "Movies_1(FindMovies)|||Restaurants_1(FindRestaurants)|||Movies_1(GetTimesForMovie)|||Restaurants_1(ReserveRestaurant)|||RideSharing_2(GetRide)": "82_00054"
+        }
+      },
+      "type": {
+        "Services_3": {
+          "Services_3(FindProvider->BookAppointment)": "30_00010",
+          "Services_3(FindProvider)": "33_00080",
+          "Services_3(FindProvider->BookAppointment)|||Calendar_1(AddEvent)": "62_00034",
+          "Services_3(FindProvider->BookAppointment)|||Calendar_1(GetAvailableTime)|||Services_2(FindProvider->BookAppointment)": "78_00035",
+          "Services_3(FindProvider)|||RideSharing_2(GetRide)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "79_00049",
+          "Services_3(FindProvider->BookAppointment)|||RideSharing_2(GetRide)": "109_00054",
+          "Services_3(FindProvider)|||Calendar_1(GetAvailableTime)|||Services_3(BookAppointment)": "111_00033",
+          "Services_3(FindProvider)|||Weather_1(GetWeather)|||Services_3(BookAppointment)": "112_00067"
+        },
+        "RentalCars_1": {
+          "RentalCars_1(ReserveCar)|||Hotels_3(SearchHotel->ReserveHotel)": "51_00047",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_1(ReserveCar)": "59_00123"
+        }
+      },
+      "account_type": {
+        "Banks_1": {
+          "Banks_1(CheckBalance->TransferMoney)": "32_00011",
+          "Banks_1(TransferMoney->CheckBalance)": "39_00124",
+          "Music_1(PlaySong)|||Banks_1(TransferMoney)|||Media_1(FindMovies)": "64_00079",
+          "Music_2(PlayMedia)|||Banks_1(TransferMoney)|||Media_1(PlayMovie)": "65_00007",
+          "Banks_1(CheckBalance)|||Media_1(FindMovies->PlayMovie)": "65_00066",
+          "Events_1(FindEvents)|||Banks_1(CheckBalance)": "96_00088",
+          "Events_2(FindEvents)|||Banks_1(CheckBalance)": "97_00050",
+          "Events_1(FindEvents)|||Banks_1(CheckBalance)|||Events_1(BuyEventTickets)": "98_00057",
+          "Events_2(FindEvents)|||Banks_1(CheckBalance)|||Events_2(BuyEventTickets)": "99_00011"
+        }
+      },
+      "car_type": {
+        "RentalCars_2": {
+          "RentalCars_2(ReserveCar)|||Hotels_1(SearchHotel->ReserveHotel)": "52_00002",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_2(ReserveCar)": "60_00024"
+        }
+      },
+      "city": {
+        "Services_2": {
+          "Services_3(FindProvider->BookAppointment)|||Calendar_1(GetAvailableTime)|||Services_2(FindProvider->BookAppointment)": "78_00076"
+        }
+      }
+    },
+    "singlevalue": {
+      "departure_date": {
+        "Buses_2": {
+          "Events_2(GetEventDates)|||Buses_2(BuyBusTicket)|||Events_2(BuyEventTickets)": "44_00000",
+          "Flights_1(SearchOnewayFlight)|||Buses_2(FindBus->BuyBusTicket)": "53_00112",
+          "Flights_1(SearchOnewayFlight->ReserveOnewayFlight)|||Buses_2(FindBus)": "55_00014",
+          "Flights_1(SearchOnewayFlight)|||Buses_2(FindBus)|||Flights_1(ReserveOnewayFlight)": "55_00127",
+          "Events_2(GetEventDates)|||Buses_2(FindBus)|||Hotels_1(SearchHotel)|||Events_2(BuyEventTickets)": "73_00055",
+          "Travel_1(FindAttractions)|||Events_2(FindEvents)|||Hotels_2(SearchHouse)|||Buses_2(FindBus)": "84_00061"
+        },
+        "Flights_1": {
+          "Weather_1(GetWeather)|||Flights_1(SearchRoundtripFlights)|||Hotels_2(SearchHouse)": "48_00075",
+          "Hotels_3(ReserveHotel)|||Flights_1(SearchOnewayFlight->ReserveOnewayFlight)": "52_00078",
+          "Hotels_1(ReserveHotel)|||Flights_1(SearchOnewayFlight->ReserveOnewayFlight)": "53_00030",
+          "RentalCars_1(GetCarsAvailable)|||Buses_2(FindBus)|||Flights_1(SearchRoundtripFlights)": "117_00043"
+        },
+        "Flights_2": {
+          "Weather_1(GetWeather)|||Flights_2(SearchRoundtripFlights)|||Hotels_2(SearchHouse)": "49_00029",
+          "RentalCars_1(GetCarsAvailable)|||Buses_1(FindBus)|||Flights_2(SearchRoundtripFlights)": "117_00089",
+          "RentalCars_2(GetCarsAvailable)|||Buses_2(FindBus)|||Flights_2(SearchRoundtripFlights)": "118_00010"
+        }
+      },
+      "pickup_date": {
+        "RentalCars_2": {
+          "Events_1(BuyEventTickets)|||RentalCars_2(GetCarsAvailable->ReserveCar)": "44_00074",
+          "Events_2(BuyEventTickets)|||RentalCars_2(GetCarsAvailable->ReserveCar)": "55_00091",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_2(ReserveCar)": "60_00024"
+        },
+        "RentalCars_1": {
+          "Events_2(BuyEventTickets)|||RentalCars_1(GetCarsAvailable->ReserveCar)": "50_00059",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_1(ReserveCar)": "59_00121",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_1(GetCarsAvailable->ReserveCar)": "74_00058",
+          "Buses_1(FindBus)|||RentalCars_1(GetCarsAvailable->ReserveCar)|||Media_1(FindMovies->PlayMovie)": "80_00057",
+          "Events_1(BuyEventTickets)|||RentalCars_1(GetCarsAvailable->ReserveCar)": "122_00061"
+        }
+      },
+      "pickup_location": {
+        "RentalCars_2": {
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_2(ReserveCar)": "60_00023"
+        },
+        "RentalCars_1": {
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_1(ReserveCar)": "59_00121"
+        }
+      },
+      "dropoff_date": {
+        "RentalCars_2": {
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_2(ReserveCar)": "60_00023"
+        },
+        "RentalCars_1": {
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_1(ReserveCar)": "59_00121",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_1(GetCarsAvailable->ReserveCar)": "74_00058"
+        }
+      },
+      "destination": {
+        "RideSharing_1": {
+          "Movies_1(GetTimesForMovie)|||RideSharing_1(GetRide)": "44_00116",
+          "Services_2(FindProvider->BookAppointment)|||RideSharing_1(GetRide)": "108_00081",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||RideSharing_1(GetRide)": "116_00016",
+          "Calendar_1(GetEvents)|||RideSharing_1(GetRide)": "125_00052"
+        },
+        "Hotels_1": {
+          "RentalCars_2(ReserveCar)|||Hotels_1(SearchHotel->ReserveHotel)": "52_00002"
+        },
+        "RideSharing_2": {
+          "Services_3(FindProvider)|||RideSharing_2(GetRide)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "79_00044",
+          "Movies_1(FindMovies)|||Restaurants_1(FindRestaurants)|||Movies_1(GetTimesForMovie)|||Restaurants_1(ReserveRestaurant)|||RideSharing_2(GetRide)": "82_00047",
+          "Services_1(FindProvider->BookAppointment)|||RideSharing_2(GetRide)": "109_00002",
+          "Services_3(FindProvider->BookAppointment)|||RideSharing_2(GetRide)": "109_00053",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||RideSharing_2(GetRide)": "115_00064",
+          "Calendar_1(GetEvents)|||RideSharing_2(GetRide)": "124_00093",
+          "Movies_1(GetTimesForMovie)|||RideSharing_2(GetRide)": "127_00035"
+        }
+      },
+      "check_in_date": {
+        "Hotels_3": {
+          "Hotels_3(SearchHotel)|||Weather_1(GetWeather)|||Hotels_3(ReserveHotel)": "46_00051",
+          "RentalCars_1(ReserveCar)|||Hotels_3(SearchHotel->ReserveHotel)": "51_00048",
+          "Flights_1(ReserveRoundtripFlights)|||Hotels_3(SearchHotel->ReserveHotel)|||Travel_1(FindAttractions)": "66_00090",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||Hotels_3(SearchHotel->ReserveHotel)|||Travel_1(FindAttractions)": "72_00055",
+          "Buses_2(BuyBusTicket)|||Hotels_3(SearchHotel->ReserveHotel)": "93_00126",
+          "Buses_1(BuyBusTicket)|||Hotels_3(SearchHotel->ReserveHotel)": "101_00025"
+        },
+        "Hotels_1": {
+          "Weather_1(GetWeather)|||Hotels_1(SearchHotel->ReserveHotel)": "47_00007",
+          "RentalCars_2(ReserveCar)|||Hotels_1(SearchHotel->ReserveHotel)": "52_00002",
+          "Hotels_1(SearchHotel)|||Buses_1(FindBus)|||Hotels_1(ReserveHotel)|||Music_1(LookupSong->PlaySong)": "81_00054",
+          "Buses_2(BuyBusTicket)|||Hotels_1(SearchHotel->ReserveHotel)": "98_00017",
+          "Buses_1(BuyBusTicket)|||Hotels_1(SearchHotel->ReserveHotel)": "105_00008"
+        },
+        "Hotels_2": {
+          "Weather_1(GetWeather)|||Hotels_2(SearchHouse->BookHouse)": "47_00086"
+        }
+      },
+      "location": {
+        "Hotels_3": {
+          "RentalCars_1(ReserveCar)|||Hotels_3(SearchHotel->ReserveHotel)": "51_00047"
+        },
+        "Movies_1": {
+          "RentalCars_2(GetCarsAvailable->ReserveCar)|||Movies_1(FindMovies)|||Travel_1(FindAttractions)": "72_00010"
+        }
+      },
+      "check_out_date": {
+        "Hotels_3": {
+          "RentalCars_1(ReserveCar)|||Hotels_3(SearchHotel->ReserveHotel)": "51_00047",
+          "Flights_1(ReserveRoundtripFlights)|||Hotels_3(SearchHotel->ReserveHotel)|||Travel_1(FindAttractions)": "66_00090",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||Hotels_3(SearchHotel->ReserveHotel)|||Travel_1(FindAttractions)": "72_00055"
+        }
+      },
+      "return_date": {
+        "Flights_1": {
+          "RentalCars_1(GetCarsAvailable)|||Buses_2(FindBus)|||Flights_1(SearchRoundtripFlights)": "117_00042"
+        },
+        "Flights_2": {
+          "Events_1(BuyEventTickets)|||Flights_2(SearchRoundtripFlights)": "77_00081",
+          "Events_2(BuyEventTickets)|||Flights_2(SearchRoundtripFlights)": "85_00075",
+          "RentalCars_1(GetCarsAvailable)|||Buses_1(FindBus)|||Flights_2(SearchRoundtripFlights)": "117_00089",
+          "RentalCars_2(GetCarsAvailable)|||Buses_2(FindBus)|||Flights_2(SearchRoundtripFlights)": "118_00010"
+        }
+      },
+      "pickup_city": {
+        "RentalCars_1": {
+          "Buses_1(FindBus)|||RentalCars_1(GetCarsAvailable->ReserveCar)|||Media_1(FindMovies->PlayMovie)": "80_00057"
+        }
+      },
+      "leaving_date": {
+        "Buses_1": {
+          "Flights_2(SearchOnewayFlight)|||Buses_1(FindBus->BuyBusTicket)": "54_00061",
+          "Flights_1(SearchOnewayFlight->ReserveOnewayFlight)|||Buses_1(FindBus)": "55_00059",
+          "Flights_1(SearchOnewayFlight)|||Buses_1(FindBus)|||Flights_1(ReserveOnewayFlight)": "56_00038",
+          "Hotels_1(SearchHotel)|||Buses_1(FindBus)|||Hotels_1(ReserveHotel)|||Music_1(LookupSong->PlaySong)": "81_00054",
+          "Events_2(GetEventDates)|||Buses_1(BuyBusTicket)|||Events_2(BuyEventTickets)": "88_00049",
+          "RentalCars_1(GetCarsAvailable)|||Buses_1(FindBus)|||Flights_2(SearchRoundtripFlights)": "117_00090"
+        }
+      },
+      "date": {
+        "Events_2": {
+          "Buses_2(BuyBusTicket)|||Events_2(BuyEventTickets)": "59_00044",
+          "Events_2(FindEvents)|||Hotels_1(SearchHotel)|||Events_2(BuyEventTickets)": "104_00017"
+        }
+      },
+      "event_location": {
+        "Calendar_1": {
+          "Services_2(FindProvider->BookAppointment)|||Calendar_1(AddEvent)": "61_00057",
+          "Services_1(FindProvider->BookAppointment)|||Calendar_1(AddEvent)": "61_00112",
+          "Services_3(FindProvider->BookAppointment)|||Calendar_1(AddEvent)": "62_00033",
+          "Movies_1(FindMovies->GetTimesForMovie)|||Calendar_1(AddEvent)": "63_00085",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||Calendar_1(AddEvent)": "65_00117"
+        }
+      },
+      "event_date": {
+        "Calendar_1": {
+          "Events_2(FindEvents)|||Calendar_1(GetAvailableTime)|||Events_2(BuyEventTickets)": "101_00092"
+        }
+      },
+      "show_date": {
+        "Movies_1": {
+          "Movies_1(FindMovies)|||Restaurants_1(FindRestaurants)|||Movies_1(GetTimesForMovie)|||Restaurants_1(ReserveRestaurant)|||RideSharing_2(GetRide)": "82_00047"
+        }
+      },
+      "city": {
+        "Services_2": {
+          "Services_3(FindProvider->BookAppointment)|||Calendar_1(GetAvailableTime)|||Services_2(FindProvider->BookAppointment)": "78_00034"
+        },
+        "Services_1": {
+          "Restaurants_1(FindRestaurants)|||Services_1(FindProvider->BookAppointment)|||Restaurants_1(ReserveRestaurant)|||Music_1(PlaySong)": "83_00051"
+        }
+      },
+      "appointment_date": {
+        "Services_2": {
+          "Services_2(FindProvider)|||Weather_1(GetWeather)|||Services_2(BookAppointment)": "111_00105"
+        },
+        "Services_1": {
+          "Services_1(FindProvider)|||Weather_1(GetWeather)|||Services_1(BookAppointment)": "112_00018"
+        },
+        "Services_3": {
+          "Services_3(FindProvider)|||Weather_1(GetWeather)|||Services_3(BookAppointment)": "112_00067"
+        }
+      }
+    }
+  },
+  "user": {
+    "singlevalue": {
+      "price_range": {
+        "Restaurants_1": {
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)": "1_00005",
+          "Restaurants_1(ReserveRestaurant)": "3_00051",
+          "Weather_1(GetWeather)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "45_00071",
+          "Events_1(BuyEventTickets)|||Restaurants_1(FindRestaurants)": "60_00099",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||Calendar_1(AddEvent)": "65_00120",
+          "Events_2(BuyEventTickets)|||Restaurants_1(FindRestaurants)": "67_00016",
+          "Movies_1(FindMovies->GetTimesForMovie)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "71_00001",
+          "Services_1(FindProvider->BookAppointment)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "76_00074",
+          "Services_3(FindProvider)|||RideSharing_2(GetRide)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "79_00053",
+          "Movies_1(FindMovies)|||Restaurants_1(FindRestaurants)|||Movies_1(GetTimesForMovie)|||Restaurants_1(ReserveRestaurant)|||RideSharing_2(GetRide)": "82_00057",
+          "Restaurants_1(FindRestaurants)|||Services_1(FindProvider->BookAppointment)|||Restaurants_1(ReserveRestaurant)|||Music_1(PlaySong)": "83_00051",
+          "Events_1(FindEvents->BuyEventTickets)|||Restaurants_1(FindRestaurants)": "95_00093",
+          "Events_2(FindEvents->BuyEventTickets)|||Restaurants_1(FindRestaurants)": "95_00108",
+          "Events_1(FindEvents)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "100_00047",
+          "Events_2(FindEvents)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "100_00092",
+          "Movies_1(FindMovies->GetTimesForMovie)|||Restaurants_1(ReserveRestaurant)": "105_00046",
+          "Restaurants_1(ReserveRestaurant)|||Movies_1(FindMovies->GetTimesForMovie)": "105_00121",
+          "Media_1(FindMovies->PlayMovie)|||Restaurants_1(ReserveRestaurant)": "107_00114",
+          "Events_1(BuyEventTickets)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "110_00092",
+          "Restaurants_1(FindRestaurants)|||Movies_1(FindMovies)": "113_00021",
+          "Restaurants_1(FindRestaurants)|||Media_1(FindMovies)": "114_00001",
+          "Restaurants_1(FindRestaurants)|||Movies_1(FindMovies)|||Restaurants_1(ReserveRestaurant)": "114_00037",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||Media_1(FindMovies)": "114_00117",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||RideSharing_2(GetRide)": "115_00069",
+          "Restaurants_1(FindRestaurants->ReserveRestaurant)|||RideSharing_1(GetRide)": "116_00021",
+          "Events_2(BuyEventTickets)|||Restaurants_1(FindRestaurants->ReserveRestaurant)": "116_00118"
+        }
+      },
+      "cuisine": {
+        "Restaurants_1": {
+          "Restaurants_1(ReserveRestaurant)": "3_00019",
+          "Movies_1(FindMovies->GetTimesForMovie)|||Restaurants_1(ReserveRestaurant)": "105_00049",
+          "Restaurants_1(ReserveRestaurant)|||Movies_1(FindMovies->GetTimesForMovie)": "105_00126",
+          "Media_1(FindMovies->PlayMovie)|||Restaurants_1(ReserveRestaurant)": "108_00000"
+        }
+      },
+      "year": {
+        "Music_1": {
+          "Music_1(LookupSong->PlaySong)": "7_00106",
+          "Music_1(LookupSong->PlaySong)|||Events_1(FindEvents)": "49_00112",
+          "Music_1(PlaySong)|||Events_2(FindEvents)": "51_00013",
+          "Music_1(PlaySong)|||Banks_1(TransferMoney)|||Media_1(FindMovies)": "64_00090",
+          "Hotels_1(SearchHotel)|||Buses_1(FindBus)|||Hotels_1(ReserveHotel)|||Music_1(LookupSong->PlaySong)": "81_00055",
+          "Restaurants_1(FindRestaurants)|||Services_1(FindProvider->BookAppointment)|||Restaurants_1(ReserveRestaurant)|||Music_1(PlaySong)": "83_00058",
+          "Media_1(FindMovies)|||Music_1(LookupSong->PlaySong)": "107_00021",
+          "RideSharing_2(GetRide)|||Music_1(LookupSong->PlaySong)": "126_00006",
+          "RideSharing_1(GetRide)|||Music_1(LookupSong->PlaySong)": "126_00083"
+        }
+      },
+      "seating_class": {
+        "Flights_2": {
+          "Flights_2(SearchOnewayFlight)": "15_00118",
+          "Flights_2(SearchRoundtripFlights)": "19_00055",
+          "Flights_2(SearchOnewayFlight->SearchRoundtripFlights)": "21_00124",
+          "Flights_2(SearchRoundtripFlights->SearchOnewayFlight)": "25_00023",
+          "Weather_1(GetWeather)|||Flights_2(SearchRoundtripFlights)|||Hotels_2(SearchHouse)": "49_00069",
+          "Flights_2(SearchOnewayFlight)|||Buses_1(FindBus->BuyBusTicket)": "54_00066",
+          "Events_1(BuyEventTickets)|||Flights_2(SearchRoundtripFlights)": "77_00108",
+          "Events_2(BuyEventTickets)|||Flights_2(SearchRoundtripFlights)": "85_00075",
+          "Events_2(FindEvents->BuyEventTickets)|||Flights_2(SearchOnewayFlight)": "96_00065",
+          "RentalCars_1(GetCarsAvailable)|||Buses_1(FindBus)|||Flights_2(SearchRoundtripFlights)": "117_00115",
+          "RentalCars_2(GetCarsAvailable)|||Buses_2(FindBus)|||Flights_2(SearchRoundtripFlights)": "118_00053"
+        }
+      },
+      "passengers": {
+        "Flights_2": {
+          "Flights_2(SearchOnewayFlight)": "16_00031",
+          "Flights_2(SearchRoundtripFlights)": "19_00054",
+          "Flights_2(SearchOnewayFlight->SearchRoundtripFlights)": "21_00120",
+          "Flights_2(SearchRoundtripFlights->SearchOnewayFlight)": "25_00022",
+          "Weather_1(GetWeather)|||Flights_2(SearchRoundtripFlights)|||Hotels_2(SearchHouse)": "49_00055",
+          "Flights_2(SearchOnewayFlight)|||Buses_1(FindBus->BuyBusTicket)": "54_00066"
+        }
+      },
+      "number_stops": {
+        "Flights_2": {
+          "Flights_2(SearchRoundtripFlights->SearchOnewayFlight)": "25_00025",
+          "Weather_1(GetWeather)|||Flights_2(SearchRoundtripFlights)|||Hotels_2(SearchHouse)": "49_00044",
+          "Events_1(BuyEventTickets)|||Flights_2(SearchRoundtripFlights)": "77_00104",
+          "Events_2(BuyEventTickets)|||Flights_2(SearchRoundtripFlights)": "85_00106",
+          "RentalCars_1(GetCarsAvailable)|||Buses_1(FindBus)|||Flights_2(SearchRoundtripFlights)": "117_00095",
+          "RentalCars_2(GetCarsAvailable)|||Buses_2(FindBus)|||Flights_2(SearchRoundtripFlights)": "118_00029"
+        },
+        "Flights_1": {
+          "Flights_1(ReserveOnewayFlight)": "16_00059",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)": "18_00012",
+          "Flights_1(SearchRoundtripFlights)": "18_00036",
+          "Flights_1(ReserveRoundtripFlights)": "19_00082",
+          "Flights_1(SearchRoundtripFlights->SearchOnewayFlight)": "25_00000",
+          "Weather_1(GetWeather)|||Flights_1(SearchRoundtripFlights)|||Hotels_2(SearchHouse)": "48_00078",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||Travel_1(FindAttractions)": "57_00118",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||Events_1(FindEvents)": "58_00098",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||Events_2(FindEvents)": "59_00014",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_1(ReserveCar)": "60_00006",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_2(ReserveCar)": "60_00025",
+          "Flights_1(ReserveRoundtripFlights)|||Hotels_3(SearchHotel->ReserveHotel)|||Travel_1(FindAttractions)": "66_00101",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||Hotels_3(SearchHotel->ReserveHotel)|||Travel_1(FindAttractions)": "72_00063",
+          "Flights_1(SearchRoundtripFlights->ReserveRoundtripFlights)|||RentalCars_1(GetCarsAvailable->ReserveCar)": "74_00064",
+          "RentalCars_1(GetCarsAvailable)|||Buses_2(FindBus)|||Flights_1(SearchRoundtripFlights)": "117_00058"
+        }
+      },
+      "star_rating": {
+        "Hotels_1": {
+          "Hotels_1(ReserveHotel)": "41_00013",
+          "Hotels_1(ReserveHotel)|||Flights_1(SearchOnewayFlight->ReserveOnewayFlight)": "53_00034",
+          "Travel_1(FindAttractions)|||Hotels_1(ReserveHotel)": "92_00021"
+        }
+      },
+      "transfers": {
+        "Buses_1": {
+          "Events_2(GetEventDates)|||Buses_1(BuyBusTicket)|||Events_2(BuyEventTickets)": "88_00057",
+          "Buses_1(BuyBusTicket)|||Hotels_3(SearchHotel->ReserveHotel)": "101_00027",
+          "Buses_1(BuyBusTicket)|||Hotels_1(SearchHotel->ReserveHotel)": "105_00010"
+        }
+      }
+    }
+  }
+}

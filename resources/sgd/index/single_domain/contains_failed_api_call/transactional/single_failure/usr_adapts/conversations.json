@@ -1,0 +1,104 @@
+{
+  "train": {
+    "Hotels_2(SearchHouse->BookHouse)": [
+      "34_00106",
+      "34_00101",
+      "34_00019",
+      "34_00011",
+      "34_00013",
+      "34_00073",
+      "34_00051"
+    ],
+    "Hotels_3(SearchHotel->ReserveHotel)": [
+      "41_00060",
+      "41_00085"
+    ],
+    "Restaurants_1(FindRestaurants->ReserveRestaurant)": [
+      "1_00002",
+      "1_00122",
+      "1_00108",
+      "1_00093",
+      "1_00074",
+      "1_00103",
+      "1_00069",
+      "1_00095",
+      "1_00076",
+      "1_00072",
+      "1_00015",
+      "1_00086",
+      "1_00112",
+      "1_00058",
+      "2_00009",
+      "2_00008",
+      "2_00017",
+      "2_00063",
+      "2_00036",
+      "2_00023",
+      "2_00039",
+      "2_00070"
+    ],
+    "Services_1(FindProvider->BookAppointment)": [
+      "29_00062",
+      "29_00079"
+    ],
+    "Services_2(FindProvider->BookAppointment)": [
+      "28_00106",
+      "28_00127",
+      "29_00019"
+    ],
+    "Services_3(FindProvider->BookAppointment)": [
+      "30_00063",
+      "30_00068"
+    ]
+  },
+  "dev": {
+    "Alarm_1(GetAlarms->AddAlarm)": [
+      "2_00123",
+      "3_00021"
+    ],
+    "Hotels_4(SearchHotel->ReserveHotel)": [
+      "6_00045"
+    ],
+    "Restaurants_2(FindRestaurants->ReserveRestaurant)": [
+      "4_00083",
+      "4_00073",
+      "4_00068",
+      "4_00098"
+    ],
+    "Services_4(FindProvider->BookAppointment)": [
+      "3_00073",
+      "3_00054"
+    ]
+  },
+  "test": {
+    "Alarm_1(GetAlarms->AddAlarm)": [
+      "5_00028",
+      "5_00035",
+      "5_00034",
+      "5_00042",
+      "5_00025"
+    ],
+    "Movies_1(FindMovies->BuyMovieTickets)": [
+      "9_00050",
+      "9_00051",
+      "9_00048"
+    ],
+    "Restaurants_2(FindRestaurants->ReserveRestaurant)": [
+      "4_00043",
+      "4_00036",
+      "4_00024"
+    ],
+    "Services_1(FindProvider->BookAppointment)": [
+      "6_00065",
+      "6_00095"
+    ],
+    "Services_4(FindProvider->BookAppointment)": [
+      "5_00109",
+      "5_00126",
+      "5_00127",
+      "6_00000",
+      "6_00008",
+      "6_00012"
+    ]
+  }
+}

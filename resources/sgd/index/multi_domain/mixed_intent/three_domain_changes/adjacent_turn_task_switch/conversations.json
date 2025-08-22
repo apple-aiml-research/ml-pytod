@@ -1,0 +1,132 @@
+{
+  "train": {
+    "Buses_2(FindBus)|||Travel_1(FindAttractions)|||Buses_2(BuyBusTicket)|||Hotels_3(SearchHotel)": [
+      "69_00122",
+      "69_00124",
+      "70_00025",
+      "70_00027",
+      "70_00117",
+      "70_00078",
+      "70_00032",
+      "70_00060",
+      "70_00000",
+      "70_00084",
+      "70_00004",
+      "70_00115",
+      "70_00101",
+      "70_00122",
+      "70_00057",
+      "70_00044",
+      "70_00033",
+      "70_00069",
+      "70_00110",
+      "70_00082",
+      "70_00031",
+      "70_00080",
+      "70_00053",
+      "70_00068",
+      "70_00009",
+      "70_00124",
+      "70_00116",
+      "70_00121",
+      "70_00055",
+      "70_00024",
+      "70_00021",
+      "70_00089",
+      "70_00019"
+    ],
+    "Events_2(GetEventDates)|||Buses_2(FindBus)|||Hotels_1(SearchHotel)|||Events_2(BuyEventTickets)": [
+      "73_00113",
+      "74_00023",
+      "74_00014",
+      "74_00038"
+    ],
+    "Hotels_1(SearchHotel)|||Buses_1(FindBus)|||Hotels_1(ReserveHotel)|||Music_1(LookupSong->PlaySong)": [
+      "81_00070",
+      "81_00093",
+      "82_00044",
+      "82_00029"
+    ]
+  },
+  "dev": {
+    "Media_2(FindMovies)|||Travel_1(FindAttractions)|||Music_1(LookupSong->PlaySong)|||Media_2(RentMovie)": [
+      "18_00066",
+      "18_00055",
+      "18_00067"
+    ]
+  },
+  "test": {
+    "Alarm_1(GetAlarms)|||Restaurants_2(FindRestaurants)|||RentalCars_3(ReserveCar)|||Messaging_1(ShareLocation)": [
+      "25_00112"
+    ],
+    "Buses_3(FindBus)|||Travel_1(FindAttractions)|||Buses_3(BuyBusTicket)|||Hotels_4(SearchHotel)": [
+      "27_00082",
+      "27_00076",
+      "27_00112",
+      "27_00083",
+      "27_00071",
+      "27_00124",
+      "27_00109",
+      "27_00119",
+      "27_00088",
+      "27_00100",
+      "27_00099",
+      "27_00110",
+      "27_00102",
+      "27_00120",
+      "27_00095",
+      "27_00094",
+      "27_00115",
+      "27_00098",
+      "27_00090",
+      "27_00097",
+      "27_00103"
+    ],
+    "Events_3(FindEvents)|||Hotels_2(SearchHouse)|||Buses_3(FindBus)|||Events_3(BuyEventTickets)": [
+      "29_00087",
+      "29_00090",
+      "29_00092",
+      "29_00109",
+      "29_00093",
+      "29_00082",
+      "29_00083",
+      "29_00112",
+      "29_00103",
+      "29_00094",
+      "29_00110",
+      "29_00127",
+      "29_00121",
+      "30_00005",
+      "30_00004",
+      "30_00000"
+    ],
+    "Hotels_4(SearchHotel)|||Flights_4(SearchRoundtripFlights)|||Hotels_4(ReserveHotel)|||Travel_1(FindAttractions)": [
+      "29_00070"
+    ],
+    "Media_3(FindMovies)|||Travel_1(FindAttractions)|||Music_3(LookupMusic->PlayMedia)|||Media_3(PlayMovie)": [
+      "22_00112",
+      "22_00111",
+      "22_00119",
+      "23_00017",
+      "23_00005",
+      "23_00006",
+      "23_00003",
+      "23_00032"
+    ],
+    "Music_3(LookupMusic)|||Media_3(FindMovies)|||Music_3(PlayMedia)|||Alarm_1(GetAlarms)": [
+      "32_00042",
+      "32_00064",
+      "32_00054",
+      "32_00048",
+      "32_00053",
+      "32_00074"
+    ],
+    "Payment_1(MakePayment)|||Trains_1(FindTrains)|||Weather_1(GetWeather)|||Trains_1(GetTrainTickets)": [
+      "23_00049",
+      "23_00063",
+      "23_00040",
+      "23_00050",
+      "23_00074"
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+# the 'defaults' list is responsible for composing the configurations
+# of the application components into a single app config
+defaults:
+  # configures conversation truncation, filters noisy conversations
+  # or conversations that are left out because they contain certain
+  # services
+  - filters@filters: default
+  # prints the SGD conversation and the prefix in scope for conversion
+  # to PyTOD format in human-readable form when `show_conversation=True`
+  - conversation_format: service_calls_no_default_vals_in_result
+  # configures the PyTOD language implementation
+  - interpreter@interpreter: v3
+  # - adds `api_returns` to the SGD schema to modify the properties of the
+  #   returned entities
+  # - ensures no slot names are `python` keywords
+  - schema_transformations: v0.3
+  # configuration for the toolbox which summarises the SGD data
+  - toolbox: default
+  # parses the SGD schema into a `python` object. Used for display and conversation
+  # annotation only
+  - command_collection: default
+  # service metadata that assigns the `seen/unseen/uncanny` labels to `PyTOD` turns
+  - sgd_metadata/sgd_api_novelty@sgd_api_novelty: default
+  # prints the PyTOD conversations in human-readable form when `show_conversation=True`
+  - pytod_formatter@pytod_formatter: default
+  # contains data necessary for multi-domain PyTOD conversation conversions and
+  # automatic entities definitions
+  - sgd_metadata: default
+  - _self_
+
+split: ???
+version: ???
+schema_path: ${root:data/interim/sgd/${.split}/schema.json}
+
+# for debugging purposes, shows the PyTOD-format conversation
+show_conversation: false
+# PyTOD allows one to convert only conversations with a certain
+# set of unhappy paths. The tree of unhappy paths is stored under
+# resources/index/sgd.
+tree:
+  split: ${..split}
+  data_path: ${root:data/interim/sgd}
+  index_path: ${root:resources/sgd/index}
+  # for debugging, target specific conversations to convert
+  return_only: ~
+  # specify to convert all conversations where a certain service is accessed.
+  service: ~
+  # specify the root nodes of the subtrees to be traversed.
+  # 1. set to `None` if you want to traverse the entire index starting from its root (`index`)
+  # 2. Otherwise, each node is list[str], a path through the tree which must start at the root `index`
+  # (eg ['single_domain', 'api_success'] is a valid path but ['search', 'changed_goal'] is not
+  # as we don't know how to reach it from `index`)
+  nodes:
+    - ["single_domain"]
+    - ["single_intent"]
+    - ['multi_domain']
+# here's how to create conversation subsets with different complexities
+#    - ['single_domain', 'contains_failed_api_call', 'search']
+#    - ['single_intent', 'search', 'changed_goal', 'req_alts', 'contains_failed_api_call']
+#    - ['single_intent', 'search', 'req_alts', 'contains_failed_api_call']
+#    - ['single_domain', 'contains_failed_api_call', 'transactional', "multiple_failures", "usr_adapts_accepts_alternative"]
+#    - ['single_domain', 'contains_failed_api_call', 'transactional']
+  conversation_builder:
+    # this builder converts raw SGD conversations to a `pydantic` class (Conversation)
+    # it extensively pre-processes the conversations - do not change.
+    _target_: pytod.sgd_conversation_builder_extension.build_conversation_with_carryover_annotations
+    # hardcoded cross-domain slot relations to support future research
+    slot_relations: ${sgd_metadata.slot_relations}
+    # if `true`, the two flags below remove INFORM_INTENT annotations from user turns
+    # which follow notification failure to allow for displaying an assignment
+    # instead of a call
+    user_task_retry_instruction_format: ${interpreter.user.user_task_retry_instruction_format}
+    user_query_retry_instruction_format: ${interpreter.user.user_query_retry_instruction_format}
+    _partial_: true
+# determines what turn-level metadata is saved with the conversations
+# Intent: see pytod.pytod_types.pytod.Intent
+# ServiceInfo: see  pytod.pytod_types.pytod.ServiceInfo
+metadata_type: 'pytod.pytod_types.pytod.ServiceInfo'
+interim_output_path: ${root:data/interim/sgd}
+
+
+hydra:
+  # application logs together with configs are saved to this path
+  run:
+    # custom root resolver is defined in `pytod` __init__
+    dir: ${root:data/processed/sgd/${...version}/${...split}}
+  searchpath:
+    - file://${root:src/pytod/configs}
+
+# variables start at zero for all
+# examples in dialogue history files
+pytod_conversation_history_formatter:
+  config:
+    start_index: 0
+# prompts are not randomised in dialogue history
+# files
+pytod_intent_formatter:
+  config:
+    toolbox: ${toolbox}
+    randomise_prompt_elements: false
+
+output_dir: ${hydra:run.dir}
+evaluation_resource_pth: ${create_dir:${root:resources/evaluation/sgd/dialogue_histories/${version}/${split}}}
+lowercase_dst_transcripts: true
+testing_resource_pth: ${create_dir:${root:tests/resources/dst_testing/${version}/${split}}}
+random:
+  seed: 0

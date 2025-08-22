@@ -1,0 +1,47 @@
+RentalCars_3:
+  GetCarsAvailable:
+  - city
+  - start_date
+  ReserveCar:
+  - start_date
+Services_4:
+  BookAppointment:
+  - appointment_date
+  FindProvider:
+  - city
+Messaging_1:
+  ShareLocation:
+  - location
+Flights_4:
+  SearchOnewayFlight:
+  - departure_date
+  SearchRoundtripFlights:
+  - departure_date
+RideSharing_2:
+  GetRide:
+  - destination
+Hotels_4:
+  ReserveHotel:
+  - check_in_date
+Buses_3:
+  FindBus:
+  - departure_date
+Weather_1:
+  GetWeather:
+  - city
+Trains_1:
+  FindTrains:
+  - date_of_journey
+Hotels_2:
+  BookHouse:
+  - check_in_date
+  - check_out_date
+Homes_2:
+  ScheduleVisit:
+  - visit_date
+Movies_1:
+  GetTimesForMovie:
+  - show_date
+Services_1:
+  BookAppointment:
+  - appointment_date

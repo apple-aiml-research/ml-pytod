@@ -1,0 +1,4 @@
+defaults:
+  - sgd_api_novelty: default
+  - slot_relations: default
+  - _self_

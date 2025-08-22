@@ -1,0 +1,313 @@
+{
+  "1_00003": {
+    "Not at this time.": "Not at this time. Cya!"
+  },
+  "1_00045": {
+    "I'm planning a trip, can you help find me a flight?": "I'm planning a trip, one-way, can you help find me a flight?"
+  },
+  "1_00082": {
+    "Will you find me flights from Atlanta for 1 person?": "Will you find me flights from Atlanta for 1 person? I am fine with any ticket, business or economy, doesn't matter so long we get there."
+  },
+  "1_00116": {
+    "I found 2 flights that work. How about Southwest airlines with 1 layover and a 6:25 am departure for $298": "I found 3 flights that work. How about Southwest airlines with 1 layover and a 6:25 am departure for $298"
+  },
+  "1_00095": {
+    "Let's look at round-trip flights.": "Could be an option. Let's look at round-trip flights."
+  },
+  "3_00112": {
+    "Hey! I will be shifting to Sonoma County in California for my work. It would be great if you can find some nice apartment there?": "Hey! I will be shifting for my work. It would be great if you can find some nice apartment."
+  },
+  "5_00108": {
+    "What else do you have?": "What else do you have? I'm open minded regarding the kind of movie you propose."
+  },
+  "6_00078": {
+    "I'd like to make a hotel reservation. Can you help me please?": "I'd like to make a hotel reservation. Can you help me find a suitable one first please?"
+  },
+  "6_00081": {
+    "I want to book a hotel room for which I need your help.": "I want to check options for a hotel room for which I need your help."
+  },
+  "6_00084": {
+    "I need to book one room in a hotel and I need your help.": "I'm bad at browsing, look for a room in a hotel, I need your help."
+  },
+  "6_00096": {
+    "How about something from '14?": "How about something from '14, artist notwithstanding?",
+    "yes that is good.": "yes that is good. let's play it."
+  },
+  "8_00001": {
+    "Thanks for all your help. Could you help me find a rental car there?": "Thanks for all your help. Now, could you help me find a rental car?"
+  },
+  "8_00021": {
+    "Hi there, could you search for some bus rides for me please?": "Hi there, could you search for some bus rides for me please? I want to book some tickets!",
+    "I see, could you get me a standard rental car for use till Wednesday next week?": "I see, could you see if any standard rental car is free for use till Wednesday next week?"
+  },
+  "8_00031": {
+    "That works for me.": "That works for me, I want to rent it."
+  },
+  "8_00032": {
+    "I'd also like a rental car there.": "I'd also like a rental car.",
+     "I need it until the 11th of this month.":  "No, not until the 11th of this month."
+  },
+  "8_00038": {
+    "I will be travelling soon to San Fran. I need to find a bus departing from Sacramento, CA.": "I will be travelling soon to San Fran. I need to book a bus departing from Sacramento, CA."
+  },
+  "8_00043": {
+    "I need to finish putting together plans for my trip. Can you look up buses for me?": "I need to finish putting together plans for my trip. Let's get tickets.",
+    "Great, thanks. Can you also look up rental cars for me there?": "Great, thanks. Can you also look up rental cars for me?"
+  },
+  "8_00053": {"thank you very much": "thank you very much, let's look for a hotel there"},
+  "8_00054": {
+    "leaving 8th of this month": "searching for a bus leaving 8th of this month.",
+    "what bus station?": "what's the arrival bus station?",
+    "2 star hotel 2 rooms": "look for a 2 star hotel at destination. 2 rooms."
+  },
+  "8_00088": {
+    "thanks a lot": "thanks a lot. any good hotels at destination?",
+    "I do not": "I do not, that's all."
+  },
+  "9_00058": {
+    "maybe a bit later": "maybe a bit later, let's look at hotels there first.",
+    "sounds very good": "sounds very good, let's go ahead with the purchase now."
+  },
+  "9_00066": {
+    "look for hotels": "look for hotels there.",
+    "sounds very good 2": "sounds very good. 2 tickets to the show we were on about please."
+  },
+  "9_00088": {
+    "funny genre morton dacosta rand harper": "i'm interested in a movie. funny genre, directed by morton dacosta with rand harper",
+    "sounds very good": "sounds very good. let's look for events now.",
+    "that is good": "that is good, all I need for one."
+  },
+  "9_00102": {
+    "march 4th is good": "let's now look for an event, march 4th is good"
+  },
+  "10_00046": {
+    "I'd like to rent the Man Who Knew Too Much. I'll be watching it with no subtitles.": "I'd like to rent the Man Who Knew Too Much. Don't really care about subtitles."
+  },
+  "10_00052": {
+    "Yeah, I also want to put on some music right now.": "Yeah, I also want to see if there is any good music."
+  },
+  "10_00079": {
+    "dean deblois please": "dean deblois movie please.",
+    "country '19 no line signal likhat ba": "Cool, love this one. Now a song: country '19 no line signal likhat ba",
+    "naya naya penhi salwarba by Shashi Lal Yadav no line signal likhat ba": "I have naya naya penhi salwarba by Shashi Lal Yadav from the album no line signal likhat ba",
+    "late nights and longnecks": "album late nights and longnecks?",
+    "jesus and jack daniels by justin moore 1 song late nights and longnecks": "jesus and jack daniels by justin moore is one song on late nights and longnecks",
+    "jesus and jack daniels tv": "jesus and jack daniels on tv?"
+  },
+  "11_00111": {"Get me a rental car please.":  "Browse for a rental car please."},
+  "11_00117": {
+    "Could you please help me to find a rental Compact car from Fremont at afternoon 1:30 on 8th of March.": "Could you please help me to find a rental Compact car from Fremont on 8th of March."
+  },
+  "11_0122": {
+    "Get me a car in Fremont from the 8th of this month until the 9th of March.": "Show me cars available in Fremont from the 8th of this month until the 9th of March."
+  },
+  "12_00007": {
+    "It is nice.": "Hope it's going to be nice, you've got my confirmation.",
+    "Thank you so much.": "Thank you so much. Let's also go for that last car you mentioned."
+  },
+  "12_00037": {
+    "I need a bus for two people, on March 6th, to Fresno": "I need bus tickets for two people, on March 6th, to Fresno"
+  },
+  "12_00012": {
+    "Yes that works": "Yes that works, I want to see it myself.",
+    "can you book it?": "can you book that car?"
+  },
+  "12_00023": {
+    "I can pick it up around 5 in the evening on March 11th in San Jose.": "Returning it on March 11th. I can pick it up around 5 in the evening in San Jose."
+  },
+  "12_00033": {
+    "I need a car to drive, how about renting it?": "I need a car to drive, thinking about renting it, so how about we see what's available?",
+    "I like but I need you to take care of something else right now, look for an apartment": "I like but I need you to take care of something else right now, look for an apartment there please."
+  },
+  "12_00035": {
+    "That sounds great.": "That sounds great. Let's go with this last option mentioned and book it."
+  },
+  "12_00040": {
+    "Please find me a bus": "Please find me a bus ticket.",
+    "Shall I book these tickets?": "Shall I book?"
+  },
+  "12_00068": {
+    "12th of march philadelphia two seats": "12th of march flying from philadelphia two seats",
+    "go to savings": "go to savings, show my balance"
+  },
+  "12_00069": {
+    "I am taking a trip, can you help me reserve my ticket please.": "I am taking a trip, can you help me reserve my one-way ticket please."
+  },
+  "12_00075": {
+    "zero bags to check in": "Search for a one-way flight with zero bags to check in.",
+    "what city then?": "what city are you starting at then?",
+    "what date and when?": "what date and where are you heading to?",
+    "delhi economy march 8th": "delhi, march 8th. I want economy.",
+    "alright thank you": "alright thank you. let's see if I can afford it.",
+    "one thousand seven hundred and sixty bucks savings to grace": "please transfer one thousand seven hundred and sixty bucks savings to grace"
+  },
+  "12_00072": {
+    "I want 12th of this month premium economy": "I want a one-way flight on the 12th of this month, premium economy"
+  },
+  "12_00079": {
+    "Hi, could you get me two seats on a Delta Airlines plane please?": "Hi, could you get me two one-way seats on a Delta Airlines plane please?"
+  },
+  "12_00103": {
+    "london san diego": "to london, from san diego.",
+    "what city and when?": "to what and from which city?",
+    "alright then thanks": "alright then thanks, let's see if there is anything to pay this with.",
+    "zero bags economy": "update my search to be zero bags, economy class.",
+    "11th of this month washington": "and for same details except destination washington, departing 11th of this month?",
+    "thow many days then?": "go ahead. how many days will it take then?",
+    "thanks a lot": "thanks a lot, bye."
+  },
+  "13_00010": {
+    "san francisco 2nd of this month atlanta": "atlanta. starting at san francisco 2nd of this month",
+    "alright thank you": "alright thank you. any good hotels to rest when I get there?"
+  },
+  "13_00021": {
+    "I want to find a hotel room, also.": "I want to find a hotel room there, also."
+  },
+  "13_00032": {
+    "las vegas economy southwest airlines": "a one-way from las vegas, economy ticket, on southwest airlines",
+    "alright thank you": "alright thank you, now please help me find a hotel at destination",
+    "yes that works": "yes that works. have a nice day."
+  },
+  "13_00033": {
+    "Can you make this for 3 people?": "So expensive, is this for 3 people?"
+  },
+  "13_00034": {
+    "11th of this month in london, england": "weather on 11th of this month in london, england.",
+    "how humid though?": "how humid though? windy?",
+    "monday next week premium economy": "wanna fly there monday next week, premium economy.",
+    "12:30 march 14th": "could you help with car hunting? need one at 12:30, intend to return it on march 14th",
+    "when and where?": "when should we arrange collection and where?"
+  },
+  "13_00042": {
+    "Can you find me a car rental there?": "Can you find me a car rental?"
+  },
+  "13_00051": {
+    "Thanks a lot. Can you book a one-way flight there?": "Thanks a lot. Can you look for a one-way flight there?"
+  },
+  "13_00068": {
+    "Please reserve a one way flight for me. Lets see if you can get two seats today.": "Please reserve a one way flight for me, I want to go there. Lets see if you can get two seats today."
+  },
+  "13_00073": {
+    "Sure, could you get me a full-size rental car?": "Sure, could we find a full-size rental car?"
+  },
+  "14_00015": {
+    "Can you find me 1 room in a hotel that allows smoking?": "Can you find me 1 room in another hotel?",
+    "I want to check in on the 10th of this month": "I want to check in on the weather there on the 10th of this month."
+  },
+  "14_00026": {
+    "I'm going to be needing a hotel, can you help me book one please.": "I'm going to be needing a hotel, can you help me search one please."
+  },
+  "14_00100": {
+    "I need it until the 5th.": "I need it from the 5th."
+  },
+  "15_00012": {"I need to find a rental car on the 12th of March":  "I need to find a rental car, need it until the 12th of March."},
+  "15_00019": {"I choose this one and thanks. Can I get one more help from you? I want to book a bus from Vancouver on 11th of this month. Search for something like that.": "I choose this one and thanks. Can I get one more help from you? I want to book a bus from Vancouver on 11th of this month. Search for something like that, it will be just me travelling."},
+  "15_00069": {"I need to reserve a rental car there until the 3rd of this month.":  "I am wondering if there are any rental cars available there until the 3rd of this month?"},
+  "15_00073": {"I need to reserve 2 hotel rooms in Paris, France. Can you help me book this please.": "I'm after 2 hotel rooms in Paris, France. Can you help me book this please."},
+  "15_00081": {"Book me a hotel room.": "Browse for a hotel room."},
+  "15_00086": {
+    "I'm looking for hotel to book.": "I'm looking for hotel.",
+    "Which city should I book a hotel?": "Which city should I search for a hotel?"
+  },
+  "15_00099": {
+    "Nice. Can you also get me a rental compact car for the 9th of March?": "Nice. Can you also get me a rental compact car when I get there, for the 9th of March?"
+  },
+  "15_00113": {
+    "I like that, let's go with this option.": "I like that, let's go with this option. Rent it for me."
+  },
+  "16_00006": {
+    "I'd like to rent a large car until the 14th. I need it by eight pm.": "I'd like to check for availability of a large car until the 14th. I need it by eight pm."
+  },
+  "16_00010": {
+    "Book me a rental car.": "Can you search a rental car for me?",
+    "That works for me. Find me a place near there that serves Burger.": "That works for me. On a different note, find me a place that serves Burger."
+  },
+  "16_00018": {
+    "Great, now find me a hotel room": "Great, now find me a hotel room there."
+  },
+  "16_00029": {
+    "I also want to know if there is any 1 star hotel in there.": "I also want to know if there is any 1 star hotel in there with good wi-fi coverage.",
+    "No, not right now. For now just find a restaurant in there.": "No, not right now, thanks for helping me out. Can you search for restaurants?."
+  },
+  "16_00035": {
+    "No, but I do want to find a restaurant there. Look in Livermore for a Pizza and Pasta place.": "No, but I do want to find a restaurant there. Look in Livermore for a Pizza and Pasta place, at any price point."
+  },
+  "17_00042": {
+    "sure that works": "sure that works. anything interesting to do in that city?",
+    "It's for one": "It's for one, fine with sharing."
+  },
+  "17_00099": {
+    "There are 2 flights that match your search. There is a Southwest Airlines flight that departs at 2:15 pm on March 4th. Your returning flight departs at 7:15 am. This ticket will cost $173 per person.": "There are 3 flights that match your search. There is a Southwest Airlines flight that departs at 2:15 pm on March 4th. Your returning flight departs at 7:15 am. This ticket will cost $173 per person."
+  },
+  "18_00086": {
+    "look in pittsburg": "look for food in pittsburg",
+    "any beggie stuff?": "any beggie stuff? price-wise?",
+    "they are moderate": "they are moderate, plenty of veg"
+
+  },
+  "18_00058": {
+    "okay good then": "okay good then, check for a song.",
+    "10 songs nerves kevin macleod the descent": "got 10 songs. One is nerves by kevin macleod from the descent"
+  },
+  "18_00027": {
+    "Interesting, let's book a table at a restaurant there, then.": "Interesting, let's see if there is any good restaurant there, then. I might want to book a table."
+  },
+  "18_00047": {
+    "I would like to hear a Frank Ocean song.": "I would like to find a Frank Ocean song."
+  },
+  "18_00066": {
+    "Nice, thanks. Ok, now I want to listen to a song from Prequelle": "Nice, thanks. What songs from Prequelle would you recommend?",
+    "Not right now. Help me find some garden attractions in london, england": "Not right now. Help me find some garden attractions in london, england. A free one please."
+  },
+  "18_00067": {
+    "find los angeles museum": "find los angeles museum, but something the kids would go for.",
+    "okay good one": "okay good one. in the mood for a song now.",
+    "put on display": "put it on display",
+    "two years ago then": "song from two years ago then?",
+    "no subtitles then": "let's play that movie with no subtitles please."
+  },
+  "19_00037": {
+    "Thanks! I need bus tickets from NY to get there.": "Thanks! I need a bus from NY to get there, know of any?"
+  },
+  "19_00068": {
+    "any pets allowed?": "agreed. any pets allowed?",
+    "I want a restaurant": "I want a restaurant when I go for the viewing."
+  },
+  "19_00078": {
+    "Thanks a lot": "Thanks a lot, laters."
+  },
+  "20_00025": {
+    "Fine, I need to take a plane there.": "Fine, I need to take a plane to get there and back.",
+    "What date do you want to go? When will you return from and where?": "What date do you want to go? When will you return from London and where to?"
+  },
+  "20_00029": {
+    "I want a room": "I want a room in a hotel there.",
+    "yes that works": "yes that works. now let's find a flight there an back.",
+    "washington today on the 10th": "today till the 10th, from washington.",
+    "premium economy seating": "did you quote premium economy seating?",
+    "economy seat then": "economy seat it is."
+  },
+  "20_00043": {
+    "show some places": "show some places to go visit",
+    "okay good then": "okay good then. search for a hotel with good wifi in that city.",
+    "how much then?": "how much then? contact number?",
+    "any other ones? one star one room": "any other ones? one star, one room",
+    "economy three seats delta airlines": "now see for a return flight to get there, economy. three seats on delta airlines."
+  },
+  "20_00048": {
+    "Okay, no problem. I found 2 flights that you may like. Southwest Airlines has an outbound flight leaving at 2 pm local time, with a return flight that leaves at 11:10 am local time. The ticket price is $219 per passenger. Would that work?": "Okay, no problem. I found 3 flights that you may like. Southwest Airlines has an outbound flight leaving at 2 pm local time, with a return flight that leaves at 11:10 am local time. The ticket price is $219 per passenger. Would that work?"
+  },
+  "20_00059": {
+    "Sure, Find me round trip flight that flies out on March 2nd": "Sure, Find me round trip flight that flies out that way on March 2nd",
+    "I need 3 tickets. What is the arrival time?": "Is that the cost for 3 tickets? What is the arrival time?"
+  },
+  "20_00062": {
+    "10 are there adventure island theme park": "10 are there. adventure island theme park is one.",
+    "adventure island theme park": "is there a fee to visit it?",
+    "okay good then": "okay good then. help me find a hotel nearby there.",
+    "yes that works": "yes that works. can you browse for roundtrip flights headed there?",
+    "san francisco next tuesday 14th of march": "departing san francisco next tuesday until the 14th of march.",
+    "0 stops for you": "0 stops? how many bags did I say?",
+    "0 stops 0 stops": "yes, it's a direct flight. no bags."
+  }
+}

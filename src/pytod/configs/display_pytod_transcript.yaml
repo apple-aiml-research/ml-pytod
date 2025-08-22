@@ -1,0 +1,22 @@
+defaults:
+  - pytod/pytod_formatter@formatter: default
+  - _self_
+
+split: ???
+ids: ???
+version: ???
+sgd_variant: 'original'
+experiment_name: ~
+checkpoint: ???
+hyps_dir: ${root:hyps}
+data_path: ${root:data/processed/sgd/${version}}
+use_rich: true
+conversation_builder:
+  _target_: pytod.pytod_conversation_builder.pytod_transcript_builder
+  _partial_: true
+
+output_path: '${root:runs/pytod_display}'
+
+hydra:
+  run:
+    dir: ${...output_path}/${...split}

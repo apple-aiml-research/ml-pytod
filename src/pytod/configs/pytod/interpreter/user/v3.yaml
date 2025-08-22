@@ -1,0 +1,61 @@
+author: 'User'
+out_of_scope_acts:
+    _target_ : pytod.preprocessing_utils.get_skipped_acts
+    acts:
+      - 'THANK_YOU'
+      - 'NEGATE'
+    author: 'USER'
+# valid values are "call" / "assignment". Given the context:
+
+# agent: Unfortunately, I was unable to book an appointment at that time. Is there anything else I can do?
+# user: Yes. Can you try again at 12 in the afternoon?
+
+# call gives:
+#29 services_4_book_appointment(appointment_date=x19.appointment_date, therapist_name=x19.therapist_name, appointment_time="12 in the afternoon")
+
+# assignment gives:
+#29 x19.appointment_time="12 in the afternoon"
+user_task_retry_instruction_format: "assignment"
+user_query_retry_instruction_format: "call"
+# whether the resolved string represented the entity selected
+# by user in Movies_1, and Media_* services should be displayed
+# the subsequent transactional intent invocation or not
+# (see `train/65_00092` for an example.)
+resolve_entity_in_invocation: false
+# "variable_reference" | "selection_variable_reference" | "natural_language"
+# "variable_reference" : display reference to entity/call for co-referred or carried over slot values
+# "natural language": display resolved string instead
+value_carryover: 'variable_reference'
+# 'inlined': multiple assignments are made on the same line (eg x1.restaurant_name="Bird dog"; x1.time="11:30")
+# 'newline': one variable per line ( 2 x1.restaurant_name="Bird dog" \n 3 x1.time="11:30")
+assignments_layout: 'inlined'
+# for `Media_*` and `Movies_1`, the user selects a movie/song from alternatives offered by the
+# system. If `true` this is represented as x[index] where "x" is the variable bound to the
+# query and "index" is the index of the selection _in the system utterance_ (NB: this index
+# is not correct if the user asks for more results as we do not increment the index across turns).
+# otherwise, the selection is represented as select([slot]=[value], from_results=x) where [slot]
+# is the name of the slot the user mentions to identify the utterance and [value] is the value
+# mentioned by the user. Note the selection is always by value, by design (ie we don't have
+# references such as "the last you mentioned", "the third one", etc).
+index_lists_in_media_services: false
+# often, the user puts on hold a task suggested by the agent
+# user: I absolutely love this restaurant.
+# agent: "Shall we book it?"
+# user: First see if there is any money left in the porky.
+decline_agent_suggested_task_cmd_name: "suspend"
+# the user sometimes goes back to complete a task the agent previously suggested
+# user: Okay, seems like I've got enough to treat myself, let's book.
+resume_task_cmd_name: 'resume'
+# 'sgd' ("find_music") | 'toolbox' ("music_1_find_music")
+function_naming_convention: 'toolbox'
+# in general, the variables in API calls where values are carried over
+# refer to variables bound to entities. However, if the carry-over is
+# between two queries, this is not correct for some wildcard values: we
+# wish to carry over the wildcard and not the entity property, and so should
+# refer to the command. Run `display_sgd split=dev ids="['1_00082']"` for
+# an example but note the wildcard is missing from NLG (user turn 4).
+reference_command_for_wildcard_carryover: false
+use_snake_case: ${interpreter.backend.actions.use_snake_case}
+skip_service_variations: ${interpreter.backend.actions.skip_service_variations}
+entity_suffix: ${interpreter.backend.actions.entity_suffix}
+anonymize_service: ${interpreter.backend.actions.anonymize_service}

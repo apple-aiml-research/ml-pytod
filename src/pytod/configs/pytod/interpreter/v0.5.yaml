@@ -1,0 +1,24 @@
+defaults:
+  - backend: v0.3.2
+  - user: v3
+  - response: v3
+  - _self_
+
+# override the default value in the backend config
+backend:
+  hints:
+    multiple_slot_filling: true
+
+# if `true`, ensure entities selected at the same time
+# with new tasks are also remembered for the search
+# intents in this way, carry-over slots in future tasks
+# reference the selected entity and not the entity returned
+# by the next() call (see dev/19_00045)
+copy_selected_entities_to_search: false
+# if `true`, ensure that we reference the entity variables
+# in call variable references if the source carried over slot
+# is not an API argument and an entity exists (see dev/14_00098)
+resolve_carry_over_to_entity: false
+start_index: 0
+# valid grammars: "v2" and "v3"
+grammar: 'v3'

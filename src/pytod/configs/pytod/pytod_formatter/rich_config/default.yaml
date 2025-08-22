@@ -1,0 +1,15 @@
+# column width for user/agent turns
+width: 79
+# column width for code turns
+code_width: 58
+user_style: "bold dark_orange"
+agent_style: "bold dark_magenta"
+
+syntax_highlight:
+  hint_body: "gray50"
+  calls: "light_salmon1"
+  varindex: "gray50"
+  macros: 'gray50'
+  corrections: "light_coral bold italic"
+wrap:
+  hints: false

@@ -1,0 +1,51 @@
+_target_: pytod.prompting.pytod_prompt_formatters.RenderedEntitiesConversationHistoryFormatter
+config:
+  line_start: 'index'
+  # if true, carried over values reference entities or commands
+  # (e.g. destination=x5.street_address may appear in a get_ride API call.
+  #  otherwise, the resolved value is shown: destination="30 Station Rd" )
+  value_object_references: false
+  render_entities: true
+  # if `true` a developer turn is added after each `select` statement to
+  # instruct the model on how to use object references in subsequent API calls
+  # Example:
+  #  user: okay i need to schedule a visit now.
+  #  3 forecast(city, date)
+  #  developer: use the following object references, if relevant, in subsequent
+  #    API function calls:
+  #      -  `x3.city` instead of `sebastopol`
+  #      -  `x3.date` instead of `11th of this month`
+  instruct_obj_reference: false
+  # if `true` the descriptions of the entity properties the user may ask about
+  #  are displayed in context after the `next` instruction as follows:
+  #  2 next(x0)  # type: forecast
+  #  developer: to answer questions about 'humidity' (percentage humidity), 'wind'
+  #    (wind speed in miles per hour) and 'temperature' (temeprature in fahrenheit)
+  #    pass the relevant property to `say` (eg say(x2.temperature))
+  show_api_return_defs: true
+  # if `true` the descriptions of the entity properties the user may ask about
+  #  are displayed in context after the `confirm` instruction as follows:
+  #     user: i want to send $30 to jasbir.
+  #     5 x4.transfer_amount = '$30'; x4.recipient_name = 'jasbir'
+  #     agent: confirming a $30 transfer from savings to the checking account of jasbir.
+  #     user: thanks. how long will that take?
+  #     6 confirm(x4)
+  #     developer: unless a signal indicates banks_2_transfer_money calling error with no alternative arrangements, the properties
+  #     - transfer_time: number of days for the transfer to go through
+  #     may be communicated to the user upon their request by referencing x4 while calling `say` (eg, say(x4.transfer_time)).
+  #     7 perform(x4)
+  display_properties_after_confirmation: true
+  # if a transaction fails and the user retries, some properties the user confirmed
+  # but did not display directly are carried over to the retried call. To encourage
+  # generalisation, we instruct the model to do so as follows (19_00052/dev):
+
+  instruct_confirmed_optional_reference: true
+  # randomises which properties are shown to demonstrate `say` usage
+  # randomises the order of the properties displayed in rendered entities
+  randomise_prompt_elements: true
+  # whether the dialogue state should be tracked when the turns are formatted. This
+  # is necessary in offline mode when we need to know which optional slots were
+  # mentioned in order to display the entity. In online mode, this is not
+  # necessary as the state can be tracked inside the DialogueSession directly.
+  record_state: true
+  schema: ${command_collection}

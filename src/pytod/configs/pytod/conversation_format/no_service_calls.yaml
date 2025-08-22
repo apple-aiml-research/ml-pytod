@@ -1,0 +1,6 @@
+formatter:
+  _target_ : pytod.text_formatter.TextFormatter
+  index_user_turns: true
+  # tokens used to mark conversation_format roles
+  user_name: 'user'
+  system_name: 'agent'

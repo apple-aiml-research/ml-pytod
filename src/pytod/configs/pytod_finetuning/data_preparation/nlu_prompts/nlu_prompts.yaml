@@ -1,0 +1,440 @@
+version: ???
+patch_version: ~
+split: ???
+data_path: ${root:data/interim/sgd}
+index_path: ${root:resources/sgd/index}
+schema_path: ${root:data/interim/sgd/${split}/schema.json}
+train_schema_path: ${root:data/interim/sgd/train/schema.json}
+debug: true
+formatter:
+  _target_: pytod.prompting.pytod_nlu_formatters.NLUExampleFormatter
+  prompt_fmt:
+    _target_: pytod.prompting.pytod_nlu_formatters.NLUPromptFormatter
+    schema: ${schema}
+  target_fmt:
+    _target_: pytod.prompting.pytod_nlu_formatters.NLUTargetFormatter
+  unk_slot_probability: ???
+  similar_slot_probability: ???
+  randomise_prompt_elements: ???
+first_turn_formatter:
+  _target_: pytod.prompting.pytod_nlu_formatters.NLUExampleFormatter
+  prompt_fmt:
+    _target_: pytod.prompting.pytod_nlu_formatters.NLUPromptFormatter
+    schema: ${schema}
+  target_fmt:
+    _target_: pytod.prompting.pytod_nlu_formatters.NLUTargetFormatter
+  unk_slot_probability: 1.0
+  similar_slot_probability: 1.0
+  randomise_prompt_elements: ${formatter.randomise_prompt_elements}
+  include_all_unk_slots: true
+
+random:
+  seed: 25
+
+
+# noisy dialogues to exclude from training
+deny_list:
+  train:
+    - "12_00103"  # "dontcare" wildcard not in utterance
+    - "25_00053"  # wrong intent phrase  [1] (ambiguous)
+    - "38_00092"  # wrong intent paraphrase
+    - "44_00126"
+    - "52_00002"
+    - "52_00106"  # thrashy
+    - "53_00030" # missing slot annotation
+    - "57_00103" # missing categorical slot (probably from utterance)
+    - "59_00006"
+    - "60_00098"
+    - "65_00067"
+    - "74_00058"
+    - "83_00075"
+    - "92_00017"
+    - "100_00027"
+    - "100_00036"
+    - "105_00120"
+    - "126_00083"
+    # the dialogues below all contain paraphrase errors regarding to dontcare slot
+    - "70_00008"
+    - "70_00003"
+    - "53_00050"
+    - "53_00099"
+    - "53_00102"
+    - "93_00090"
+    - "93_00076"
+    - "93_00009"
+    - "81_00075"
+    - "92_00088"
+    - "92_00060"
+    - "92_00087"
+    - "92_00081"
+    - "92_00035"
+    - "84_00101"
+    - "11_00091"
+    - "6_00051"
+    - "73_00041"
+    - "73_00043"
+    - "73_00012"
+    - "71_00047"
+    - "50_00087"
+    - "57_00116"
+    - "6_00121"
+    - "6_00062"
+    - "6_00058"
+    - "6_00021"
+    - "6_00110"
+    - "68_00009"
+    - "68_00122"
+    - "68_00076"
+    - "119_00064"
+    - "119_00057"
+    - "55_00028"
+    - "55_00069"
+    - "55_00019"
+    - "17_00035"
+    - "17_00034"
+    - "17_00101"
+    - "118_00002"
+    - "118_00111"
+    - "102_00015"
+    - "102_00041"
+    - "102_00013"
+    - "90_00036"
+    - "90_00119"
+    - "13_00032"
+    - "13_00047"
+    - "13_00117"
+    - "13_00080"
+    - "13_00059"
+    - "106_00069"
+    - "106_00058"
+    - "106_00053"
+    - "106_00038"
+    - "106_00036"
+    - "85_00012"
+    - "85_00049"
+    - "25_00064"
+    - "44_00104"
+    - "44_00088"
+    - "66_00118"
+    - "66_00115"
+    - "66_00116"
+    - "58_00078"
+    - "58_00019"
+    - "58_00064"
+    - "117_00085"
+    - "52_00110"
+    - "52_00098"
+    - "60_00038"
+    - "7_00103"
+    - "7_00095"
+    - "7_00088"
+    - "7_00043"
+    - "7_00070"
+    - "69_00042"
+    - "69_00035"
+    - "69_00050"
+    - "5_00039"
+    - "5_00063"
+    - "5_00127"
+    - "5_00070"
+    - "5_00054"
+    - "5_00085"
+    - "9_00030"
+    - "9_00096"
+    - "14_00078"
+    - "14_00069"
+    - "14_00071"
+    - "14_00042"
+    - "21_00077"
+    - "21_00123"
+    - "40_00062"
+    - "40_00009"
+    - "40_00057"
+    - "64_00061"
+    - "64_00121"
+    - "64_00021"
+    - "64_00053"
+    - "64_00117"
+    - "64_00055"
+    - "12_00100"
+    - "12_00112"
+    - "12_00075"
+    - "12_00060"
+    - "65_00001"
+    - "83_00023"
+    - "83_00015"
+    - "96_00007"
+    - "96_00062"
+    - "49_00022"
+    - "94_00036"
+    - "75_00070"
+    - "75_00044"
+    - "75_00024"
+    - "54_00001"
+    - "127_00104"
+    - "127_00079"
+    - "127_00046"
+    - "127_00094"
+    - "37_00033"
+    - "37_00078"
+    - "72_00071"
+    - "72_00119"
+    - "72_00045"
+    - "72_00020"
+    - "72_00029"
+    - "57_00014"
+    - "106_00063"
+    - "106_00024"
+    - "106_00068"
+    - "71_00117"
+    - "71_00070"
+    - "78_00008"
+    - "32_00067"
+    - "113_00034"
+    - "111_00008"
+    - "80_00038"
+    - "120_00127"
+    - "120_00050"
+    - "3_00081"
+    - "20_00052"
+    - "20_00095"
+    - "20_00097"
+    - "20_00126"
+    - "114_00015"
+    - "114_00035"
+    - "114_00090"
+    - "105_00110"
+    - "105_00068"
+    - "105_00099"
+    - "105_00075"
+    - "105_00063"
+    - "105_00109"
+    - "105_00112"
+    - "36_00117"
+    - "8_00021"
+    - "8_00090"
+    - "8_00019"
+    - "8_00098"
+    - "8_00091"
+    - "56_00030"
+    - "56_00055"
+    - "56_00046"
+    - "71_00076"
+    - "71_00012"
+    - "71_00107"
+    - "71_00084"
+    - "71_00068"
+    - "71_00039"
+    - "91_00087"
+    - "107_00078"
+    - "107_00062"
+    - "76_00010"
+    - "76_00001"
+    - "76_00059"
+    - "76_00032"
+    - "76_00079"
+    - "56_00033"
+    - "23_00090"
+    - "77_00064"
+    - "77_00088"
+    - "89_00000"
+    - "89_00040"
+    - "116_00038"
+    - "99_00092"
+    - "99_00105"
+    - "99_00106"
+    - "67_00064"
+    - "115_00066"
+    - "116_00020"
+    - "122_00073"
+    - "122_00038"
+    - "125_00092"
+    - "125_00076"
+    - "125_00075"
+    - "116_00024"
+    - "34_00009"
+    - "82_00092"
+    - "82_00078"
+    - "46_00010"
+    - "70_00029"
+    - "86_00014"
+    - "2_00011"
+    - "124_00009"
+    - "51_00105"
+    - "121_00070"
+  dev:
+    - '1_00031'  # PC, not sure if [1] should be corrected
+    - '1_00019'  # PC, missing "dontcare" NLG [2]
+    - '1_00045'
+    - '1_00057'  # PC, wrong paraphrase "from seattle", should be "to seattle"
+    - '1_00067'  # PC, dontcare not well paraphrase, intent ambiguous?
+    - '1_00082'  # missing wildcard in NLG  [4]
+    - '1_00088'  # missing wildcard in NLG  [6]
+    - '2_00013' # PC, wrong NLG [1] - missing slot paraphrase
+    - '2_00047' # PC, wrong NLG first 3 utterances
+    - '2_00051' # PC, wrong user: would i would be able to get another car for the 10th of this month? (should be dropoff)
+    - '2_00053' # PC, wrong NLG [1], should express dropoff_date
+    - '2_00060' # PC, agent shouldn't ask for car_type, user should not respond
+    - '2_00071' # PC, wrong user:  i will need it up next thursday // up to as slot should be dropoff_date
+    - '2_00090' # PC, wrong NLG [1] - intent
+    - '2_00092' # PC, wrong NLG [1] - intent
+    - '2_00098' # PC, wrong NLG [1] - intent
+    #  - '2_00100' # PC, wrong NLG, first agent utterance
+    - '2_00108' # PC, wrong slot paraphrase are there any buses available to go to san diego, leaving tomorrow?, should be from_location
+    - '2_00119' # PC, wrong NLG [3], wrong slot paraphrase, annot says from_location
+    - '6_00006' # PC, intent [2]
+    - '6_00032' # PC, wrong paraphrase for requested slots [6]
+    - '6_00078'
+    - '6_00061'  # PC, missing intent paraphrase in [3]
+    - '6_00081'
+    - '6_00096'
+    - '8_00001'
+    - '8_00008' # pending correct: no coref in annotation [6], [7] wrong slot paraphrase (should be 'dropoff_date' not 'from_date')
+    - '8_00023' # pending correct
+    - '8_00031'
+    - '8_00032'
+    - '8_00038'
+    - '8_00053'
+    - '8_00054'
+    - '8_00058' # PC, [1],[10] intent NLG
+    - '8_00088'
+    - '8_00098' # PC, [1] wrong slot paraphrase
+    - '8_00114' # pending correct
+    - '9_00003' # pending correct
+    - '9_00051' # pending correct
+    - '9_00053' # pending correct
+    - '9_00058'
+    - '9_00088'
+    - '9_00098' # pending correct
+    - '9_00100' # pending correct
+    - '9_00066'
+    - '9_00094'  # pending correct
+    - '9_00102'
+    - '9_00108' # pending correct
+    - '9_00117' # pending correct
+    - '10_00015' # pending correct, subtitle_language paraphrase wrong
+    - '10_00047' # missing intent [discuss] music_1_play_music
+    - '10_00052'
+    - '10_00073' # pending correct (by mercury lane)
+    - '11_00111'
+    - '11_00122'
+    #    - '11_00125' # pending correct, poor dialogue
+    - '11_00114'  # no correction, code needs refactoring to handle that.
+    - '12_00007'
+    - '12_00012'
+    - '12_00022' # PC ( nlg intent[1])
+    - '12_00023'
+    - '12_00033'
+    - '12_00035'
+    - '12_00037'
+    - '12_00040'
+    - '12_00126' # PC, values only
+    #  - '12_00064' # PC (nlg missing slot filling question in first agent utterance)
+    - "12_00060" # PC, wrong intent paraphrase [1]
+    - '12_00068'
+    - '12_00069'
+    - '12_00072'
+    - '12_00075'
+    - '12_00079'
+    - '12_00086' # ambiguous intent [1], discuss?, transfer_money missing slot paraphrase for recipient account type
+    - '12_00098'  # PC, values only
+    - '12_00100'  # PC, values only
+    - '12_00103'
+    - '12_00126'  # PC, values only
+    - '13_00008' # pending correct, thrashy, values only
+    - '13_00032'
+    - '13_00010'
+    - '13_00020' # PC, values only
+    - '13_00030' # pending correct
+    - '13_00033'
+    - '13_00034'
+    - '13_00048' # pending correct, coref
+    - '13_00059' # pending correct
+    - '13_00061' # pending correct
+    - '13_00063' # pending correct
+    - '13_00064' # pending correct
+    - '13_00073'
+    - '14_00015'
+    - '14_00042' # PC, wrong intent [1]
+    - '14_00058' # PC, weird/incorrect annotation [1]
+    - '14_00026'
+    - '14_00055' # PC, missing slot paraphrase has_seating_outdoors=True
+    #  - '14_00037' # PC, NLG (incorrect paraphrase semantics) wrong article in [4]
+    #  - '14_00082' # co-ref issue in first ride_sharing utterance - not sure how to correct this? state annotation?
+    - '14_00100'
+    - '14_00104'  # missing dontcare in NLG, [9]
+    - '14_00104'  # PC, missing dontcare airlines [9] (first flights turn)
+    - '14_00117'  # missing intent paraphrase
+    #    - '14_00119'  # PC, wrong intent paraphrase buses 1
+    - '14_000126' # pending correct
+    - '15_00005'  # pending correct (NLG [1])
+    - '15_00007'  # wrong slot paraphrase [2] - pickup instead of drop off date
+    - '15_00012'
+    - '15_00017'  # pending correct (from_location [6])
+    - '15_00019'
+    - '15_00069'
+    - '15_00073'
+    - '15_00081'
+    - '15_00086'
+    - '15_00099'
+    - '15_00113'
+    - '15_00116' # PC, ambiguous intent [1]
+    - '16_00006'
+    - '16_00010'
+    - '16_00011' # pending correct
+    - '16_00013' # pending correct
+    - '16_00018'
+    - '16_00027' # pending correct (mangled NLG [16], intent [1] ??)
+    - '16_00029'
+    #  - '16_00019' # pending correct ( coref [10])
+    #  - '16_00033' # pending correct ( coref [13])
+    #  - '16_00036' # pending correct ( coref [11])
+    - '16_00038' # PC, wrong coref [13]
+    - '16_00040' # PC, wrong coref [15]
+    - '16_00054' # PC, wrong intent paraphrase [1]
+    - '16_00080' # PC, wrong intent paraphrase [1]
+    - '16_00088' # pending correct
+    - '16_00115' # pending correct
+    - '16_00121' # pending correct
+    - '17_00027' # pending correct (no categ slot [5])
+    - '17_00041' # pending correct
+    - '17_00042'
+    - '17_00059'
+    - '17_00067' # pending correct (wrong NLG, [9])
+    - '17_00071' # pending correct (missing smoking_allowed, [9])
+    - '17_00088' # pending correct
+    - '17_00121' # pending correct
+    - '18_00047'
+    - '18_00066'
+    - '18_00092' # pending correct, values only
+    - '18_00097' # pending correct, values only
+    - '19_00008' # dev wrong intent paraphrase [1]
+    - '19_00037'
+    - '19_00068'
+    - '19_00111'  # pending correct (no intent [6])
+    - '18_00027'
+    - '18_00080' # pending correct
+    - '18_00086'
+    - '18_00058' # no correction, code needs refactoring to handle that
+    - '20_00029'
+    - '20_00020' # pending correct (nlg-intent [5])
+    - '20_00025' # pending correct (nlg-intent [6])
+    - '20_00038' # pending correct
+    - '20_00068' # pending correct (NLG-INTENT [4])
+    - '20_00043'
+    - '20_00045'
+    #    - '20_00046' # pending correct, first Flights_3 user utterance Londo -> London
+    - '20_00071' # pending correct
+    - '20_00073' # pending correct, missing free_entry slot paraphrase [1]
+    - '20_00081' # pending correct, values only
+
+schema:
+  _target_: pytod.command.CommandCollection
+  schema_path: ${schema_path}
+
+hydra:
+  # application logs together with configs are saved to this path
+  run:
+    # custom root resolver is defined in `pytod` __init__
+    dir: ${root:data/finetuning/sgd/${apply_patch_version:${...version},${...patch_version}}/${split}}
+output_dir: ${hydra:run.dir}

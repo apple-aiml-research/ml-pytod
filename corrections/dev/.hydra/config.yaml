@@ -1,0 +1,177 @@
+split: dev
+formatter:
+  _target_: pytod.text_formatter.TextFormatter
+  user_name: user
+  system_name: agent
+  index_user_turns: true
+  service_call_formatter:
+    _target_: pytod.text_formatter.PythonFunctionServiceCallFormatter
+    format_config: ${...service_calls_text}
+  service_results_formatter:
+    _target_: pytod.text_formatter.SGDServiceCallResultFormatter
+    format_config: ${...service_results_text}
+  command_collection:
+    _target_: pytod.command.CommandCollection
+    schema_path: ${root:data/raw/sgd/${...split}}/schema.json
+service_results_text:
+  prefix: 'results: '
+  error_prefix: 'error: '
+  index_results: true
+  filtering_opts:
+    call_params: true
+    opt_slots: true
+service_calls_text:
+  convert_camel_case: true
+conversation_builder:
+  api_errors:
+    default_message: Reservation could not be completed.
+    default_search_message: No other results found.
+    messages:
+      Alarm_1:
+        AddAlarm: Sorry, the alarm could not be set.
+        GetAlarms: No other alarms found.
+      Banks_1:
+        CheckBalance: Access denied, account cannot be accessed at this time.
+      Banks_2: ${.Banks_1}
+      Buses_1:
+        BuyBusTicket: ${...default_message}
+      Buses_2: ${.Buses_1}
+      Buses_3: ${.Buses_1}
+      Calendar_1:
+        GetEvents: ${...default_search_message}
+        GetAvailableTime: No other time available.
+      Events_1:
+        FindEvents: ${...default_search_message}
+        BuyEventTickets: ${...default_message}
+      Events_2:
+        FindEvents: ${..Events_1.FindEvents}
+        BuyEventTickets: ${..Events_1.BuyEventTickets}
+        GetEventDates: There are no other dates available.
+      Events_3: ${.Events_1}
+      Flights_1:
+        SearchOnewayFlight: ${...default_search_message}
+        SearchRoundtripFlights: ${.SearchOnewayFlight}
+        ReserveOnewayFlight: ${...default_message}
+        ReserveRoundtripFlights: ${...default_message}
+      Flights_2:
+        SearchOnewayFlight: ${..Flights_1.SearchOnewayFlight}
+        SearchRoundtripFlights: ${.SearchOnewayFlight}
+      Flights_3: ${.Flights_2}
+      Flights_4: ${.Flights_2}
+      Homes_1:
+        FindApartment: ${...default_search_message}
+        ScheduleVisit: Appointment could not be scheduled.
+      Hotels_1:
+        ReserveHotel: ${...default_message}
+      Hotels_2:
+        BookHouse: ${...default_message}
+      Hotels_3: ${.Hotels_1}
+      Hotels_4:
+        SearchHotel: ${...default_search_message}
+        ReserveHotel: ${...default_message}
+      Media_1:
+        FindMovies: ${...default_search_message}
+        PlayMovie: There was an error while trying to play the movie.
+      Media_2:
+        FindMovies: ${...default_search_message}
+        RentMovie: Transaction did not succeed.
+      Media_3: ${.Media_1}
+      Movies_1:
+        GetTimesForMovie: No other time available.
+        FindMovies: ${...default_search_message}
+        BuyMovieTickets: Transaction did not succeed.
+      Movies_2:
+        FindMovies: ${..Movies_1.FindMovies}
+      Movies_3: ${.Movies_2}
+      Music_1:
+        LookupSong: ${...default_search_message}
+      Music_2:
+        LookupMusic: ${...default_search_message}
+      Music_3: ${.Music_2}
+      RentalCars_1:
+        GetCarsAvailable: No other options available.
+        ReserveCar: ${...default_message}
+      RentalCars_2:
+        GetCarsAvailable: ${..RentalCars_1.GetCarsAvailable}
+        ReserveCar: ${...default_message}
+      RentalCars_3:
+        ReserveCar: ${..RentalCars_2.ReserveCar}
+      Restaurants_1:
+        FindRestaurants: ${...default_search_message}
+        ReserveRestaurant: ${...default_message}
+      Restaurants_2: ${.Restaurants_1}
+      RideSharing_1:
+        GetRide: No ride was found.
+      RideSharing_2: ${.RideSharing_1}
+      Services_1:
+        FindProvider: No service provider could be found.
+        BookAppointment: ${...default_message}
+      Services_2: ${.Services_1}
+      Services_3: ${.Services_1}
+      Services_4: ${.Services_1}
+      Travel_1:
+        FindAttractions: ${...default_search_message}
+      Weather_1:
+        GetWeather: An error occurred while retrieving information.
+  builder:
+    _target_: pytod.sgd_conversation_builder.build_conversation
+    _partial_: true
+    _convert_: object
+    error_messages: ${..api_errors.messages}
+ids:
+- '12_00126'
+- '9_00095'
+- '9_00104'
+- '12_00111'
+- '20_00097'
+- '12_00098'
+- '9_00090'
+- '18_00097'
+- '13_00058'
+- '17_00033'
+- '13_00022'
+- '20_00081'
+- '20_00082'
+- '13_00036'
+- '14_00041'
+- '17_00034'
+- '13_00072'
+- '12_00086'
+- '14_00107'
+- '11_00127'
+- '13_00075'
+- '14_00119'
+- '13_00047'
+- '17_00037'
+- '14_00113'
+- '18_00102'
+- '13_00051'
+- '13_00078'
+- '17_00097'
+- '13_00048'
+- '15_00123'
+- '13_00038'
+- '12_00066'
+- '13_00060'
+- '20_00018'
+- '8_00106'
+- '18_00067'
+- '17_00064'
+- '14_00097'
+- '14_00104'
+- '14_00101'
+- '13_00054'
+- '13_00052'
+- '17_00078'
+- '16_00033'
+- '16_00036'
+- '17_00065'
+- '17_00083'
+- '13_00074'
+- '17_00068'
+- '17_00063'
+- '17_00075'
+data_path: ${root:data/interim/sgd}
+correct_dialogues: ${root:corrections/${split}/${split}_correct_dialogues.json}
+incorrect_dialogues: ${root:corrections/${split}/${split}_incorrect_dialogues.json}
+output_path: ${root:corrections}

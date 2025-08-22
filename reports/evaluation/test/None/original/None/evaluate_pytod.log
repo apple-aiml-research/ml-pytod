@@ -1,0 +1,288 @@
+[2025-02-10 03:03:07,792][pytod.simulation.confirmed_command][WARNING] - 1_00001 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['restaurant_name']
+[2025-02-10 03:03:07,928][pytod.simulation.api_driver][WARNING] - 1_00011: Parameters {'restaurant_name': 'lotus thai restaurant', 'location': 'danville', 'time': '12:00', 'number_of_seats': '2', 'date': '2019-03-01', 'dialogue_id': '1_00011'} did not match the API schema
+[2025-02-10 03:03:08,061][pytod.simulation.confirmed_command][WARNING] - 1_00022 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:03:17,347][pytod.simulation.search_command][WARNING] - 2_00099 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:03:18,620][pytod.simulation.confirmed_command][WARNING] - 3_00061 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['destination']
+[2025-02-10 03:03:22,066][pytod.simulation.confirmed_command][WARNING] - 4_00032 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:03:27,616][pytod.simulation.confirmed_command][WARNING] - 5_00058 || Alarm_1.AddAlarm || User corrected arguments before confirmation: ['new_alarm_name']
+[2025-02-10 03:03:31,810][pytod.simulation.confirmed_command][WARNING] - 6_00064 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:03:31,910][pytod.simulation.confirmed_command][WARNING] - 6_00066 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:03:31,985][pytod.simulation.confirmed_command][WARNING] - 6_00068 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:03:32,970][pytod.simulation.confirmed_command][WARNING] - 6_00090 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:03:35,703][pytod.simulation.confirmed_command][WARNING] - 7_00075 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['location']
+[2025-02-10 03:03:35,851][pytod.simulation.confirmed_command][WARNING] - 7_00088 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['movie_name']
+[2025-02-10 03:03:35,883][pytod.simulation.confirmed_command][WARNING] - 7_00090 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['show_type', 'location']
+[2025-02-10 03:03:35,947][pytod.simulation.confirmed_command][WARNING] - 7_00095 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['number_of_tickets']
+[2025-02-10 03:03:36,055][pytod.simulation.confirmed_command][WARNING] - 7_00104 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['show_date', 'location']
+[2025-02-10 03:03:36,172][pytod.simulation.confirmed_command][WARNING] - 7_00113 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['movie_name']
+[2025-02-10 03:03:36,265][pytod.simulation.confirmed_command][WARNING] - 7_00122 || Homes_2.ScheduleVisit || User corrected arguments before confirmation: ['property_name']
+[2025-02-10 03:03:36,528][pytod.simulation.confirmed_command][WARNING] - 8_00018 || Homes_2.ScheduleVisit || User corrected arguments before confirmation: ['visit_date']
+[2025-02-10 03:03:36,611][pytod.simulation.confirmed_command][WARNING] - 8_00026 || Homes_2.ScheduleVisit || User corrected arguments before confirmation: ['property_name']
+[2025-02-10 03:03:37,384][pytod.simulation.confirmed_command][WARNING] - 8_00056 || Payment_1.MakePayment || User corrected arguments before confirmation: ['payment_method']
+[2025-02-10 03:03:37,406][pytod.simulation.confirmed_command][WARNING] - 8_00057 || Payment_1.MakePayment || User corrected arguments before confirmation: ['payment_method']
+[2025-02-10 03:03:39,537][pytod.simulation.confirmed_command][WARNING] - 8_00120 || Trains_1.GetTrainTickets || User corrected arguments before confirmation: ['ticket_fare_class']
+[2025-02-10 03:03:42,139][pytod.simulation.confirmed_command][WARNING] - 9_00049 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['number_of_tickets']
+[2025-02-10 03:03:44,260][pytod.simulation.confirmed_command][WARNING] - 10_00016 || Media_3.PlayMovie || User corrected arguments before confirmation: ['subtitle_language']
+[2025-02-10 03:03:44,483][pytod.simulation.confirmed_command][WARNING] - 10_00037 || Media_3.PlayMovie || User corrected arguments before confirmation: ['subtitle_language']
+[2025-02-10 03:03:44,526][pytod.simulation.confirmed_command][WARNING] - 10_00041 || Media_3.PlayMovie || User corrected arguments before confirmation: ['subtitle_language']
+[2025-02-10 03:03:44,568][pytod.simulation.confirmed_command][WARNING] - 10_00045 || Media_3.PlayMovie || User corrected arguments before confirmation: ['subtitle_language']
+[2025-02-10 03:03:48,288][pytod.simulation.confirmed_command][WARNING] - 11_00018 || Hotels_2.BookHouse || User corrected arguments before confirmation: ['check_out_date']
+[2025-02-10 03:03:50,056][pytod.simulation.confirmed_command][WARNING] - 12_00002 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['departure_time']
+[2025-02-10 03:03:50,494][pytod.simulation.confirmed_command][WARNING] - 12_00010 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['departure_date']
+[2025-02-10 03:03:50,596][pytod.simulation.confirmed_command][WARNING] - 12_00012 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['num_passengers']
+[2025-02-10 03:03:51,604][pytod.simulation.command][WARNING] - 12_00030 || RentalCars_3.GetCarsAvailable || Value: Long BEach. Could not normalise: city.
+[2025-02-10 03:03:52,140][pytod.simulation.confirmed_command][WARNING] - 12_00038 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['departure_date']
+[2025-02-10 03:04:33,251][pytod.simulation.confirmed_command][WARNING] - 16_00030 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:04:33,684][pytod.simulation.confirmed_command][WARNING] - 16_00034 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:04:35,709][pytod.simulation.confirmed_command][WARNING] - 16_00050 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['departure_date']
+[2025-02-10 03:04:36,050][pytod.simulation.confirmed_command][WARNING] - 16_00053 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['from_city']
+[2025-02-10 03:04:36,418][pytod.simulation.confirmed_command][WARNING] - 16_00056 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['stay_length']
+[2025-02-10 03:04:36,638][pytod.simulation.command][WARNING] - 12_00030 || RentalCars_3.GetCarsAvailable || Value: Long BEach. Could not normalise: city.
+[2025-02-10 03:04:36,738][__main__][INFO] - JGA: 1.0
+[2025-02-10 03:04:36,740][pytod.evaluation.evaluation_utils][INFO] - Saving model_None_metrics at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/model_None_metrics.json
+[2025-02-10 03:04:36,741][pytod.evaluation.evaluation_utils][INFO] - Saving service_errors at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/service_errors.json
+[2025-02-10 03:04:36,741][pytod.evaluation.evaluation_utils][INFO] - Saving metrics_and_dialogues at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/metrics_and_dialogues.json
+[2025-02-10 03:04:37,935][pytod.simulation.confirmed_command][WARNING] - 16_00069 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['number_of_rooms']
+[2025-02-10 03:04:39,441][pytod.simulation.confirmed_command][WARNING] - 16_00079 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['from_city']
+[2025-02-10 03:04:41,708][pytod.simulation.confirmed_command][WARNING] - 16_00095 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['contact_name']
+[2025-02-10 03:04:42,760][pytod.simulation.confirmed_command][WARNING] - 16_00102 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['location']
+[2025-02-10 03:04:46,172][pytod.simulation.confirmed_command][WARNING] - 16_00123 || Alarm_1.AddAlarm || User corrected arguments before confirmation: ['new_alarm_name']
+[2025-02-10 03:04:47,339][pytod.simulation.confirmed_command][WARNING] - 17_00006 || Alarm_1.AddAlarm || User corrected arguments before confirmation: ['new_alarm_name']
+[2025-02-10 03:04:53,680][pytod.simulation.search_command][WARNING] - 17_00098 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:04:53,875][pytod.simulation.search_command][WARNING] - 17_00101 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:04:54,062][pytod.simulation.search_command][WARNING] - 17_00104 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:04:55,535][pytod.simulation.search_command][WARNING] - 18_00000 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:04:55,748][pytod.simulation.search_command][WARNING] - 18_00003 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:04:57,027][pytod.simulation.search_command][WARNING] - 18_00022 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:04:57,389][pytod.simulation.confirmed_command][WARNING] - 18_00028 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['destination']
+[2025-02-10 03:04:57,816][pytod.simulation.command][WARNING] - 18_00037 || RideSharing_2.GetRide || Value: 7200 BAncroft Ave # 125C. Could not normalise: destination.
+[2025-02-10 03:04:57,845][pytod.simulation.confirmed_command][WARNING] - 18_00038 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:04:58,188][pytod.simulation.confirmed_command][WARNING] - 18_00045 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:04:58,352][pytod.simulation.confirmed_command][WARNING] - 18_00048 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:04:58,896][pytod.simulation.confirmed_command][WARNING] - 18_00059 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:04:59,297][pytod.simulation.confirmed_command][WARNING] - 18_00065 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['stay_length']
+[2025-02-10 03:04:59,972][pytod.simulation.confirmed_command][WARNING] - 18_00074 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['check_in_date']
+[2025-02-10 03:05:01,687][pytod.simulation.confirmed_command][WARNING] - 18_00097 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['number_of_rooms']
+[2025-02-10 03:05:02,805][pytod.simulation.confirmed_command][WARNING] - 18_00117 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['destination']
+[2025-02-10 03:05:03,347][pytod.simulation.confirmed_command][WARNING] - 19_00001 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:05:04,576][pytod.simulation.search_command][WARNING] - 19_00020 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:05:06,029][pytod.simulation.search_command][WARNING] - 19_00036 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:05:06,382][pytod.simulation.search_command][WARNING] - 19_00040 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:05:07,261][pytod.simulation.search_command][WARNING] - 19_00050 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:05:12,288][pytod.simulation.confirmed_command][WARNING] - 19_00106 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['event_name']
+[2025-02-10 03:05:12,395][pytod.simulation.confirmed_command][WARNING] - 19_00108 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['date']
+[2025-02-10 03:05:12,685][pytod.simulation.confirmed_command][WARNING] - 19_00111 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['city']
+[2025-02-10 03:05:26,252][pytod.simulation.confirmed_command][WARNING] - 20_00127 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:05:36,881][pytod.simulation.search_command][WARNING] - 22_00001 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:05:37,548][pytod.simulation.search_command][WARNING] - 22_00005 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:05:38,162][pytod.simulation.search_command][WARNING] - 22_00009 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:05:41,154][pytod.simulation.search_command][WARNING] - 22_00028 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:05:45,108][pytod.simulation.confirmed_command][WARNING] - 22_00056 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:05:46,786][pytod.simulation.confirmed_command][WARNING] - 22_00074 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:05:47,479][pytod.simulation.confirmed_command][WARNING] - 22_00083 || Payment_1.RequestPayment || User corrected arguments before confirmation: ['amount']
+[2025-02-10 03:05:47,577][pytod.simulation.confirmed_command][WARNING] - 22_00084 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:06:00,627][pytod.simulation.confirmed_command][WARNING] - 23_00052 || Trains_1.GetTrainTickets || User corrected arguments before confirmation: ['ticket_fare_class']
+[2025-02-10 03:06:07,679][pytod.simulation.confirmed_command][WARNING] - 24_00006 || Trains_1.GetTrainTickets || User corrected arguments before confirmation: ['ticket_fare_class']
+[2025-02-10 03:06:08,197][pytod.simulation.confirmed_command][WARNING] - 24_00014 || Trains_1.GetTrainTickets || User corrected arguments before confirmation: ['ticket_fare_class']
+[2025-02-10 03:06:13,385][pytod.simulation.confirmed_command][WARNING] - 24_00106 || Payment_1.MakePayment || User corrected arguments before confirmation: ['payment_method']
+[2025-02-10 03:06:18,877][pytod.simulation.confirmed_command][WARNING] - 25_00065 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['start_date']
+[2025-02-10 03:06:19,268][pytod.simulation.confirmed_command][WARNING] - 25_00071 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_time']
+[2025-02-10 03:06:20,231][pytod.simulation.confirmed_command][WARNING] - 25_00086 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_time']
+[2025-02-10 03:06:20,554][pytod.simulation.confirmed_command][WARNING] - 25_00091 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_time']
+[2025-02-10 03:06:20,878][pytod.simulation.confirmed_command][WARNING] - 25_00096 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['end_date']
+[2025-02-10 03:06:21,077][pytod.simulation.confirmed_command][WARNING] - 25_00099 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['car_type']
+[2025-02-10 03:06:21,482][pytod.simulation.confirmed_command][WARNING] - 25_00105 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['location']
+[2025-02-10 03:06:21,764][pytod.simulation.confirmed_command][WARNING] - 25_00109 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_location']
+[2025-02-10 03:06:22,567][pytod.simulation.confirmed_command][WARNING] - 25_00121 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['location']
+[2025-02-10 03:06:22,831][pytod.simulation.confirmed_command][WARNING] - 25_00125 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_location']
+[2025-02-10 03:06:24,431][pytod.simulation.search_command][WARNING] - 26_00007 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:06:24,471][pytod.simulation.confirmed_command][WARNING] - 26_00007 || Hotels_2.BookHouse || User corrected arguments before confirmation: ['check_in_date']
+[2025-02-10 03:06:25,787][pytod.simulation.search_command][WARNING] - 26_00015 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:06:30,727][pytod.simulation.search_command][WARNING] - 26_00051 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:06:31,898][pytod.simulation.confirmed_command][WARNING] - 26_00062 || Hotels_2.BookHouse || User corrected arguments before confirmation: ['check_in_date']
+[2025-02-10 03:07:02,353][pytod.simulation.confirmed_command][WARNING] - 28_00009 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['date', 'number_of_seats']
+[2025-02-10 03:07:03,076][pytod.simulation.confirmed_command][WARNING] - 28_00022 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:07:06,566][pytod.simulation.confirmed_command][WARNING] - 28_00075 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['contact_name']
+[2025-02-10 03:07:06,784][pytod.simulation.command][WARNING] - 18_00037 || RideSharing_2.GetRide || Value: 7200 BAncroft Ave # 125C. Could not normalise: destination.
+[2025-02-10 03:07:06,811][__main__][INFO] - JGA: 1.0
+[2025-02-10 03:07:06,812][pytod.evaluation.evaluation_utils][INFO] - Saving model_None_metrics at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/model_None_metrics.json
+[2025-02-10 03:07:06,812][pytod.evaluation.evaluation_utils][INFO] - Saving service_errors at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/service_errors.json
+[2025-02-10 03:07:06,812][pytod.evaluation.evaluation_utils][INFO] - Saving metrics_and_dialogues at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/metrics_and_dialogues.json
+[2025-02-10 03:07:10,252][pytod.simulation.confirmed_command][WARNING] - 28_00103 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['location']
+[2025-02-10 03:07:10,941][pytod.simulation.confirmed_command][WARNING] - 28_00108 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['contact_name']
+[2025-02-10 03:07:11,902][pytod.simulation.confirmed_command][WARNING] - 28_00117 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['contact_name']
+[2025-02-10 03:07:13,829][pytod.simulation.confirmed_command][WARNING] - 29_00003 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['contact_name']
+[2025-02-10 03:07:15,393][pytod.simulation.confirmed_command][WARNING] - 29_00013 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['stay_length']
+[2025-02-10 03:07:15,675][pytod.simulation.search_command][WARNING] - 29_00015 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:07:17,191][pytod.simulation.search_command][WARNING] - 29_00023 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:07:17,446][pytod.simulation.search_command][WARNING] - 29_00024 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:07:23,582][pytod.simulation.confirmed_command][WARNING] - 29_00051 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['check_in_date']
+[2025-02-10 03:07:25,946][pytod.simulation.search_command][WARNING] - 29_00061 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:07:46,540][pytod.simulation.confirmed_command][WARNING] - 30_00020 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['event_name']
+[2025-02-10 03:07:48,655][pytod.simulation.confirmed_command][WARNING] - 30_00040 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['event_name', 'date']
+[2025-02-10 03:07:49,098][pytod.simulation.confirmed_command][WARNING] - 30_00048 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['event_name']
+[2025-02-10 03:07:49,887][pytod.simulation.confirmed_command][WARNING] - 30_00063 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['end_date']
+[2025-02-10 03:07:49,956][pytod.simulation.confirmed_command][WARNING] - 30_00065 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['start_date']
+[2025-02-10 03:07:50,332][pytod.simulation.confirmed_command][WARNING] - 30_00076 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_time']
+[2025-02-10 03:07:50,606][pytod.simulation.confirmed_command][WARNING] - 30_00084 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['end_date', 'start_date', 'pickup_location']
+[2025-02-10 03:07:50,642][pytod.simulation.confirmed_command][WARNING] - 30_00085 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_time']
+[2025-02-10 03:07:51,425][pytod.simulation.confirmed_command][WARNING] - 30_00107 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['start_date']
+[2025-02-10 03:07:59,777][pytod.simulation.confirmed_command][WARNING] - 31_00083 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:08:00,929][pytod.simulation.confirmed_command][WARNING] - 31_00097 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:08:01,390][pytod.simulation.confirmed_command][WARNING] - 31_00103 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:08:01,417][pytod.simulation.confirmed_command][WARNING] - 31_00103 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:08:01,602][pytod.simulation.confirmed_command][WARNING] - 31_00105 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:08:02,427][pytod.simulation.confirmed_command][WARNING] - 31_00120 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:08:02,752][pytod.simulation.confirmed_command][WARNING] - 31_00126 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:08:04,035][pytod.simulation.confirmed_command][WARNING] - 32_00021 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:08:04,084][pytod.simulation.confirmed_command][WARNING] - 32_00022 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:08:10,770][pytod.simulation.confirmed_command][WARNING] - 33_00001 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:08:15,020][pytod.simulation.confirmed_command][WARNING] - 33_00075 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:08:15,738][pytod.simulation.search_command][WARNING] - 33_00084 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:08:19,953][pytod.simulation.search_command][WARNING] - 33_00123 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:08:20,531][pytod.simulation.search_command][WARNING] - 34_00001 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:08:21,135][pytod.simulation.confirmed_command][WARNING] - 34_00007 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['check_in_date']
+[2025-02-10 03:08:22,788][pytod.simulation.confirmed_command][WARNING] - 34_00024 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['number_of_rooms']
+[2025-02-10 03:08:52,601][__main__][INFO] - JGA: 1.0
+[2025-02-10 03:08:52,619][pytod.evaluation.evaluation_utils][INFO] - Saving model_None_metrics at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/model_None_metrics.json
+[2025-02-10 03:08:52,621][pytod.evaluation.evaluation_utils][INFO] - Saving service_errors at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/service_errors.json
+[2025-02-10 03:08:52,621][pytod.evaluation.evaluation_utils][INFO] - Saving metrics_and_dialogues at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/metrics_and_dialogues.json
+[2025-02-10 03:11:15,640][pytod.simulation.confirmed_command][WARNING] - 1_00001 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['restaurant_name']
+[2025-02-10 03:11:15,772][pytod.simulation.api_driver][WARNING] - 1_00011: Parameters {'restaurant_name': 'lotus thai restaurant', 'location': 'danville', 'time': '12:00', 'number_of_seats': '2', 'date': '2019-03-01', 'dialogue_id': '1_00011'} did not match the API schema
+[2025-02-10 03:11:15,902][pytod.simulation.confirmed_command][WARNING] - 1_00022 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:11:25,015][pytod.simulation.search_command][WARNING] - 2_00099 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:11:26,262][pytod.simulation.confirmed_command][WARNING] - 3_00061 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['destination']
+[2025-02-10 03:11:29,454][pytod.simulation.confirmed_command][WARNING] - 4_00032 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:11:35,071][pytod.simulation.confirmed_command][WARNING] - 5_00058 || Alarm_1.AddAlarm || User corrected arguments before confirmation: ['new_alarm_name']
+[2025-02-10 03:11:39,327][pytod.simulation.confirmed_command][WARNING] - 6_00064 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:11:39,425][pytod.simulation.confirmed_command][WARNING] - 6_00066 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:11:39,499][pytod.simulation.confirmed_command][WARNING] - 6_00068 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:11:40,478][pytod.simulation.confirmed_command][WARNING] - 6_00090 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:11:43,175][pytod.simulation.confirmed_command][WARNING] - 7_00075 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['location']
+[2025-02-10 03:11:43,319][pytod.simulation.confirmed_command][WARNING] - 7_00088 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['movie_name']
+[2025-02-10 03:11:43,350][pytod.simulation.confirmed_command][WARNING] - 7_00090 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['show_type', 'location']
+[2025-02-10 03:11:43,413][pytod.simulation.confirmed_command][WARNING] - 7_00095 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['number_of_tickets']
+[2025-02-10 03:11:43,517][pytod.simulation.confirmed_command][WARNING] - 7_00104 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['show_date', 'location']
+[2025-02-10 03:11:43,632][pytod.simulation.confirmed_command][WARNING] - 7_00113 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['movie_name']
+[2025-02-10 03:11:43,722][pytod.simulation.confirmed_command][WARNING] - 7_00122 || Homes_2.ScheduleVisit || User corrected arguments before confirmation: ['property_name']
+[2025-02-10 03:11:43,981][pytod.simulation.confirmed_command][WARNING] - 8_00018 || Homes_2.ScheduleVisit || User corrected arguments before confirmation: ['visit_date']
+[2025-02-10 03:11:44,064][pytod.simulation.confirmed_command][WARNING] - 8_00026 || Homes_2.ScheduleVisit || User corrected arguments before confirmation: ['property_name']
+[2025-02-10 03:11:44,821][pytod.simulation.confirmed_command][WARNING] - 8_00056 || Payment_1.MakePayment || User corrected arguments before confirmation: ['payment_method']
+[2025-02-10 03:11:44,841][pytod.simulation.confirmed_command][WARNING] - 8_00057 || Payment_1.MakePayment || User corrected arguments before confirmation: ['payment_method']
+[2025-02-10 03:11:46,774][pytod.simulation.confirmed_command][WARNING] - 8_00120 || Trains_1.GetTrainTickets || User corrected arguments before confirmation: ['ticket_fare_class']
+[2025-02-10 03:11:49,523][pytod.simulation.confirmed_command][WARNING] - 9_00049 || Movies_1.BuyMovieTickets || User corrected arguments before confirmation: ['number_of_tickets']
+[2025-02-10 03:11:52,132][pytod.simulation.confirmed_command][WARNING] - 10_00016 || Media_3.PlayMovie || User corrected arguments before confirmation: ['subtitle_language']
+[2025-02-10 03:11:52,375][pytod.simulation.confirmed_command][WARNING] - 10_00037 || Media_3.PlayMovie || User corrected arguments before confirmation: ['subtitle_language']
+[2025-02-10 03:11:52,421][pytod.simulation.confirmed_command][WARNING] - 10_00041 || Media_3.PlayMovie || User corrected arguments before confirmation: ['subtitle_language']
+[2025-02-10 03:11:52,469][pytod.simulation.confirmed_command][WARNING] - 10_00045 || Media_3.PlayMovie || User corrected arguments before confirmation: ['subtitle_language']
+[2025-02-10 03:11:56,986][pytod.simulation.confirmed_command][WARNING] - 11_00018 || Hotels_2.BookHouse || User corrected arguments before confirmation: ['check_out_date']
+[2025-02-10 03:12:00,043][pytod.simulation.confirmed_command][WARNING] - 12_00002 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['departure_time']
+[2025-02-10 03:12:00,558][pytod.simulation.confirmed_command][WARNING] - 12_00010 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['departure_date']
+[2025-02-10 03:12:00,680][pytod.simulation.confirmed_command][WARNING] - 12_00012 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['num_passengers']
+[2025-02-10 03:12:01,768][pytod.simulation.command][WARNING] - 12_00030 || RentalCars_3.GetCarsAvailable || Value: Long BEach. Could not normalise: city.
+[2025-02-10 03:12:02,304][pytod.simulation.confirmed_command][WARNING] - 12_00038 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['departure_date']
+[2025-02-10 03:12:36,515][pytod.simulation.confirmed_command][WARNING] - 16_00030 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:12:36,827][pytod.simulation.confirmed_command][WARNING] - 16_00034 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:12:38,285][pytod.simulation.confirmed_command][WARNING] - 16_00050 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['departure_date']
+[2025-02-10 03:12:38,537][pytod.simulation.confirmed_command][WARNING] - 16_00053 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['from_city']
+[2025-02-10 03:12:38,802][pytod.simulation.confirmed_command][WARNING] - 16_00056 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['stay_length']
+[2025-02-10 03:12:39,755][pytod.simulation.confirmed_command][WARNING] - 16_00069 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['number_of_rooms']
+[2025-02-10 03:12:40,392][pytod.simulation.confirmed_command][WARNING] - 16_00079 || Buses_3.BuyBusTicket || User corrected arguments before confirmation: ['from_city']
+[2025-02-10 03:12:41,480][pytod.simulation.confirmed_command][WARNING] - 16_00095 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['contact_name']
+[2025-02-10 03:12:42,005][pytod.simulation.confirmed_command][WARNING] - 16_00102 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['location']
+[2025-02-10 03:12:43,547][pytod.simulation.confirmed_command][WARNING] - 16_00123 || Alarm_1.AddAlarm || User corrected arguments before confirmation: ['new_alarm_name']
+[2025-02-10 03:12:44,483][pytod.simulation.confirmed_command][WARNING] - 17_00006 || Alarm_1.AddAlarm || User corrected arguments before confirmation: ['new_alarm_name']
+[2025-02-10 03:12:50,926][pytod.simulation.search_command][WARNING] - 17_00098 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:12:51,124][pytod.simulation.search_command][WARNING] - 17_00101 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:12:51,317][pytod.simulation.search_command][WARNING] - 17_00104 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:12:52,815][pytod.simulation.search_command][WARNING] - 18_00000 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:12:53,022][pytod.simulation.search_command][WARNING] - 18_00003 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:12:54,273][pytod.simulation.search_command][WARNING] - 18_00022 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:12:54,637][pytod.simulation.confirmed_command][WARNING] - 18_00028 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['destination']
+[2025-02-10 03:12:55,070][pytod.simulation.command][WARNING] - 18_00037 || RideSharing_2.GetRide || Value: 7200 BAncroft Ave # 125C. Could not normalise: destination.
+[2025-02-10 03:12:55,099][pytod.simulation.confirmed_command][WARNING] - 18_00038 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:12:55,447][pytod.simulation.confirmed_command][WARNING] - 18_00045 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:12:55,613][pytod.simulation.confirmed_command][WARNING] - 18_00048 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:12:56,157][pytod.simulation.confirmed_command][WARNING] - 18_00059 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:12:56,588][pytod.simulation.confirmed_command][WARNING] - 18_00065 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['stay_length']
+[2025-02-10 03:12:57,489][pytod.simulation.confirmed_command][WARNING] - 18_00074 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['check_in_date']
+[2025-02-10 03:12:59,239][pytod.simulation.confirmed_command][WARNING] - 18_00097 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['number_of_rooms']
+[2025-02-10 03:13:00,290][pytod.simulation.confirmed_command][WARNING] - 18_00117 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['destination']
+[2025-02-10 03:13:00,859][pytod.simulation.confirmed_command][WARNING] - 19_00001 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:13:01,935][pytod.simulation.search_command][WARNING] - 19_00020 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:13:03,398][pytod.simulation.search_command][WARNING] - 19_00036 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:13:03,753][pytod.simulation.search_command][WARNING] - 19_00040 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:13:04,595][pytod.simulation.search_command][WARNING] - 19_00050 || Flights_4.SearchOnewayFlight || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:13:09,229][pytod.simulation.confirmed_command][WARNING] - 19_00106 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['event_name']
+[2025-02-10 03:13:09,339][pytod.simulation.confirmed_command][WARNING] - 19_00108 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['date']
+[2025-02-10 03:13:09,555][pytod.simulation.confirmed_command][WARNING] - 19_00111 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['city']
+[2025-02-10 03:13:23,681][pytod.simulation.confirmed_command][WARNING] - 20_00127 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:13:34,262][pytod.simulation.search_command][WARNING] - 22_00001 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:13:34,927][pytod.simulation.search_command][WARNING] - 22_00005 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:13:35,545][pytod.simulation.search_command][WARNING] - 22_00009 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:13:38,535][pytod.simulation.search_command][WARNING] - 22_00028 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:13:42,764][pytod.simulation.confirmed_command][WARNING] - 22_00056 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:13:44,440][pytod.simulation.confirmed_command][WARNING] - 22_00074 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:13:45,125][pytod.simulation.confirmed_command][WARNING] - 22_00083 || Payment_1.RequestPayment || User corrected arguments before confirmation: ['amount']
+[2025-02-10 03:13:45,222][pytod.simulation.confirmed_command][WARNING] - 22_00084 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:13:55,493][pytod.simulation.confirmed_command][WARNING] - 23_00052 || Trains_1.GetTrainTickets || User corrected arguments before confirmation: ['ticket_fare_class']
+[2025-02-10 03:14:02,290][pytod.simulation.confirmed_command][WARNING] - 24_00006 || Trains_1.GetTrainTickets || User corrected arguments before confirmation: ['ticket_fare_class']
+[2025-02-10 03:14:02,880][pytod.simulation.confirmed_command][WARNING] - 24_00014 || Trains_1.GetTrainTickets || User corrected arguments before confirmation: ['ticket_fare_class']
+[2025-02-10 03:14:07,776][pytod.simulation.confirmed_command][WARNING] - 24_00106 || Payment_1.MakePayment || User corrected arguments before confirmation: ['payment_method']
+[2025-02-10 03:14:13,102][pytod.simulation.confirmed_command][WARNING] - 25_00065 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['start_date']
+[2025-02-10 03:14:13,512][pytod.simulation.confirmed_command][WARNING] - 25_00071 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_time']
+[2025-02-10 03:14:14,495][pytod.simulation.confirmed_command][WARNING] - 25_00086 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_time']
+[2025-02-10 03:14:14,826][pytod.simulation.confirmed_command][WARNING] - 25_00091 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_time']
+[2025-02-10 03:14:15,150][pytod.simulation.confirmed_command][WARNING] - 25_00096 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['end_date']
+[2025-02-10 03:14:15,349][pytod.simulation.confirmed_command][WARNING] - 25_00099 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['car_type']
+[2025-02-10 03:14:15,750][pytod.simulation.confirmed_command][WARNING] - 25_00105 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['location']
+[2025-02-10 03:14:16,027][pytod.simulation.confirmed_command][WARNING] - 25_00109 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_location']
+[2025-02-10 03:14:16,829][pytod.simulation.confirmed_command][WARNING] - 25_00121 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['location']
+[2025-02-10 03:14:17,088][pytod.simulation.confirmed_command][WARNING] - 25_00125 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_location']
+[2025-02-10 03:14:18,664][pytod.simulation.search_command][WARNING] - 26_00007 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:14:18,705][pytod.simulation.confirmed_command][WARNING] - 26_00007 || Hotels_2.BookHouse || User corrected arguments before confirmation: ['check_in_date']
+[2025-02-10 03:14:20,005][pytod.simulation.search_command][WARNING] - 26_00015 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:14:28,348][pytod.simulation.search_command][WARNING] - 26_00051 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:14:30,825][pytod.simulation.confirmed_command][WARNING] - 26_00062 || Hotels_2.BookHouse || User corrected arguments before confirmation: ['check_in_date']
+[2025-02-10 03:15:05,234][pytod.simulation.confirmed_command][WARNING] - 28_00009 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['date', 'number_of_seats']
+[2025-02-10 03:15:05,942][pytod.simulation.confirmed_command][WARNING] - 28_00022 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:15:09,293][pytod.simulation.confirmed_command][WARNING] - 28_00075 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['contact_name']
+[2025-02-10 03:15:12,701][pytod.simulation.confirmed_command][WARNING] - 28_00103 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['location']
+[2025-02-10 03:15:13,387][pytod.simulation.confirmed_command][WARNING] - 28_00108 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['contact_name']
+[2025-02-10 03:15:14,324][pytod.simulation.confirmed_command][WARNING] - 28_00117 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['contact_name']
+[2025-02-10 03:15:16,338][pytod.simulation.confirmed_command][WARNING] - 29_00003 || Messaging_1.ShareLocation || User corrected arguments before confirmation: ['contact_name']
+[2025-02-10 03:15:17,803][pytod.simulation.confirmed_command][WARNING] - 29_00013 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['stay_length']
+[2025-02-10 03:15:18,058][pytod.simulation.search_command][WARNING] - 29_00015 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:15:19,278][pytod.simulation.search_command][WARNING] - 29_00023 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:15:19,420][pytod.simulation.search_command][WARNING] - 29_00024 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:15:23,073][pytod.simulation.confirmed_command][WARNING] - 29_00051 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['check_in_date']
+[2025-02-10 03:15:24,229][pytod.simulation.search_command][WARNING] - 29_00061 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:15:35,488][pytod.simulation.confirmed_command][WARNING] - 30_00020 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['event_name']
+[2025-02-10 03:15:37,601][pytod.simulation.confirmed_command][WARNING] - 30_00040 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['event_name', 'date']
+[2025-02-10 03:15:38,046][pytod.simulation.confirmed_command][WARNING] - 30_00048 || Events_3.BuyEventTickets || User corrected arguments before confirmation: ['event_name']
+[2025-02-10 03:15:38,841][pytod.simulation.confirmed_command][WARNING] - 30_00063 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['end_date']
+[2025-02-10 03:15:38,909][pytod.simulation.confirmed_command][WARNING] - 30_00065 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['start_date']
+[2025-02-10 03:15:39,283][pytod.simulation.confirmed_command][WARNING] - 30_00076 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_time']
+[2025-02-10 03:15:39,554][pytod.simulation.confirmed_command][WARNING] - 30_00084 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['end_date', 'start_date', 'pickup_location']
+[2025-02-10 03:15:39,589][pytod.simulation.confirmed_command][WARNING] - 30_00085 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['pickup_time']
+[2025-02-10 03:15:40,392][pytod.simulation.confirmed_command][WARNING] - 30_00107 || RentalCars_3.ReserveCar || User corrected arguments before confirmation: ['start_date']
+[2025-02-10 03:15:49,684][pytod.simulation.confirmed_command][WARNING] - 31_00083 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:15:51,295][pytod.simulation.confirmed_command][WARNING] - 31_00097 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:15:51,838][pytod.simulation.confirmed_command][WARNING] - 31_00103 || Services_1.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:15:51,870][pytod.simulation.confirmed_command][WARNING] - 31_00103 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:15:52,139][pytod.simulation.confirmed_command][WARNING] - 31_00105 || Restaurants_2.ReserveRestaurant || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:15:53,019][pytod.simulation.confirmed_command][WARNING] - 31_00120 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:15:53,345][pytod.simulation.confirmed_command][WARNING] - 31_00126 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_time']
+[2025-02-10 03:15:54,625][pytod.simulation.confirmed_command][WARNING] - 32_00021 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:15:54,673][pytod.simulation.confirmed_command][WARNING] - 32_00022 || Services_4.BookAppointment || User corrected arguments before confirmation: ['appointment_date']
+[2025-02-10 03:16:01,415][pytod.simulation.confirmed_command][WARNING] - 33_00001 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:16:05,820][pytod.simulation.confirmed_command][WARNING] - 33_00075 || RideSharing_2.GetRide || User corrected arguments before confirmation: ['number_of_seats']
+[2025-02-10 03:16:06,557][pytod.simulation.search_command][WARNING] - 33_00084 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:16:10,942][pytod.simulation.search_command][WARNING] - 33_00123 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:16:11,528][pytod.simulation.search_command][WARNING] - 34_00001 || Flights_4.SearchRoundtripFlights || Selected entity is not the last entity mentioned. This is not expected.
+[2025-02-10 03:16:12,138][pytod.simulation.confirmed_command][WARNING] - 34_00007 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['check_in_date']
+[2025-02-10 03:16:13,882][pytod.simulation.confirmed_command][WARNING] - 34_00024 || Hotels_4.ReserveHotel || User corrected arguments before confirmation: ['number_of_rooms']
+[2025-02-10 03:16:45,576][__main__][INFO] - JGA: 1.0
+[2025-02-10 03:16:45,595][pytod.evaluation.evaluation_utils][INFO] - Saving model_None_metrics at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/model_None_metrics.json
+[2025-02-10 03:16:45,598][pytod.evaluation.evaluation_utils][INFO] - Saving service_errors at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/service_errors.json
+[2025-02-10 03:16:45,598][pytod.evaluation.evaluation_utils][INFO] - Saving metrics_and_dialogues at /Users/alexandrucoca/work/dev/ml-pytod/data/processed/sgd/v0.9.1/metrics_and_dialogues.json

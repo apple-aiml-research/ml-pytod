@@ -1,0 +1,45 @@
+{
+  "train": {
+    "Calendar_1(GetEvents->GetAvailableTime)": [
+      "38_00127",
+      "38_00119",
+      "38_00099",
+      "39_00038",
+      "39_00036"
+    ],
+    "Flights_1(SearchOnewayFlight->SearchRoundtripFlights)": [
+      "21_00110"
+    ],
+    "Homes_1(FindApartment->ScheduleVisit)": [
+      "31_00085"
+    ],
+    "Media_1(FindMovies->PlayMovie)": [
+      "20_00017",
+      "20_00032",
+      "21_00004",
+      "21_00015",
+      "21_00048",
+      "21_00059"
+    ],
+    "Movies_1(FindMovies->GetTimesForMovie)": [
+      "12_00069",
+      "13_00000",
+      "13_00051",
+      "13_00004",
+      "14_00010"
+    ],
+    "Music_2(LookupMusic->PlayMedia)": [
+      "5_00041"
+    ],
+    "RentalCars_1(GetCarsAvailable->ReserveCar)": [
+      "23_00074"
+    ]
+  },
+  "test": {
+    "Media_3(FindMovies->PlayMovie)": [
+      "10_00075",
+      "10_00072",
+      "10_00060"
+    ]
+  }
+}

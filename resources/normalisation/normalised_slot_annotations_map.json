@@ -1,0 +1,50 @@
+{
+    "Alarm_1": [
+        "new_alarm_time"
+    ],
+    "Restaurants_2": [
+        "restaurant_name",
+        "time",
+        "date",
+        "number_of_seats"
+    ],
+    "Buses_1": [
+        "leaving_time"
+    ],
+    "Buses_3": [
+        "departure_time"
+    ],
+    "Events_1": [
+        "date",
+        "event_name"
+    ],
+    "Flights_3": [
+        "airlines"
+    ],
+    "Homes_1": [
+        "property_name"
+    ],
+    "Hotels_1": [
+        "hotel_name"
+    ],
+    "Hotels_4": [
+        "place_name"
+    ],
+    "Media_2": [
+        "movie_name"
+    ],
+    "Music_1": [
+        "song_name"
+    ],
+    "RentalCars_1": [
+        "pickup_location",
+        "type"
+    ],
+    "Services_1": [
+        "appointment_time"
+    ],
+    "Services_4": [
+        "appointment_time",
+        "therapist_name"
+    ]
+}

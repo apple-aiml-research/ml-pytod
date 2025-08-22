@@ -1,0 +1,25 @@
+defaults:
+  - noisy_conversations: default
+
+# pipeline to extract dialogue prefixes in scope for modelling
+prefix_extractor: ~
+# pipeline to filter dialogues that are not in scope for modelling
+scope_filters:
+  train:
+    _target_: pytod.preprocessing_pipelines.FilteringPipeline
+    steps:
+      - _target_: pytod.preprocessing_utils.by_id
+        noisy_ids: ${.....noisy_conversations.train}
+        _partial_: true
+  dev:
+    _target_: pytod.preprocessing_pipelines.FilteringPipeline
+    steps:
+      - _target_: pytod.preprocessing_utils.by_id
+        noisy_ids: ${.....noisy_conversations.dev}
+        _partial_: true
+  test:
+    _target_: pytod.preprocessing_pipelines.FilteringPipeline
+    steps:
+      - _target_: pytod.preprocessing_utils.by_id
+        noisy_ids: ${.....noisy_conversations.test}
+        _partial_: true

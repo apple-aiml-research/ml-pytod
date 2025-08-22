@@ -1,0 +1,48 @@
+{
+  "train": {
+    "Flights_1(ReserveRoundtripFlights)": [
+      "19_00086",
+      "19_00084",
+      "19_00113"
+    ],
+    "Restaurants_1(ReserveRestaurant)": [
+      "3_00110",
+      "3_00043",
+      "3_00074",
+      "3_00103",
+      "3_00053",
+      "3_00040",
+      "3_00082",
+      "3_00062",
+      "3_00068",
+      "43_00101"
+    ],
+    "Services_1(BookAppointment)": [
+      "36_00040"
+    ],
+    "Services_2(BookAppointment)": [
+      "35_00116",
+      "35_00082",
+      "35_00097",
+      "35_00085"
+    ],
+    "Services_3(BookAppointment)": [
+      "36_00087"
+    ]
+  },
+  "dev": {
+    "Restaurants_2(ReserveRestaurant)": [
+      "1_00013",
+      "1_00008",
+      "1_00003"
+    ]
+  },
+  "test": {
+    "Restaurants_2(ReserveRestaurant)": [
+      "1_00029",
+      "1_00024",
+      "1_00006",
+      "1_00010"
+    ]
+  }
+}

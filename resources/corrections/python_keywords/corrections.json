@@ -1,0 +1,6 @@
+{
+    "Trains_1": {
+        "from": "journey_starts_from",
+        "class": "ticket_fare_class"
+    }
+}

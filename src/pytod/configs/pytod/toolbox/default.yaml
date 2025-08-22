@@ -1,0 +1,40 @@
+skip_service_variations: false
+use_snake_case: true
+entity_suffix: "AppEntity"
+# this is not used by the toolbox itself, but controls
+# if the service index appears in the conversation (eg music_3_find_music)
+# or not (music_find_music)
+anonymize_service: false
+toolbox_generator: pytod.toolbox.toolbox.get_toolbox
+# whether invocations are to be sampled from the corpus
+collect_invocations: false
+# when only single domain/single intent conversations are pre-processed
+# invocations are missing for certain intents because they do not appear
+# in the first turn of those conversations. This option enables invocations
+# search in the multi-domain conversations.
+harvest_from_multi_domain: false
+invocations_field_name: 'example_invocations'
+num_examples: 10
+# save a toolbox containing a list of objects parseable with the
+# pytod.pytod_types.pytod.Intent class
+save_refined_toolbox: false
+
+toolbox_refined:
+  # if `true` the entities are defined by the slots the user can request.
+  _target_: ${..toolbox_generator}
+  refine: true
+  skip_service_variations: ${..skip_service_variations}
+  use_snake_case: ${..use_snake_case}
+  entity_suffix: ${..entity_suffix}
+  output_path: ~
+  _partial_: true
+
+toolbox:
+  # Otherwise, entities are the union of the required and optional args
+   _target_: ${..toolbox_generator}
+   refine: false
+   skip_service_variations: ${..skip_service_variations}
+   use_snake_case: ${..use_snake_case}
+   entity_suffix: ${..entity_suffix}
+   output_path: ${output_dir}/toolbox
+   _partial_: true

@@ -1,0 +1,29 @@
+defaults:
+  - actions: v0.3.2
+  - hints: v0.3.2
+  - notifications: v0.3.2
+  - nlg_calls: v3
+  - _self_
+
+
+# This option controls whether the REQ_MORE dialogue is grounded
+#  in a `Hint`, whose corresponding  variable is passed to the
+# `say()` command or not
+ground_req_more: true
+function_naming_convention: ${interpreter.user.function_naming_convention}
+# whether slot value references are included in confirmation hints
+include_slot_value_references_in_confirmation_hints: true
+# as above, except that it applies to alternative hints
+include_slot_value_references_in_alternative_hints: true
+# if true and slots "a", "b" are confirmed, the transcript contains eg
+# n Hint("please confirm: a")
+# n+1 Hint("please confirm: b")
+# otherwise, we have just one hint
+# n Hint("please confirm: a, b")
+multiple_confirmation_hints: false
+# whether to show the values of the REQUEST()
+# dialogue act in hints. These values can be
+# examples (eg agent: Want Taiwanese, Chinese or Romanian food?)
+#  or they can be related to dialogue context (eg agent proposes
+#  a hotel check in on the same day as flight arrival).
+show_values_samples_in_slot_filling_hints: true

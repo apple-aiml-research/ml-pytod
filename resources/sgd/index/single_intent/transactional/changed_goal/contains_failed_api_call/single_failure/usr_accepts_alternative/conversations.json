@@ -1,0 +1,31 @@
+{
+  "train": {
+    "Restaurants_1(ReserveRestaurant)": [
+      "3_00117",
+      "3_00084",
+      "3_00054"
+    ],
+    "Services_1(BookAppointment)": [
+      "36_00016"
+    ],
+    "Services_2(BookAppointment)": [
+      "35_00081",
+      "35_00121"
+    ],
+    "Services_3(BookAppointment)": [
+      "36_00079",
+      "36_00098",
+      "36_00084"
+    ]
+  },
+  "dev": {
+    "Restaurants_2(ReserveRestaurant)": [
+      "1_00026"
+    ]
+  },
+  "test": {
+    "Restaurants_2(ReserveRestaurant)": [
+      "1_00021"
+    ]
+  }
+}

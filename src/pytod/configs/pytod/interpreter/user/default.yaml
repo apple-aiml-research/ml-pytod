@@ -1,0 +1,13 @@
+author: 'USER'
+out_of_scope_acts:
+    _target_ : pytod.preprocessing_utils.get_skipped_acts
+    acts:
+      - 'SELECT'
+      - 'THANK_YOU'
+      - 'NEGATE'
+    author: 'USER'
+# should be 'natural_language' or 'variable_reference'
+value_carryover: 'variable_reference'
+# 'inlined': multiple assignments are made on the same line (eg x1.restaurant_name="Bird dog"; x1.time="11:30")
+# 'newline': one variable per line ( 2 x1.restaurant_name="Bird dog" \n 3 x1.time="11:30")
+assignments_layout: 'inlined'

@@ -1,0 +1,125 @@
+RentalCars_2:
+  GetCarsAvailable:
+  - pickup_date
+  ReserveCar:
+  - pickup_location
+RideSharing_1:
+  GetRide:
+  - destination
+  - destination
+Hotels_3:
+  ReserveHotel:
+  - check_in_date
+  - check_out_date
+  SearchHotel:
+  - location
+Hotels_1:
+  ReserveHotel:
+  - check_in_date
+  SearchHotel:
+  - destination
+Hotels_2:
+  BookHouse:
+  - check_in_date
+  - check_in_date
+  - check_out_date
+Flights_1:
+  SearchRoundtripFlights:
+  - departure_date
+  SearchOnewayFlight:
+  - departure_date
+Flights_2:
+  SearchRoundtripFlights:
+  - departure_date
+  - return_date
+RentalCars_1:
+  GetCarsAvailable:
+  - dropoff_date
+  - pickup_city
+  - pickup_date
+  - pickup_city
+  - pickup_date
+  ReserveCar:
+  - pickup_location
+Buses_2:
+  FindBus:
+  - departure_date
+Buses_1:
+  FindBus:
+  - leaving_date
+Calendar_1:
+  AddEvent:
+  - event_location
+  GetAvailableTime:
+  - event_date
+Movies_1:
+  FindMovies:
+  - location
+  GetTimesForMovie:
+  - show_date
+  - show_date
+Services_2:
+  FindProvider:
+  - city
+  BookAppointment:
+  - appointment_date
+RideSharing_2:
+  GetRide:
+  - destination
+  - destination
+Services_1:
+  FindProvider:
+  - city
+  BookAppointment:
+  - appointment_date
+  - appointment_date
+Events_2:
+  BuyEventTickets:
+  - date
+Services_3:
+  BookAppointment:
+  - appointment_date
+Services_4:
+  BookAppointment:
+  - appointment_date
+  - appointment_date
+  FindProvider:
+  - city
+Homes_1:
+  ScheduleVisit:
+  - visit_date
+Hotels_4:
+  ReserveHotel:
+  - check_in_date
+  - check_in_date
+Flights_3:
+  SearchOnewayFlight:
+  - departure_date
+  SearchRoundtripFlights:
+  - departure_date
+RentalCars_3:
+  GetCarsAvailable:
+  - city
+  - start_date
+  ReserveCar:
+  - start_date
+Messaging_1:
+  ShareLocation:
+  - location
+Flights_4:
+  SearchOnewayFlight:
+  - departure_date
+  SearchRoundtripFlights:
+  - departure_date
+Buses_3:
+  FindBus:
+  - departure_date
+Weather_1:
+  GetWeather:
+  - city
+Trains_1:
+  FindTrains:
+  - date_of_journey
+Homes_2:
+  ScheduleVisit:
+  - visit_date

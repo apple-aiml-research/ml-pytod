@@ -1,0 +1,6 @@
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
+!carryover_values.json
+!normalised_slot_annotations_map.json

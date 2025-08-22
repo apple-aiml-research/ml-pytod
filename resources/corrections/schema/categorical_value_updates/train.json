@@ -1,0 +1,16 @@
+{
+  "Flights_1": {
+    "seating_class": [
+      "Economy",
+      "Premium Economy",
+      "Business"
+    ]
+  },
+  "Flights_2": {
+    "seating_class": [
+      "Economy",
+      "Premium Economy",
+      "First Class"
+    ]
+  }
+}

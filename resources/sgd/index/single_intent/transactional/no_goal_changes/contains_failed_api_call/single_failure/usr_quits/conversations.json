@@ -1,0 +1,46 @@
+{
+  "train": {
+    "Flights_1(ReserveRoundtripFlights)": [
+      "19_00089",
+      "19_00079"
+    ],
+    "Hotels_1(ReserveHotel)": [
+      "41_00022"
+    ],
+    "Hotels_3(ReserveHotel)": [
+      "43_00077"
+    ],
+    "Media_1(PlayMovie)": [
+      "2_00090"
+    ],
+    "Restaurants_1(ReserveRestaurant)": [
+      "4_00007",
+      "43_00094"
+    ],
+    "Services_1(BookAppointment)": [
+      "36_00027"
+    ]
+  },
+  "dev": {
+    "Restaurants_2(ReserveRestaurant)": [
+      "1_00007"
+    ]
+  },
+  "test": {
+    "Alarm_1(AddAlarm)": [
+      "5_00048"
+    ],
+    "Movies_1(BuyMovieTickets)": [
+      "7_00084",
+      "7_00092",
+      "7_00074",
+      "7_00091",
+      "7_00096",
+      "7_00086"
+    ],
+    "Restaurants_2(ReserveRestaurant)": [
+      "1_00005",
+      "1_00009"
+    ]
+  }
+}

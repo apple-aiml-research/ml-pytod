@@ -1,0 +1,13 @@
+defaults:
+  - default_settings@_here_: default
+  - _self_
+
+splits:
+  - 'dev'
+  - 'test'
+
+out_dir: ${root:resources/normalisation}
+data_path: ${root:data/interim/sgd}
+
+resource_paths:
+  carryover_slots_normalised_values: ${root:resources/normalisation/carryover_values.json}

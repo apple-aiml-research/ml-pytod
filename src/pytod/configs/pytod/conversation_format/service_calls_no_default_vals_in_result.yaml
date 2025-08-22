@@ -1,0 +1,41 @@
+# this object controls the conversation representation seen by the summariser
+split: ${..split}
+#defaults:
+#  # API error messages
+#  - api_errors: default
+formatter:
+  _target_ : pytod.text_formatter.TextFormatter
+  # tokens used to mark conversation_format roles
+  user_name: 'user'
+  system_name: 'agent'
+  index_user_turns: true
+  # whether to include service call results in conversation_format shown to the LLM. For example, one way to show this in hist:
+  service_call_formatter:
+    _target_: pytod.text_formatter.PythonFunctionServiceCallFormatter
+    format_config: ${...service_calls_text}
+  service_results_formatter:
+    _target_: pytod.text_formatter.SGDServiceCallResultFormatter
+    format_config: ${...service_results_text}
+  # this is a command collection, specified by the assistant schema at `schema_path`
+  command_collection:
+    _target_: pytod.command.CommandCollection
+    schema_path: ${root:data/interim/sgd/${...split}}/schema.json
+#    schema_path: ${root:data/interim/sgd/${....split}}/schema.json
+
+# configuration options for text representation of service results
+service_results_text:
+  prefix: 'results: '
+  error_prefix: 'error: '
+  # whether to update the results JSON with {_id: int}
+  index_results: true
+  # options that control what fields the result contain
+  # path to the API schema - necessary for filtering optional slots from API call results
+  filtering_opts:
+    # whether call params should be dropped from result
+    call_params: true
+    # whether optional param defaults should be dropped from result
+    opt_slots: true
+
+# configuration options for text representation of service calls
+service_calls_text:
+  convert_camel_case: true
